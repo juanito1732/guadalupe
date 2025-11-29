@@ -1,0 +1,268 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* 5-color palette system - will be updated by PaletteSwitcher */
+  /* Default: AZULES palette */
+  --color-1: #E8F5FD;  /* Lightest - backgrounds */
+  --color-2: #CCE1EF;  /* Light - secondary backgrounds, light accents */
+  --color-3: #9BC0DA;  /* Medium - cards, borders, subtle elements */
+  --color-4: #689EC2;  /* Dark - buttons, links, prominent elements */
+  --color-5: #1B5B7E;  /* Darkest - text, headers, strong emphasis */
+
+  /* Legacy color variables for backward compatibility */
+  --primary-dark: #1B5B7E;
+  --primary: #689EC2;
+  --primary-light: #9BC0DA;
+  --accent: #CCE1EF;
+
+  /* Transition speed for palette changes */
+  --transition-duration: 300ms;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Vercel Deploy Test - 2025-11-20 */
+}
+
+body {
+  @apply font-sans text-c5 bg-white dark:bg-dark transition-colors duration-300;
+  background-color: var(--color-1);
+}
+
+/* Smooth transitions when palette changes */
+* {
+  @apply transition-colors;
+  transition-duration: var(--transition-duration);
+}
+
+html.dark {
+  @apply bg-dark-light;
+}
+
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.heading-serif {
+  @apply font-serif font-bold tracking-tight;
+}
+
+.section-padding {
+  @apply py-20 px-4;
+}
+
+@supports (scroll-behavior: smooth) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* ===== PROFESSIONAL PALETTE APPLICATION ===== */
+
+/* Headers and Headings - Use darkest color (color-5) */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold;
+  color: var(--color-5);
+}
+
+/* Links - Use dark color (color-4) */
+a {
+  color: var(--color-4);
+  @apply hover:opacity-80 transition-opacity duration-200;
+}
+
+/* Buttons - Professional styling with full palette */
+button,
+.btn,
+input[type="button"],
+input[type="submit"] {
+  background-color: var(--color-4);
+  color: white;
+  @apply px-4 py-2 rounded-lg font-semibold transition-all duration-300;
+  border: 2px solid var(--color-4);
+}
+
+button:hover,
+.btn:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  background-color: var(--color-5);
+  border-color: var(--color-5);
+  @apply shadow-lg;
+}
+
+button:active,
+.btn:active,
+input[type="button"]:active,
+input[type="submit"]:active {
+  @apply transform scale-95;
+}
+
+/* Secondary Buttons */
+.btn-secondary,
+button.secondary {
+  background-color: var(--color-2);
+  color: var(--color-5);
+  border-color: var(--color-3);
+}
+
+.btn-secondary:hover,
+button.secondary:hover {
+  background-color: var(--color-3);
+  border-color: var(--color-4);
+}
+
+/* Cards and Containers */
+.card,
+.container-card,
+[class*="card"] {
+  background-color: var(--color-1);
+  border: 1px solid var(--color-3);
+  @apply rounded-lg shadow-md transition-all duration-300;
+}
+
+.card:hover,
+.container-card:hover {
+  @apply shadow-lg;
+  border-color: var(--color-4);
+}
+
+/* Forms and Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  background-color: var(--color-1);
+  border: 2px solid var(--color-3);
+  color: var(--color-5);
+  @apply rounded-lg px-4 py-2 transition-all duration-300;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+  @apply outline-none;
+  border-color: var(--color-4);
+  box-shadow: 0 0 0 3px rgba(104, 158, 194, 0.1);
+}
+
+input::placeholder {
+  color: var(--color-3);
+}
+
+/* Sections with Backgrounds */
+section {
+  @apply transition-all duration-300;
+}
+
+section.bg-primary {
+  background-color: var(--color-4);
+  @apply text-white;
+}
+
+section.bg-secondary {
+  background-color: var(--color-2);
+}
+
+section.bg-accent {
+  background-color: var(--color-1);
+}
+
+/* Borders and Separators */
+hr,
+.divider {
+  border-color: var(--color-3);
+}
+
+/* Text Colors */
+.text-primary {
+  color: var(--color-5);
+}
+
+.text-secondary {
+  color: var(--color-4);
+}
+
+.text-light {
+  color: var(--color-3);
+}
+
+.text-muted {
+  color: var(--color-2);
+}
+
+/* Background Colors */
+.bg-primary {
+  background-color: var(--color-4);
+}
+
+.bg-secondary {
+  background-color: var(--color-2);
+}
+
+.bg-light {
+  background-color: var(--color-1);
+}
+
+.bg-accent {
+  background-color: var(--color-3);
+}
+
+/* Badges and Tags */
+.badge,
+.tag {
+  background-color: var(--color-4);
+  color: white;
+  @apply px-3 py-1 rounded-full text-sm font-semibold;
+}
+
+.badge-secondary {
+  background-color: var(--color-2);
+  color: var(--color-5);
+}
+
+/* Alerts and Messages */
+.alert {
+  border-left: 4px solid var(--color-4);
+  background-color: var(--color-1);
+  color: var(--color-5);
+  @apply p-4 rounded;
+}
+
+.alert-success {
+  border-left-color: #10b981;
+  background-color: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+}
+
+/* Shadows using palette colors */
+.shadow-palette {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-palette-lg {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Focus styles with palette */
+:focus-visible {
+  @apply outline-none;
+  box-shadow: 0 0 0 3px rgba(104, 158, 194, 0.3);
+}
+
+::selection {
+  background-color: var(--color-4);
+  color: white;
+}

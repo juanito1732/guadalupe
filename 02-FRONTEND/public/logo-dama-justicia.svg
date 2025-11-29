@@ -1,0 +1,90 @@
+<svg viewBox="0 0 200 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      .law-figure { fill: #2c3e50; stroke: #2c3e50; stroke-width: 0.5; }
+      .details { fill: #34495e; }
+    </style>
+  </defs>
+
+  <!-- Head -->
+  <circle cx="100" cy="50" r="18" class="law-figure"/>
+
+  <!-- Crown/Headpiece -->
+  <path d="M 82 38 Q 100 25 118 38 L 115 42 Q 100 32 85 42 Z" class="law-figure"/>
+  <circle cx="88" cy="35" r="2.5" class="details"/>
+  <circle cx="100" cy="32" r="2.5" class="details"/>
+  <circle cx="112" cy="35" r="2.5" class="details"/>
+
+  <!-- Neck -->
+  <path d="M 94 68 L 92 85 L 108 85 L 106 68 Z" class="law-figure"/>
+
+  <!-- Body/Toga - Main -->
+  <path d="M 80 85 Q 75 120 70 160 Q 68 180 70 220 L 130 220 Q 132 180 130 160 Q 125 120 120 85 Z" class="law-figure"/>
+
+  <!-- Toga Folds - Detail -->
+  <path d="M 85 100 Q 82 130 80 160" stroke="#2c3e50" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M 100 90 Q 98 140 97 200" stroke="#2c3e50" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <path d="M 115 100 Q 118 130 120 160" stroke="#2c3e50" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Left Arm (holding scales) -->
+  <path d="M 75 95 Q 55 105 40 130" stroke="#2c3e50" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- Left Hand -->
+  <circle cx="38" cy="132" r="5" class="law-figure"/>
+
+  <!-- Right Arm (holding sword) -->
+  <path d="M 125 95 Q 145 105 160 130" stroke="#2c3e50" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- Right Hand -->
+  <circle cx="162" cy="132" r="5" class="law-figure"/>
+
+  <!-- Left Leg -->
+  <path d="M 88 220 L 85 280 L 92 280 L 95 220 Z" class="law-figure"/>
+  <!-- Left Foot -->
+  <ellipse cx="88.5" cy="285" rx="5" ry="3" class="law-figure"/>
+
+  <!-- Right Leg -->
+  <path d="M 112 220 L 108 280 L 115 280 L 118 220 Z" class="law-figure"/>
+  <!-- Right Foot -->
+  <ellipse cx="111.5" cy="285" rx="5" ry="3" class="law-figure"/>
+
+  <!-- SCALES/BALANCE -->
+  <!-- Left Balance Arm -->
+  <line x1="38" y1="130" x2="25" y2="115" stroke="#2c3e50" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Balance Beam Center -->
+  <circle cx="32" cy="125" r="6" class="law-figure"/>
+
+  <!-- Right Balance Arm -->
+  <line x1="32" y1="125" x2="45" y2="140" stroke="#2c3e50" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Left Pan -->
+  <rect x="18" y="116" width="14" height="10" rx="1.5" class="law-figure"/>
+  <path d="M 20 126 Q 25 135 30 126" stroke="#2c3e50" stroke-width="1" fill="none"/>
+
+  <!-- Right Pan -->
+  <rect x="40" y="141" width="14" height="10" rx="1.5" class="law-figure"/>
+  <path d="M 42 151 Q 47 160 52 151" stroke="#2c3e50" stroke-width="1" fill="none"/>
+
+  <!-- Chains for pans -->
+  <line x1="25" y1="116" x2="25" y2="106" stroke="#2c3e50" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="30" y1="116" x2="30" y2="106" stroke="#2c3e50" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="47" y1="141" x2="47" y2="131" stroke="#2c3e50" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="52" y1="141" x2="52" y2="131" stroke="#2c3e50" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- SWORD -->
+  <!-- Blade -->
+  <path d="M 162 130 L 175 40" stroke="#34495e" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M 165 130 L 178 40" stroke="#2c3e50" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Point -->
+  <polygon points="176.5,38 174,45 179,45" class="law-figure"/>
+
+  <!-- Guard/Hilt -->
+  <rect x="160" y="132" width="6" height="8" class="details"/>
+  <path d="M 156 140 L 168 140" stroke="#2c3e50" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Handle -->
+  <rect x="161" y="140" width="4" height="15" rx="2" class="details"/>
+
+  <!-- Pommel -->
+  <circle cx="163" cy="158" r="3.5" class="law-figure"/>
+</svg>

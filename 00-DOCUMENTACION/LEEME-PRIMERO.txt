@@ -1,0 +1,181 @@
+================================================================================
+                          ¡LEEME PRIMERO!
+================================================================================
+
+Hola, bienvenido a la documentación del Proyecto Guadis.
+
+Este proyecto tiene un SISTEMA DE MEMORIA PERSISTENTE que asegura que
+James Web NUNCA pierda contexto, sin importar la sesión.
+
+================================================================================
+                        ¿ERES JAMES WEB?
+================================================================================
+
+SI SÍ, haz esto AHORA (toma 8 minutos):
+
+PASO 1 - Leer Contexto (2 minutos):
+  Abre: CONTEXTO-PERSISTENTE.md
+  Lee: Las primeras secciones (hasta "Stack Tecnológico")
+  Objetivo: Entender dónde estamos en el proyecto
+
+PASO 2 - Validar (2 minutos):
+  Abre: TEMPLATE-ENTRADA-SESION.md
+  Completa: El checklist de 6 preguntas
+  Objetivo: Confirmar que tienes contexto completo
+
+PASO 3 - Revisar Cambios (2 minutos):
+  Abre: BITACORA.md
+  Lee: Las últimas 3 entradas
+  Objetivo: Saber qué cambió desde tu última sesión
+
+PASO 4 - Auditoría (2 minutos):
+  Abre: REGISTRO-SESIONES.md
+  Lee: Las últimas 2 sesiones
+  Objetivo: Entender qué se completó y qué quedó pendiente
+
+LISTO PARA TRABAJAR ✅
+
+================================================================================
+                        ¿ERES JUANITO?
+================================================================================
+
+SI SÍ, haz esto PRIMERO (toma 30 minutos):
+
+LEE: GUIA-JUANITO-PM.md
+
+Contiene:
+  - Tu rol como Project Manager
+  - Qué archivos leer y cuándo
+  - Cómo gestionar pagos
+  - Cómo validar que James Web está documentando
+  - Qué hacer en caso de problema
+  - Checklist semanal
+
+Tiempo: 30 minutos (una sola vez)
+
+LUEGO, cada LUNES:
+  Dedica 15 minutos a validar el estado del proyecto
+  Ver instrucciones específicas en GUIA-JUANITO-PM.md
+
+================================================================================
+                      ESTRUCTURA DE ARCHIVOS
+================================================================================
+
+CRÍTICOS (leer según rol):
+  ✅ CONTEXTO-PERSISTENTE.md ......... PUNTO DE ENTRADA (James Web)
+  ✅ TEMPLATE-ENTRADA-SESION.md ..... Checklist de 2 min (James Web)
+  ✅ GUIA-JUANITO-PM.md ............ Guía PM (Juanito)
+  ✅ INSTRUCCIONES-JAMES-WEB.md ... Guía completa (James Web)
+  ✅ PROTOCOLO-ACTUALIZACION.md ... Triggers (para referencias)
+
+AUDITORÍA:
+  ✅ BITACORA.md ..................... Log técnico
+  ✅ REGISTRO-SESIONES.md ........... Auditoría de sesiones
+
+NAVEGACIÓN:
+  ✅ MAPA-RAPIDO-MEMORIA.md ........ Mapeo visual
+  ✅ INDICE-MAESTRO.md ............ Índice completo
+
+REFERENCIA:
+  ✅ PROYECTO-INFO.md ............ Datos de cliente
+  ✅ FASES.md .................... Detalle de fases
+  ✅ ESTRUCTURA-EXPLICADA.md .... Explicación de carpetas
+
+================================================================================
+                         5 MINUTOS PARA ENTENDER
+================================================================================
+
+¿QUÉ ES ESTE SISTEMA?
+
+Es un sistema que asegura que:
+  1. James Web NUNCA pierda contexto de Guadis
+  2. Cada cambio es auditable y trazable
+  3. Juanito puede validar estado en cualquier momento
+  4. Todo está documentado, nada se olvida
+
+¿CÓMO FUNCIONA?
+
+  1. Al inicio de sesión: James Web lee 4 archivos en 8 minutos
+  2. Durante sesión: Trabaja normalmente + respeta TRIGGERS
+  3. Al fin de sesión: Documenta en 5-10 minutos
+  → RESULTADO: Memoria completa guardada en archivos
+
+¿POR QUÉ ESTO?
+
+Porque la memoria NO está en la cabeza de James Web.
+Está en ARCHIVOS, siempre accesibles, siempre actualizados.
+
+¿CUÁNTO TIEMPO TOMA?
+
+  James Web: 8 minutos inicio + 5-10 minutos fin = 13-18 min/sesión
+  Juanito: 15 minutos semanal + 5 minutos por pago
+
+================================================================================
+                         PRIMERAS ACCIONES
+================================================================================
+
+OPCIÓN A - Si eres James Web:
+  1. Lee CONTEXTO-PERSISTENTE.md (2 min)
+  2. Completa TEMPLATE-ENTRADA-SESION.md (2 min)
+  3. Empieza a trabajar ✅
+
+OPCIÓN B - Si eres Juanito:
+  1. Lee GUIA-JUANITO-PM.md (30 min)
+  2. Agrega checklist semanal a tu calendario
+  3. Próximo lunes: primera validación ✅
+
+OPCIÓN C - Si eres ambos:
+  1. James Web: Opción A
+  2. Juanito: Opción B
+  3. Ambos: Leer PROTOCOLO-ACTUALIZACION.md (protocolo compartido)
+
+================================================================================
+                         ¿TENGO DUDAS?
+================================================================================
+
+¿Qué leo si me pierdo?
+  → MAPA-RAPIDO-MEMORIA.md (navegación visual)
+  → INDICE-MAESTRO.md (índice de todo)
+
+¿Qué hago si no sé qué actualizar?
+  → PROTOCOLO-ACTUALIZACION.md (triggers automáticos)
+  → INSTRUCCIONES-JAMES-WEB.md (instrucciones explícitas)
+
+¿Qué hago si soy PM y algo no está bien?
+  → GUIA-JUANITO-PM.md (sección "Escalation")
+
+¿Dónde está el código del proyecto?
+  → /home/juani/Desktop/claude/proyectos/guadis/02-FRONTEND/
+  → /home/juani/Desktop/claude/proyectos/guadis/03-BACKEND/ (Fase 2)
+
+================================================================================
+                         ESTADO DEL PROYECTO
+================================================================================
+
+FASE ACTUAL: 1 - Landing Page Profesional
+PRESUPUESTO: $1,000 USD total ($600 Fase 1 + $400 Fase 2)
+ESTADO PAGOS: 1 de 3 cuotas pagadas ($200 de $600 - 33%)
+PRÓXIMO HITO: Completar landing page con Lighthouse 95+
+
+VER CONTEXTO-PERSISTENTE.md para detalles completos.
+
+================================================================================
+                         ¡ÁNIMO!
+================================================================================
+
+El sistema puede parecer complejo al principio.
+Pero es SIMPLE en la práctica:
+
+  James Web: Lee 8 minutos al inicio, documenta 10 minutos al fin.
+  Juanito: Valida 15 minutos cada lunes.
+
+Eso es todo.
+
+El resto es simplemente DISCIPLINA de mantener memoria.
+
+¡Bienvenido a un proyecto PROFESIONAL y AUDITABLE!
+
+================================================================================
+Created: 2025-11-04 | Updated: 2025-11-04 21:00
+Sistema de Memoria Persistente ACTIVO ✅
+================================================================================

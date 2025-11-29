@@ -1,0 +1,103 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                 GUADIS - REQUISITOS PARA DEPLOY A VERCEL                  ║
+║                                                                            ║
+║   El sitio web está 100% listo. Solo necesitamos tus contenidos.          ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+
+🎯 ¿QUÉ NECESITO DE TI?
+═════════════════════════════════════════════════════════════════════════════
+
+1. IMÁGENES (envía los archivos)
+   ✓ Logo de Guadis
+   ✓ Foto de Guadalupe (profesional)
+   ✓ 2-3 imágenes profesionales más
+
+2. TEXTOS (envía por escrito)
+   ✓ Texto corto para portada (2-3 frases)
+   ✓ Biografía de Guadalupe
+   ✓ Descripción de tus 3 servicios
+   ✓ 2-3 testimonios de clientes (nombres y breve comentario)
+
+3. CONTACTO
+   ✓ Email: contacto@... (importante para formularios)
+   ✓ Teléfono/WhatsApp: +54 9 ...
+   ✓ Ciudad donde trabajas
+
+4. REDES SOCIALES
+   ✓ Tu usuario de Instagram: @...
+   ✓ Tu usuario de TikTok: @...
+
+5. DOMINIO
+   ✓ ¿Tienes dominio registrado? (ej: guadis.com.ar)
+   ✓ Si no tienes, usamos: guadis.vercel.app (gratis)
+
+
+✅ LO QUE YO VOY A HACER
+═════════════════════════════════════════════════════════════════════════════
+
+UNA VEZ QUE ME DES TODO:
+
+Día 1:
+  • Integro tus imágenes en el sitio
+  • Actualizo todos los textos
+  • Coloco tu email y teléfono
+  • Configuro tus redes sociales
+  • Pruebo que todo funcione bien
+
+Día 2:
+  • Conecto con Vercel (servicio de hosting)
+  • Configuro tu dominio
+  • Pongo el sitio en vivo
+
+Día 3:
+  • Últimas pruebas
+  • ¡LISTO! Tu sitio en vivo 🚀
+
+
+💰 COSTOS
+═════════════════════════════════════════════════════════════════════════════
+
+Vercel (Hosting)  →  GRATIS
+Dominio           →  $0 (si usas vercel.app) O $10-15 USD/año
+Formulario Email  →  GRATIS
+
+TOTAL: $0 a $15 USD por año (tu decisión)
+
+
+📍 PRÓXIMO PASO
+═════════════════════════════════════════════════════════════════════════════
+
+1. Reúne todo lo de arriba
+2. Envíame:
+   - Las imágenes (archivos)
+   - Los textos (por email/WhatsApp/mensaje)
+   - Tu email y teléfono actualizados
+   - Tus usuarios de Instagram y TikTok
+   - Tu dominio (o confirma si usamos vercel.app)
+
+3. ¡Yo hago el resto!
+
+
+⏱️ TIEMPO TOTAL
+═════════════════════════════════════════════════════════════════════════════
+
+Una vez me proporciones todo:
+  • 2-3 horas: Integración de contenido
+  • 1-2 horas: Setup en Vercel
+  • 1 hora: Testing final
+  ─────────────────────
+  • Total: 4-6 horas de trabajo
+  • En vivo: 2-3 días
+
+
+📞 CONTACTO
+═════════════════════════════════════════════════════════════════════════════
+
+Archivo completo: DEPLOY-CHECKLIST.md (en esta carpeta)
+Para preguntas: contactame
+
+¡El sitio está listo, solo espero tu contenido! 🎉
+
+
+═════════════════════════════════════════════════════════════════════════════

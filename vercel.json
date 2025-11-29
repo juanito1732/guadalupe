@@ -1,0 +1,5 @@
+{
+  "buildCommand": "cd 02-FRONTEND && npm run build",
+  "outputDirectory": "02-FRONTEND/.next",
+  "installCommand": "cd 02-FRONTEND && npm ci"
+}

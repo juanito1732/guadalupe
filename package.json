@@ -1,0 +1,27 @@
+{
+  "name": "guadis",
+  "version": "0.1.0",
+  "description": "Proyecto web para Guadalupe Juarez",
+  "main": "index.js",
+  "scripts": {
+    "dev": "echo 'Configurar script de desarrollo'",
+    "build": "echo 'Configurar script de build'",
+    "start": "echo 'Configurar script de start'"
+  },
+  "keywords": [
+    "web",
+    "ecommerce"
+  ],
+  "author": "James Web",
+  "license": "MIT",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanito1732/guadis-landing.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/juanito1732/guadis-landing/issues"
+  },
+  "homepage": "https://github.com/juanito1732/guadis-landing#readme"
+}

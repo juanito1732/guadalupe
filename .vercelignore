@@ -1,0 +1,24 @@
+# .vercelignore - Qué NO ignorar en Vercel
+
+# NUNCA ignorar estos directorios
+!02-FRONTEND/
+
+# Ignorar solo lo que realmente no necesitamos
+.git
+.github
+.gitignore
+*.md
+docs/
+00-DOCUMENTACION/
+01-DISENO/
+04-INTEGRACIONES/
+.backups/
+.vercel/
+node_modules/
+.env
+.env.local
+.env.production
+
+# Permitir que Vercel vea los archivos de config
+!vercel.json
+!package.json
