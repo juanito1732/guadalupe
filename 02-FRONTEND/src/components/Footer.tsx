@@ -13,7 +13,7 @@ export default function Footer() {
             <img
               src="/logo-estudio-juridico.svg"
               alt="Estudio Jurídico Logo"
-              className="h-14 w-auto mb-2"
+              className="h-24 w-auto mb-4"
             />
             <p className="text-gray-300 text-sm leading-snug max-w-sm">
               {siteConfig.description}
@@ -47,28 +47,28 @@ export default function Footer() {
                   href="https://instagram.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-blue-400 transition-colors duration-200 p-1 rounded hover:bg-gray-800"
+                  className="text-gray-300 hover:text-white transition-all duration-300 p-2 rounded-lg hover:bg-blue-600 hover:shadow-lg hover:scale-110"
                   aria-label="Instagram"
                 >
-                  <FaInstagram size={18} />
+                  <FaInstagram size={22} />
                 </a>
                 <a
                   href="https://wa.me"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-blue-400 transition-colors duration-200 p-1 rounded hover:bg-gray-800"
+                  className="text-gray-300 hover:text-white transition-all duration-300 p-2 rounded-lg hover:bg-blue-600 hover:shadow-lg hover:scale-110"
                   aria-label="WhatsApp"
                 >
-                  <FaWhatsapp size={18} />
+                  <FaWhatsapp size={22} />
                 </a>
                 <a
                   href="https://tiktok.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-blue-400 transition-colors duration-200 p-1 rounded hover:bg-gray-800"
+                  className="text-gray-300 hover:text-white transition-all duration-300 p-2 rounded-lg hover:bg-blue-600 hover:shadow-lg hover:scale-110"
                   aria-label="TikTok"
                 >
-                  <FaTiktok size={18} />
+                  <FaTiktok size={22} />
                 </a>
               </div>
             </div>
