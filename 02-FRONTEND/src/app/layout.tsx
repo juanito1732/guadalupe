@@ -3,7 +3,6 @@ import { Playfair_Display, Inter } from 'next/font/google'
 import './globals.css'
 import { siteConfig, generateJsonLd } from '@/data/config'
 import ThemeProvider from '@/components/ThemeProvider'
-import PaletteSwitcher from '@/components/PaletteSwitcher'
 import PaletteInitializer from '@/components/PaletteInitializer'
 
 const playfair = Playfair_Display({
@@ -102,7 +101,6 @@ export default function RootLayout({
         <ThemeProvider>
           {children}
         </ThemeProvider>
-        <PaletteSwitcher />
       </body>
     </html>
   )

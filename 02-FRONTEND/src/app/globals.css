@@ -6,8 +6,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-  /* 5-color palette system - will be updated by PaletteSwitcher */
-  /* Default: AZULES palette */
+  /* 5-color palette system - AZULES (Professional Blue Palette) */
+  /* Fixed palette: AZULES */
   --color-1: #E8F5FD;  /* Lightest - backgrounds */
   --color-2: #CCE1EF;  /* Light - secondary backgrounds, light accents */
   --color-3: #9BC0DA;  /* Medium - cards, borders, subtle elements */
