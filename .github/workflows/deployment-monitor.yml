@@ -87,7 +87,7 @@ jobs:
 
       - name: 💾 Upload monitoring report
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: monitoring-reports
           path: MONITORING_REPORT.md

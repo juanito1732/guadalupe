@@ -77,7 +77,7 @@ jobs:
 
       - name: 💾 Upload reports
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: quality-reports
           path: CODE_QUALITY_REPORT.md
