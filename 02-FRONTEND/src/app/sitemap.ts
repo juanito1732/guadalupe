@@ -1,39 +1,42 @@
 import { MetadataRoute } from 'next'
+import { siteConfig } from '@/data/config'
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = siteConfig.url
+
   return [
     {
-      url: 'https://guadis.com.ar',
+      url: baseUrl,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 1.0,
     },
     {
-      url: 'https://guadis.com.ar#hero',
+      url: `${baseUrl}#hero`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.9,
     },
     {
-      url: 'https://guadis.com.ar#about',
+      url: `${baseUrl}#about`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.9,
     },
     {
-      url: 'https://guadis.com.ar#services',
+      url: `${baseUrl}#services`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.9,
     },
     {
-      url: 'https://guadis.com.ar#testimonials',
+      url: `${baseUrl}#testimonials`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://guadis.com.ar#contact',
+      url: `${baseUrl}#contact`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
