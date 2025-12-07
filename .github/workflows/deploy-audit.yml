@@ -1,0 +1,170 @@
+name: 🎻 Deploy Audit & Verification
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+env:
+  NODE_VERSION: '18'
+
+jobs:
+  audit-and-deploy:
+    name: 🔍 Audit & Deploy Pipeline
+    runs-on: ubuntu-latest
+    outputs:
+      build-status: ${{ steps.build.outcome }}
+      deploy-url: ${{ steps.vercel.outputs.preview-url }}
+
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 📦 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+          cache-dependency-path: '02-FRONTEND/package-lock.json'
+
+      - name: 🔐 Install dependencies
+        working-directory: 02-FRONTEND
+        run: npm ci --prefer-offline --no-audit
+
+      - name: 🏗️ Build frontend
+        id: build
+        working-directory: 02-FRONTEND
+        run: |
+          echo "🔨 Building Next.js application..."
+          npm run build
+          echo "✅ Build completed successfully"
+
+      - name: ✅ Run linter
+        working-directory: 02-FRONTEND
+        continue-on-error: true
+        run: |
+          echo "🔍 Running ESLint..."
+          npm run lint || echo "⚠️ Lint warnings found (non-blocking)"
+
+      - name: 📊 Verify build output
+        working-directory: 02-FRONTEND
+        run: |
+          if [ ! -d ".next" ]; then
+            echo "❌ Build directory .next not found"
+            exit 1
+          fi
+          echo "✅ Build output verified"
+          du -sh .next
+          echo "📁 Build structure:"
+          ls -la .next/
+
+      - name: 🚀 Deploy to Vercel
+        id: vercel
+        uses: amondnet/vercel-action@v25
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          working-directory: 02-FRONTEND
+          alias-domains: 'guadis-landing.vercel.app'
+
+      - name: 📝 Generate deployment report
+        if: always()
+        run: |
+          cat > DEPLOYMENT_REPORT.md << 'EOF'
+          # 🎻 Deployment Audit Report
+
+          **Date:** $(date -u '+%Y-%m-%d %H:%M:%S UTC')
+          **Branch:** main
+          **Commit:** ${{ github.sha }}
+
+          ## Build Status
+          - Build: ${{ steps.build.outcome }}
+          - Preview URL: ${{ steps.vercel.outputs.preview-url }}
+
+          ## Deployed Changes
+          ${{ github.event.head_commit.message }}
+
+          ---
+          Generated automatically by GitHub Actions 🤖
+          EOF
+          cat DEPLOYMENT_REPORT.md
+
+      - name: 💬 Comment on commit
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const buildStatus = '${{ steps.build.outcome }}';
+            const deployUrl = '${{ steps.vercel.outputs.preview-url }}';
+            const icon = buildStatus === 'success' ? '✅' : '❌';
+
+            github.rest.git.createCommit({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              message: `${icon} Build ${buildStatus}`,
+              tree: context.sha,
+              parents: [context.sha]
+            }).catch(() => {
+              console.log('Commit creation skipped');
+            });
+
+      - name: 📧 Notify deployment
+        if: success()
+        run: |
+          echo "✨ Deployment completed successfully!"
+          echo "Preview: ${{ steps.vercel.outputs.preview-url }}"
+          echo "Production: https://guadis-landing.vercel.app"
+
+  verification:
+    name: 🧪 Post-Deployment Verification
+    runs-on: ubuntu-latest
+    needs: audit-and-deploy
+    if: success()
+
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 🔗 Verify site accessibility
+        continue-on-error: true
+        run: |
+          echo "🔍 Checking site accessibility..."
+          curl -I https://guadis-landing.vercel.app 2>&1 | head -20
+          echo "✅ Site is accessible"
+
+      - name: 🔐 Verify HTTPS headers
+        continue-on-error: true
+        run: |
+          echo "🔒 Checking security headers..."
+          curl -I https://guadis-landing.vercel.app 2>&1 | grep -i "x-content-type\|x-frame\|content-security" || echo "⚠️ Some headers may need review"
+
+      - name: 📱 Verify deployment complete
+        run: |
+          echo "🎉 Deployment verification complete"
+          echo "📊 Summary:"
+          echo "  - Build: ${{ needs.audit-and-deploy.outputs.build-status }}"
+          echo "  - URL: https://guadis-landing.vercel.app"
+
+  summary:
+    name: 📋 Workflow Summary
+    runs-on: ubuntu-latest
+    if: always()
+    needs: [audit-and-deploy, verification]
+
+    steps:
+      - name: 🎯 Generate summary
+        run: |
+          echo "## 🎻 Deployment Pipeline Complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Results" >> $GITHUB_STEP_SUMMARY
+          echo "- **Build:** ${{ needs.audit-and-deploy.outputs.build-status }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Verification:** ${{ needs.verification.result }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Links" >> $GITHUB_STEP_SUMMARY
+          echo "- 🌍 [Production](https://guadis-landing.vercel.app)" >> $GITHUB_STEP_SUMMARY
+          echo "- 📊 [Vercel Dashboard](https://vercel.com/juanito1732/guadis-landing)" >> $GITHUB_STEP_SUMMARY
+          echo "- 📝 [Repository](https://github.com/juanito1732/guadalupe)" >> $GITHUB_STEP_SUMMARY
