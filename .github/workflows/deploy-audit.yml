@@ -28,8 +28,7 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
 
       - name: 🔐 Install dependencies
-        working-directory: 02-FRONTEND
-        run: npm ci --prefer-offline --no-audit
+        run: npm ci --prefix 02-FRONTEND --prefer-offline --no-audit
 
       - name: 🏗️ Build frontend
         id: build

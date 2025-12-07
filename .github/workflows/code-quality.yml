@@ -23,8 +23,7 @@ jobs:
           node-version: '18'
 
       - name: 🔐 Install dependencies
-        working-directory: 02-FRONTEND
-        run: npm ci
+        run: npm ci --prefix 02-FRONTEND
 
       - name: 🔍 Lint code
         working-directory: 02-FRONTEND
