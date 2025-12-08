@@ -18,7 +18,7 @@ export default function Hero() {
           transition={{ duration: 1.2, ease: 'easeOut' }}
           className="max-w-2xl"
         >
-          <p className="text-accent-light text-lg font-semibold tracking-widest uppercase mb-6">
+          <p className="text-c2 text-lg font-semibold tracking-widest uppercase mb-6">
             Asesoría Jurídica Profesional
           </p>
 
@@ -26,7 +26,7 @@ export default function Hero() {
             Tu Abogada de Confianza
           </h1>
 
-          <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-xl">
+          <p className="text-xl text-c2 mb-8 leading-relaxed max-w-xl">
             Con 20+ años de experiencia resolviendo casos de familia, sucesiones y amparos de salud.
             Profesionalismo, integridad y resultados.
           </p>
@@ -35,7 +35,7 @@ export default function Hero() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             href="#contact"
-            className="inline-block px-8 py-4 bg-gradient-to-r from-primary to-dark text-white font-bold rounded-lg hover:shadow-2xl transition-all"
+            className="inline-block px-8 py-4 bg-gradient-to-r from-c4 to-c5 text-white font-bold rounded-lg hover:shadow-2xl transition-all"
           >
             Solicita Consulta Gratuita
           </motion.a>

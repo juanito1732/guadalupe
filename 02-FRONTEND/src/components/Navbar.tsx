@@ -23,7 +23,7 @@ export default function Navbar() {
             <a
               key={item.href}
               href={item.href}
-              className="text-text-primary hover:text-primary transition-colors duration-200"
+              className="text-c5 hover:text-c4 transition-colors duration-200"
             >
               {item.name}
             </a>
@@ -36,21 +36,21 @@ export default function Navbar() {
           aria-label="Toggle menu"
         >
           {isOpen ? (
-            <FaTimes className="text-text-primary" size={24} />
+            <FaTimes className="text-c5" size={24} />
           ) : (
-            <FaBars className="text-text-primary" size={24} />
+            <FaBars className="text-c5" size={24} />
           )}
         </button>
       </div>
 
       {isOpen && (
-        <div className="md:hidden bg-white border-t border-gray-200">
+        <div className="md:hidden bg-white border-t border-c3">
           <div className="container-custom py-4 space-y-3">
             {siteConfig.nav.map(item => (
               <a
                 key={item.href}
                 href={item.href}
-                className="block text-text-primary hover:text-primary py-2 transition-colors duration-200"
+                className="block text-c5 hover:text-c4 py-2 transition-colors duration-200"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
