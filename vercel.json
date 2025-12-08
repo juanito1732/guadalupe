@@ -1,0 +1,8 @@
+{
+  "name": "guadalupe",
+  "buildCommand": "npm run build -w 02-FRONTEND",
+  "devCommand": "npm run dev -w 02-FRONTEND",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "rootDirectory": "02-FRONTEND"
+}
