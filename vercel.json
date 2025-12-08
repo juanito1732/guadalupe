@@ -1,5 +1,12 @@
 {
-  "buildCommand": "npm run build --prefix 02-FRONTEND",
-  "devCommand": "npm run dev --prefix 02-FRONTEND",
-  "installCommand": "npm ci --prefix 02-FRONTEND"
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm ci",
+  "name": "guadalupe",
+  "env": [
+    {
+      "key": "NEXT_PUBLIC_APP_NAME",
+      "value": "Guadalupe"
+    }
+  ]
 }
