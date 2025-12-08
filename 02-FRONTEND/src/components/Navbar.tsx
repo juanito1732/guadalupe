@@ -15,7 +15,6 @@ export default function Navbar() {
             src="/logo-estudio-juridico.svg"
             alt="Estudio Jurídico Logo"
             className="h-28 w-auto"
-            style={{ filter: 'invert(14%) sepia(98%) saturate(1200%) hue-rotate(202deg) brightness(90%) contrast(110%)' }}
           />
         </div>
 
