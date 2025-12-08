@@ -2,8 +2,8 @@ export const siteConfig = {
   name: 'Estudio Jurídico Dra. María Guadalupe Juárez',
   shortName: 'Guadis',
   description: 'Más de 20 años de experiencia en asesoría legal integral especializada en derecho de familia, sucesiones, amparos de salud y derecho de daños. Brindamos soluciones legales con enfoque personalizado y perspectiva de género para cada cliente.',
-  url: 'https://guadis-landing.vercel.app',
-  ogImage: 'https://guadis-landing.vercel.app/og-image.jpg',
+  url: 'https://guadalupe.vercel.app',
+  ogImage: 'https://guadalupe.vercel.app/og-image.jpg',
   locale: 'es-AR',
 
   contact: {

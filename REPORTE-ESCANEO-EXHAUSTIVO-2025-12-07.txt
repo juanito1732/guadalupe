@@ -1,0 +1,668 @@
+═══════════════════════════════════════════════════════════════════════════════
+ESCANEO EXHAUSTIVO Y PROFUNDO DEL PROYECTO GUADALUPE
+Realizado: 2025-12-07
+Directorio: /home/juani/Desktop/OSIRIS/proyectos/guadalupe
+═══════════════════════════════════════════════════════════════════════════════
+
+ESTADÍSTICAS GENERALES DEL PROYECTO
+═════════════════════════════════════════════════════════════════════════════
+
+Tamaño Total: 22M
+Cantidad de Archivos: 473
+Archivos de Código TypeScript/TSX: 21
+Líneas Totales de Código: 1,389
+Componentes Client-Side: 13
+Componentes Server-Side: 2
+Archivos de Configuración: 8
+
+═════════════════════════════════════════════════════════════════════════════
+RESUMEN EJECUTIVO - PROBLEMA CRÍTICO ENCONTRADO
+═════════════════════════════════════════════════════════════════════════════
+
+CRÍTICO: Función switchPalette() INEXISTENTE en usePalette hook
+
+Ubicación: /02-FRONTEND/src/hooks/usePalette.ts
+Afectado: /02-FRONTEND/src/components/PaletteSwitcher.tsx
+
+Problema:
+- El archivo usePalette.ts NO exporta función switchPalette()
+- El componente PaletteSwitcher.tsx intenta importar y usar switchPalette
+- Resultado: TypeError en runtime "switchPalette is not a function"
+- Impacto: El botón 🎨 de cambio de paleta NO FUNCIONA
+
+Solución Requerida: Implementar switchPalette() en el hook usePalette
+
+═════════════════════════════════════════════════════════════════════════════
+ANÁLISIS DETALLADO DE TODOS LOS ARCHIVOS
+═════════════════════════════════════════════════════════════════════════════
+
+CONFIGURACIÓN
+────────────────────────────────────────────────────────────────────────────
+
+1. package.json (31 líneas)
+   Estado: ✅ CORRECTO
+   - React 18.2.0, Next.js 14.0.0, TypeScript 5.3.0
+   - Dependencias: Framer Motion, React Icons, Tailwind
+   - DevDeps: ESLint, TypeScript, type definitions
+   - Versión: 2.1.0
+
+2. tsconfig.json (50 líneas)
+   Estado: ✅ MUY BIEN CONFIGURADO
+   - Target: ES2020
+   - Strict Mode: ACTIVADO
+   - Checks: noImplicitAny, strictNullChecks, noUnusedLocals, noImplicitReturns
+   - Path Aliases: @/* → ./src/*
+   - JSX: preserve (Next.js)
+
+3. next.config.js (36 líneas)
+   Estado: ✅ SEGURIDAD CORRECTA
+   - SWC Minify: Activado
+   - Image Optimization: AVIF, WebP
+   - Security Headers:
+     * X-Content-Type-Options: nosniff
+     * X-Frame-Options: DENY
+     * X-XSS-Protection: 1; mode=block
+
+4. tailwind.config.ts (64 líneas)
+   Estado: ✅ BIEN ESTRUCTURADO
+   - Dark Mode: class-based
+   - Paleta: c1-c5 (5 colores personalizados)
+   - Fuentes: Playfair Display (serif), Inter (sans)
+   - Extensiones: animaciones, gradientes, fontSize
+
+5. .eslintrc.json (3 líneas)
+   Estado: ✅ ESTÁNDAR NEXT.JS
+   - Configuración: next/core-web-vitals
+
+6. postcss.config.js (6 líneas)
+   Estado: ✅ CORRECTO
+   - Plugins: tailwindcss, autoprefixer
+
+7. vercel.json (31 líneas)
+   Estado: ✅ CORRECTAMENTE CONFIGURADO
+   - Build: npm run build
+   - Framework: nextjs
+   - Cache: Estáticas 1 año, dinámicas must-revalidate
+
+8. .env.local (4 líneas)
+   Estado: ✅ SEGURO
+   - Variables públicas (NEXT_PUBLIC_*)
+   - Sin secretos
+
+9. .env.production.local (4 líneas)
+   Estado: ✅ SEGURO
+   - URL producción correcta
+   - Variables públicas
+
+10. .gitignore (39 líneas)
+    Estado: ✅ BIEN CONFIGURADO
+    - node_modules, .env, .next, .vercel, credentials ignorados
+
+═════════════════════════════════════════════════════════════════════════════
+ANÁLISIS DE CÓDIGO FUENTE
+═════════════════════════════════════════════════════════════════════════════
+
+ARCHIVOS DE ENTRADA
+────────────────────────────────────────────────────────────────────────────
+
+layout.tsx (107 líneas)
+Estado: ✅ EXCELENTE
+- Metadata completa (OG, Twitter, robots, keywords)
+- Google Fonts optimizadas con display: swap
+- JSON-LD schema correcto
+- dangerouslySetInnerHTML: Seguro (JSON.stringify)
+- PaletteInitializer + ThemeProvider incluidos
+
+page.tsx (23 líneas)
+Estado: ✅ CORRECTO
+- Use Client marcado
+- Importa todos los componentes correctamente
+- Estructura de secciones bien ordenada
+
+sitemap.ts (42 líneas)
+Estado: ⚠️ FUNCIONA pero mejorable
+- URLs hardcodeadas: "https://guadis.com.ar"
+- Debería usar siteConfig.url para ser dinámico
+
+globals.css (269 líneas)
+Estado: ✅ EXCELENTE
+- Tailwind directives correctas
+- CSS variables para paleta (color-1 a color-5)
+- Clases utilitarias bien definidas
+- Aplicación de colores consistente
+- Dark mode soportado
+
+COMPONENTES REACT
+────────────────────────────────────────────────────────────────────────────
+
+1. ThemeProvider.tsx (43 líneas)
+   Estado: ✅ CORRECTO
+   - Context para light/dark theme
+   - localStorage persistence
+   - useTheme hook exportado
+   - Fallback seguro
+
+2. PaletteInitializer.tsx (12 líneas)
+   Estado: ✅ CORRECTO
+   - Inicializa paleta al montar
+   - Retorna null (sin render)
+   - Limpio y efectivo
+
+3. PaletteSwitcher.tsx (103 líneas)
+   Estado: ❌ ERROR CRÍTICO
+   - Línea 8: const { paletteName, switchPalette } = usePalette()
+   - PROBLEMA: switchPalette() NO existe en usePalette()
+   - Línea 32: Llama switchPalette() que no está definida
+   - RESULTADO: TypeError en runtime
+   - IMPACTO: Feature rota - usuario no puede cambiar paleta
+
+4. Navbar.tsx (65 líneas)
+   Estado: ✅ CORRECTO
+   - Mobile menu funcional
+   - Logo SVG con filtro de color dinámico
+   - Navigation links correctos
+   - Accesibilidad (aria-label)
+
+5. Hero.tsx (54 líneas)
+   Estado: ✅ CORRECTO
+   - Framer Motion animations suave
+   - Gradient background
+   - CTA button interactivo
+   - Scroll indicator con chevron
+
+6. About.tsx (63 líneas)
+   Estado: ✅ CORRECTO
+   - 3 feature cards
+   - Icons: FaClock, FaFileAlt, FaShieldAlt
+   - Animaciones al entrar en viewport
+   - Contenido profesional
+
+7. Services.tsx (25 líneas)
+   Estado: ✅ CORRECTO
+   - Grid responsivo (1/2/3 cols)
+   - Mapea array de servicios
+   - Pasa props correctamente
+
+8. ServiceCard.tsx (40 líneas)
+   Estado: ✅ CORRECTO
+   - Usa paleta de colores correctamente
+   - Framer Motion hover effect
+   - Lista de features con checkmarks
+   - Estructura clara
+
+9. ServiceIcon.tsx (43 líneas)
+   Estado: ✅ CORRECTO
+   - Switch statement con 6 tipos de servicios
+   - Icons de React Icons
+   - Default fallback
+
+10. Testimonials.tsx (74 líneas)
+    Estado: ✅ CORRECTO
+    - Carrusel de testimonios
+    - AnimatePresence + transiciones suaves
+    - Botones prev/next funcionales
+    - Indicadores (dots) interactivos
+
+11. TestimonialCard.tsx (32 líneas)
+    Estado: ✅ CORRECTO
+    - Quote formateado
+    - Avatar circular con initials
+    - Rating con 5 estrellas
+    - Uso correcto de paleta
+
+12. Contact.tsx (156 líneas)
+    Estado: ✅ CORRECTO
+    - Form con validación de email
+    - Regex email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    - Error handling con timeout
+    - Success message con aria-live
+    - Contact info con icons
+
+13. Footer.tsx (84 líneas)
+    Estado: ✅ CORRECTO pero incompleto
+    - Layout flexbox profesional
+    - Navigation links dinámicos
+    - Social media icons: Instagram, WhatsApp, TikTok
+    - PROBLEMA: URLs genéricas (instagram.com en lugar de cuenta real)
+
+DATOS Y LÓGICA
+────────────────────────────────────────────────────────────────────────────
+
+config.ts (57 líneas)
+Estado: ✅ CORRECTO
+- siteConfig con todos los datos del sitio
+- Email, teléfono, dirección, horarios
+- Navigation array con 5 items
+- generateJsonLd() para schema.org
+- Locale es-AR
+
+palettes.ts (103 líneas)
+Estado: ✅ BIEN IMPLEMENTADO
+- 4 paletas completas (azules, earth, rosa, gris)
+- Cada paleta: 5 colores (lightest a darkest)
+- getPalette(), getAllPaletteNames(), getAllPalettes()
+- applyPalette() con SSR safety check
+- Fallback variables para compatibilidad
+
+services.ts (82 líneas)
+Estado: ✅ CONTENIDO DE CALIDAD
+- 6 servicios principales
+- Service interface bien definida
+- Cada servicio: título, descripción, 4 características
+- IDs único para cada servicio
+
+testimonials.ts (43 líneas)
+Estado: ✅ CORRECTO
+- 4 testimonios de diferentes profesionales
+- Interface: id, name, profession, quote, rating, initials
+- Ratings: Todos 5 estrellas
+- Testimonios auténticos y positivos
+
+usePalette.ts (25 líneas)
+Estado: ❌ INCOMPLETO - CRÍTICO
+- Carga paleta "azules" (hardcoded)
+- useEffect: Aplica paleta al montar
+- FALTA: switchPalette() función
+- FALTA: Estado para paleta actual
+- RESULTADO: No retorna lo que PaletteSwitcher espera
+- SOLUCIÓN REQUERIDA: Ver sección de fixes
+
+═════════════════════════════════════════════════════════════════════════════
+GITHUB ACTIONS WORKFLOWS
+═════════════════════════════════════════════════════════════════════════════
+
+code-quality.yml (89 líneas)
+Estado: ✅ BIEN CONFIGURADO
+- Trigger: Push main/dev, PR main
+- Jobs: Checkout, Node setup, Dependencies, ESLint, Build analysis
+- TypeScript check
+- Report generation con artifacts
+- GitHub step summary
+
+deploy-audit.yml (168 líneas)
+Estado: ✅ EXCELENTE - Pipeline profesional
+- 4 jobs: audit-and-deploy, verification, summary
+- Checkout + Node 18 setup
+- npm ci con prefer-offline
+- Build Next.js
+- ESLint (continue-on-error)
+- Vercel deployment con credentials (VERCEL_TOKEN, ORG_ID, PROJECT_ID)
+- Alias domain configuration
+- Post-deployment verification
+- Deployment report generation
+- GitHub step summary
+
+deployment-monitor.yml (107 líneas)
+Estado: ✅ BIEN IMPLEMENTADO
+- Cron trigger cada 6 horas
+- HTTP status check
+- Security headers verification
+- Performance check con response time
+- Report generation con artifacts (90 días)
+- GitHub step summary
+
+═════════════════════════════════════════════════════════════════════════════
+SCRIPTS Y UTILIDADES
+═════════════════════════════════════════════════════════════════════════════
+
+generate-og-image.py (196 líneas)
+Estado: ✅ ÚTIL
+- Script Python3 para generar og-image.jpg
+- Crea imagen 1200x630px (optimal para OG)
+- 4 paletas (coinciden con app)
+- Gradientes, texto, logo
+- Error handling para fonts
+- JPEG quality 95
+
+SETUP-AUTOMATION.sh (142 líneas)
+Estado: ✅ BUENA PRÁCTICA
+- Setup interactivo de GitHub Secrets
+- Recibe: VERCEL_TOKEN, VERCEL_ORG_ID, VERCEL_PROJECT_ID
+- Usa gh CLI si disponible
+- Fallback a instrucciones manuales
+- Validaciones y checks
+
+═════════════════════════════════════════════════════════════════════════════
+PROBLEMAS ENCONTRADOS - LISTADO COMPLETO
+═════════════════════════════════════════════════════════════════════════════
+
+SEVERIDAD: CRÍTICA (1)
+════════════════════════════════════════════════════════════════════════════
+
+1. ❌ switchPalette() FUNCIÓN INEXISTENTE
+
+   Archivo: /02-FRONTEND/src/hooks/usePalette.ts
+   Afectado: /02-FRONTEND/src/components/PaletteSwitcher.tsx
+
+   Problema:
+   - usePalette() retorna: { currentPalette, paletteName }
+   - Pero NO retorna: switchPalette (función esperada)
+   - PaletteSwitcher.tsx línea 8 intenta desestructurar switchPalette
+   - PaletteSwitcher.tsx línea 32 llama switchPalette()
+   - RESULTADO: TypeError "switchPalette is not a function"
+
+   Impacto:
+   - El botón 🎨 (Palette Switcher) NO FUNCIONA
+   - Usuario NO puede cambiar paleta de colores
+   - Feature principal está rota
+   - Prioridad: ARREGLAR INMEDIATAMENTE
+
+   Solución:
+
+   Modificar /02-FRONTEND/src/hooks/usePalette.ts:
+
+   ```typescript
+   'use client'
+
+   import { useEffect, useState } from 'react'
+   import { applyPalette, getPalette, type Palette } from '@/data/palettes'
+
+   export const usePalette = () => {
+     const [currentPalette, setCurrentPalette] = useState<Palette | null>(null)
+
+     useEffect(() => {
+       // Cargar paleta guardada o default
+       const saved = localStorage.getItem('selectedPalette') || 'azules'
+       const palette = getPalette(saved)
+       setCurrentPalette(palette)
+       applyPalette(palette)
+     }, [])
+
+     const switchPalette = (name: string) => {
+       const palette = getPalette(name)
+       setCurrentPalette(palette)
+       applyPalette(palette)
+       localStorage.setItem('selectedPalette', name)
+     }
+
+     return {
+       currentPalette,
+       paletteName: currentPalette?.name.toLowerCase() || 'azules',
+       switchPalette,
+     }
+   }
+   ```
+
+═════════════════════════════════════════════════════════════════════════════
+
+SEVERIDAD: MAYOR (2)
+════════════════════════════════════════════════════════════════════════════
+
+2. ⚠️ URLs HARDCODEADAS EN SITEMAP.TS
+
+   Archivo: /02-FRONTEND/src/app/sitemap.ts
+   Líneas: 6, 12, 18, 24, 30, 36
+
+   Problema:
+   - URL hardcodeada: "https://guadis.com.ar"
+   - No es dinámica
+   - Si URL cambia, sitemap no se actualiza
+   - En desarrollo, sitemap apunta a producción
+
+   Impacto: MAYOR - Mantenibilidad
+
+   Solución:
+
+   ```typescript
+   import { MetadataRoute } from 'next'
+   import { siteConfig } from '@/data/config'
+
+   const baseUrl = siteConfig.url
+
+   export default function sitemap(): MetadataRoute.Sitemap {
+     return [
+       {
+         url: baseUrl,
+         lastModified: new Date(),
+         changeFrequency: 'weekly',
+         priority: 1.0,
+       },
+       {
+         url: `${baseUrl}#hero`,
+         // ... etc
+       },
+     ]
+   }
+   ```
+
+3. ⚠️ URLS DE REDES SOCIALES GENÉRICAS
+
+   Archivo: /02-FRONTEND/src/components/Footer.tsx
+   Líneas: 47, 56, 65
+
+   Problema:
+   - Instagram: "https://instagram.com" (sin usuario)
+   - WhatsApp: "https://wa.me" (sin número)
+   - TikTok: "https://tiktok.com" (sin usuario)
+   - No llevan a las cuentas reales
+
+   Impacto: MAYOR - Engagement
+   - Usuarios no pueden encontrar redes
+   - Links no funcionan
+   - Pérdida de oportunidad
+
+   Solución:
+   Agregar URLs reales en siteConfig y usar en Footer
+
+═════════════════════════════════════════════════════════════════════════════
+
+SEVERIDAD: MENOR (3)
+════════════════════════════════════════════════════════════════════════════
+
+4. ℹ️ --legacy-peer-deps EN VERCEL.JSON
+
+   Archivo: /02-FRONTEND/vercel.json
+   Línea: 3
+
+   Problema:
+   - "npm install --legacy-peer-deps"
+   - Sugiere conflictos de peer dependencies
+   - Flag puede ocultar problemas reales
+
+   Impacto: MENOR - Technical Debt
+
+   Recomendación:
+   - Auditar paquetes para resolver conflictos
+   - Actualizar dependencias si es posible
+   - Solo usar flag como último recurso
+
+5. ℹ️ FALTA DE ERROR BOUNDARY
+
+   Archivo: /02-FRONTEND/src/app/
+
+   Problema:
+   - No hay error.tsx
+   - Si un componente crashea, toda la app se cae
+
+   Impacto: MENOR - Resilencia
+
+   Recomendación:
+   - Crear src/app/error.tsx
+   - Implementar fallback UI profesional
+
+6. ℹ️ COMPONENTES SIN STRICT SEPARATION
+
+   Archivo: /02-FRONTEND/src/components/Contact.tsx
+
+   Problema:
+   - Validación email inline
+   - Podría ser función util reutilizable
+
+   Impacto: MENOR - Code Quality
+
+   Recomendación:
+   - Crear src/lib/validation.ts
+   - Usar en múltiples formularios
+
+═════════════════════════════════════════════════════════════════════════════
+ANÁLISIS DE SEGURIDAD
+═════════════════════════════════════════════════════════════════════════════
+
+✅ SEGURIDAD GENERAL: EXCELENTE
+
+Verificaciones Completadas:
+
+✅ No hay secrets hardcodeados
+   - Variables de entorno: Externas
+   - Emails/phones: En siteConfig (públicos, intencional)
+
+✅ Inyección de contenido
+   - dangerouslySetInnerHTML: Solo para JSON-LD
+   - Contenido: JSON.stringify() genera texto seguro
+   - NO hay user input procesado
+
+✅ XSS Protection
+   - React escapa content automáticamente
+   - No hay innerHTML, eval(), Function()
+
+✅ Headers de Seguridad (next.config.js)
+   - X-Content-Type-Options: nosniff
+   - X-Frame-Options: DENY
+   - X-XSS-Protection: 1; mode=block
+
+✅ Validación de Formularios
+   - Email validation presente
+   - Regex básico pero suficiente
+
+✅ Environment Variables
+   - NEXT_PUBLIC_* son públicas (intencional)
+   - .env en .gitignore
+
+✅ localStorage Seguro
+   - Solo tema light/dark
+   - Información no sensible
+
+═════════════════════════════════════════════════════════════════════════════
+ANÁLISIS DE RENDIMIENTO
+═════════════════════════════════════════════════════════════════════════════
+
+✅ Optimizaciones Presentes:
+
+✅ Image Optimization
+   - next.config.js: AVIF/WebP formats
+   - Compresión automática
+
+✅ Font Optimization
+   - Google Fonts con display: 'swap'
+   - No bloquea renderización
+
+✅ Code Splitting
+   - Next.js App Router: Automatic
+   - Dynamic imports posibles
+
+✅ CSS
+   - Tailwind: Production minified
+   - Utility-first approach
+
+✅ JavaScript
+   - SWC Minify activado
+   - Framer Motion: Performante
+
+✅ Caching Headers (vercel.json)
+   - Static: 31536000 (1 año)
+   - Dynamic: must-revalidate
+
+═════════════════════════════════════════════════════════════════════════════
+ANÁLISIS DE ACCESIBILIDAD
+═════════════════════════════════════════════════════════════════════════════
+
+✅ Accesibilidad:
+
+✅ Semantic HTML
+   - <section> tags con id
+   - <nav> en Navbar
+   - Estructura correcta
+
+✅ ARIA Labels
+   - aria-label en botones
+   - aria-describedby en errores
+   - aria-live="polite" en success messages
+   - role="status" en mensajes
+
+✅ Color Contrast
+   - Paleta diseñada para contraste
+   - Color-5 vs Color-1: Alto contraste
+
+✅ Navigation
+   - Enlaces hash funcionales
+   - Scroll smooth habilitado
+
+═════════════════════════════════════════════════════════════════════════════
+ANÁLISIS SEO
+═════════════════════════════════════════════════════════════════════════════
+
+✅ SEO Muy Bien Implementado:
+
+✅ Metadata
+   - Title template dinámico
+   - Description completa
+   - Keywords: 8 palabras clave
+
+✅ Open Graph
+   - og:type, locale, url
+   - og:title, description
+   - og:image: 1200x630px (óptimo)
+
+✅ Twitter Card
+   - card: summary_large_image
+   - Todos los campos
+
+✅ JSON-LD Schema
+   - Type: Organization
+   - ContactPoint completo
+   - Address (PostalAddress)
+   - sameAs (social links)
+
+✅ Sitemap
+   - sitemap.ts implementado
+   - 6 URLs incluidas
+   - Priorities correctas
+
+✅ Robots
+   - robots.txt en public/
+   - metadata: index, follow
+
+✅ Heading Hierarchy
+   - h1 usado correctamente
+   - Estructura anidada
+
+═════════════════════════════════════════════════════════════════════════════
+RESUMEN EJECUTIVO
+═════════════════════════════════════════════════════════════════════════════
+
+TOTAL DE PROBLEMAS: 6
+  - Críticos: 1 ❌
+  - Mayores: 2 ⚠️
+  - Menores: 3 ℹ️
+
+ESTADO GENERAL: EXCELENTE (excepto el problema crítico)
+  ✅ Arquitectura: Limpia y bien estructurada
+  ✅ Seguridad: Muy buena
+  ✅ Código: Limpio y legible
+  ✅ DevOps: Workflows profesionales
+  ✅ SEO: Óptimizado
+  ❌ Una feature está completamente rota (switchPalette)
+
+═════════════════════════════════════════════════════════════════════════════
+RECOMENDACIONES FINALES
+═════════════════════════════════════════════════════════════════════════════
+
+1. URGENTE (Hoy):
+   - FIJAR usePalette() hook para agregar switchPalette()
+   - Testear que el selector de paletas funciona
+   - Verificar en navegador que 🎨 botón hace algo
+
+2. IMPORTANTE (Esta semana):
+   - Actualizar URLs de redes sociales en Footer
+   - Fijar sitemap.ts para usar siteConfig.url
+   - Revisar package-lock para actualizaciones
+
+3. RECOMENDADO (Próximas sprints):
+   - Implementar Error Boundary (error.tsx)
+   - Agregar más tests (unit + e2e)
+   - Considerar analytics (Vercel Analytics)
+   - Expandir contenido (blog)
+
+═════════════════════════════════════════════════════════════════════════════
+FIN DEL REPORTE - Escaneo Exhaustivo Completo
+═════════════════════════════════════════════════════════════════════════════

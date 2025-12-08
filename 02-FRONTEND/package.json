@@ -1,7 +1,7 @@
 {
-  "name": "guadis-landing",
-  "version": "2.1.0",
-  "description": "Estudio Jurídico Dra. Guadalupe Juárez - Landing Page v2.0",
+  "name": "guadalupe",
+  "version": "1.0.0",
+  "description": "Estudio Jurídico Dra. Guadalupe Juárez - Landing Page",
   "private": true,
   "scripts": {
     "dev": "next dev",
