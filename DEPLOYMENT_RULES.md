@@ -193,6 +193,67 @@ gh run view <RUN_ID> --log
 
 ---
 
+## 5.1 FLUJO DE TRABAJO: DEV → MAIN (CRÍTICO)
+
+### Ambiente de Desarrollo vs Producción
+
+| Rama | Entorno | URL | Propósito |
+|------|---------|-----|----------|
+| **dev** | Staging/Preview | Vercel Preview (auto) | Desarrollo y testing |
+| **main** | Producción | estudiomsk.com.ar | Cliente final |
+
+### PASO A PASO: Cómo Hacer Cambios
+
+#### 1️⃣ SIEMPRE TRABAJAR EN `dev`
+```bash
+git checkout dev
+git pull origin dev
+# Hacer cambios...
+git add .
+git commit -m "feat: descripción del cambio"
+git push origin dev  # ⭐ PUSH A DEV, NO A MAIN
+```
+
+#### 2️⃣ TESTEAR EN PREVIEW
+- Vercel automáticamente deploya `dev` en una preview URL
+- Verifica que los cambios funcionen correctamente
+- Revisa en la URL de preview de Vercel
+
+#### 3️⃣ CUANDO ESTÁ LISTO PARA PRODUCCIÓN
+```bash
+# Cambiar a main
+git checkout main
+git pull origin main
+
+# Traer cambios de dev a main
+git merge dev
+
+# Pushear a producción
+git push origin main  # ⭐ Esto dispara el deploy a estudiomsk.com.ar
+```
+
+#### 4️⃣ VERIFICAR EL DEPLOYMENT
+```bash
+# Ver el workflow ejecutándose
+gh run list --limit 1 --json status,conclusion,name
+
+# Ir a https://estudiomsk.com.ar y verificar cambios
+```
+
+### RESUMEN RÁPIDO
+- **Cambios nuevos** → `git checkout dev` → hacer cambios → `git push origin dev`
+- **Testear** → Ver en preview de Vercel
+- **Listo** → `git checkout main` → `git merge dev` → `git push origin main`
+- **Producción actualizada** → Vercel deploya automáticamente a estudiomsk.com.ar
+
+### NUNCA HACER ❌
+```bash
+git push origin main  # MIENTRAS TRABAJAS EN DEV
+# Esto se debe hacer SOLO cuando pasas a producción
+```
+
+---
+
 ## 6. CONFIGURACIÓN DE SECRETS EN GITHUB
 
 ### Cómo obtener los valores
