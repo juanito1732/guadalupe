@@ -8,8 +8,8 @@ export default function Hero() {
     <section id="hero" className="relative min-h-screen pt-40 overflow-hidden flex items-center">
       <div className="absolute inset-0 bg-gradient-hero opacity-90" />
 
-      <div className="absolute top-20 right-10 w-96 h-96 bg-primary rounded-full opacity-10 blur-[120px]" />
-      <div className="absolute bottom-0 left-20 w-96 h-96 bg-accent rounded-full opacity-5 blur-[120px]" />
+      <div className="absolute top-20 right-10 w-96 h-96 bg-c4 rounded-full opacity-10 blur-[120px]" />
+      <div className="absolute bottom-0 left-20 w-96 h-96 bg-c2 rounded-full opacity-5 blur-[120px]" />
 
       <div className="relative z-10 container-custom w-full">
         <motion.div

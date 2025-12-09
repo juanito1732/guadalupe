@@ -13,11 +13,11 @@ export default function Testimonials() {
   const prev = () => setCurrent((current - 1 + testimonials.length) % testimonials.length)
 
   return (
-    <section id="testimonials" className="py-20 px-4 bg-gray-50">
+    <section id="testimonials" className="py-20 px-4 bg-c1">
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-serif font-bold mb-4">¿Qué Dicen Nuestros Clientes?</h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-xl text-c3">
             Confían en nuestro profesionalismo y dedicación
           </p>
         </div>
@@ -38,18 +38,18 @@ export default function Testimonials() {
 
             <button
               onClick={prev}
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-14 md:-translate-x-20 p-2 hover:bg-white rounded-full transition-colors"
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-14 md:-translate-x-20 p-2 hover:bg-c1 rounded-full transition-colors"
               aria-label="Previous testimonial"
             >
-              <FaChevronLeft size={24} className="text-primary" />
+              <FaChevronLeft size={24} className="text-c4" />
             </button>
 
             <button
               onClick={next}
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-14 md:translate-x-20 p-2 hover:bg-white rounded-full transition-colors"
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-14 md:translate-x-20 p-2 hover:bg-c1 rounded-full transition-colors"
               aria-label="Next testimonial"
             >
-              <FaChevronRight size={24} className="text-primary" />
+              <FaChevronRight size={24} className="text-c4" />
             </button>
           </div>
 
@@ -60,8 +60,8 @@ export default function Testimonials() {
                 onClick={() => setCurrent(idx)}
                 className={`h-2 rounded-full transition-all ${
                   idx === current
-                    ? 'w-8 bg-primary'
-                    : 'w-2 bg-gray-300'
+                    ? 'w-8 bg-c4'
+                    : 'w-2 bg-c2'
                 }`}
                 aria-label={`Go to testimonial ${idx + 1}`}
               />

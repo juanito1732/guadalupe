@@ -8,7 +8,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="fixed w-full z-50 bg-white border-b border-gray-50 shadow-sm">
+    <nav className="fixed w-full z-50 bg-c1 border-b border-c2 shadow-sm">
       <div className="container-custom h-20 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <img

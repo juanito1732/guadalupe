@@ -5,11 +5,11 @@ import ServiceCard from './ServiceCard'
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 px-4 bg-white">
+    <section id="services" className="py-20 px-4 bg-c1">
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-serif font-bold mb-4">Nuestros Servicios</h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-c3 max-w-2xl mx-auto">
             Soluciones legales integrales para todos tus necesidades jurídicas
           </p>
         </div>
