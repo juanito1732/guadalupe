@@ -5,15 +5,15 @@ import { FaInstagram, FaWhatsapp, FaTiktok } from 'react-icons/fa'
 
 export default function Footer() {
   return (
-    <footer className="bg-c5 text-white py-12">
+    <footer className="bg-c5 text-white py-6">
       <div className="container-custom">
         <div className="flex justify-between items-start gap-8 mb-8">
           {/* Logo & Descripción - IZQUIERDA */}
           <div className="flex-1">
             <img
-              src="/logo-estudio-juridico.svg"
+              src="/logo-estudio-juridico-white.svg"
               alt="Estudio Jurídico Logo"
-              className="h-24 w-auto mb-4"
+              className="h-32 w-auto mb-4"
             />
             <p className="text-c2 text-sm leading-snug max-w-sm">
               {siteConfig.description}

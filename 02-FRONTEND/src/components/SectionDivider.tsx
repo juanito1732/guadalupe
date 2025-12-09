@@ -5,10 +5,14 @@ import { motion } from 'framer-motion'
 export default function SectionDivider() {
   return (
     <motion.div
-      initial={{ opacity: 0, scaleX: 0 }}
-      whileInView={{ opacity: 1, scaleX: 1 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8, ease: 'easeOut' }}
-      className="h-1 w-full bg-gradient-to-r from-transparent via-c3 to-transparent"
+      className="w-full h-16 bg-gradient-to-b from-transparent via-c1 to-transparent"
+      style={{
+        WebkitMaskImage: 'linear-gradient(to bottom, transparent, black 50%, transparent)',
+        maskImage: 'linear-gradient(to bottom, transparent, black 50%, transparent)',
+      }}
     />
   )
 }

@@ -12,7 +12,7 @@ export default function Navbar() {
       <div className="container-custom h-20 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <img
-            src="/logo-estudio-juridico.svg"
+            src="/logo-estudio-juridico-blue.svg"
             alt="Estudio Jurídico Logo"
             className="h-28 w-auto"
           />
