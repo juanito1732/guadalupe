@@ -5,9 +5,9 @@ import { FaInstagram, FaWhatsapp, FaTiktok } from 'react-icons/fa'
 
 export default function Footer() {
   return (
-    <footer className="bg-c5 text-white py-6">
+    <footer className="bg-c5 text-white py-2">
       <div className="container-custom">
-        <div className="flex justify-between items-start gap-8 mb-8">
+        <div className="flex justify-between items-start gap-8 mb-2">
           {/* Logo & Descripción - IZQUIERDA */}
           <div className="flex-1">
             <img
@@ -75,7 +75,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-c3 pt-6 text-center text-c2 text-xs">
+        <div className="border-t border-c3 pt-2 text-center text-c2 text-xs">
           <p>&copy; 2025 Estudio Jurídico Dra. Guadalupe Juárez. Todos los derechos reservados.</p>
         </div>
       </div>
