@@ -8,7 +8,7 @@ export default function SectionDivider() {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8, ease: 'easeOut' }}
-      className="w-full"
+      className="w-full py-4"
       style={{
         height: '64px',
         background: 'linear-gradient(to bottom, rgba(232,245,253,0), rgba(232,245,253,0.3), rgba(232,245,253,0))',

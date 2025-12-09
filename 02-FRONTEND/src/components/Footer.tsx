@@ -5,15 +5,15 @@ import { FaInstagram, FaWhatsapp, FaTiktok } from 'react-icons/fa'
 
 export default function Footer() {
   return (
-    <footer className="bg-c5 text-white py-2">
+    <footer className="bg-c5 text-white py-3">
       <div className="container-custom">
-        <div className="flex justify-between items-start gap-8 mb-2">
+        <div className="flex justify-between items-start gap-4 mb-2">
           {/* Logo & Descripción - IZQUIERDA */}
           <div className="flex-1">
             <img
               src="/logo-estudio-juridico-white.svg"
               alt="Estudio Jurídico Logo"
-              className="h-32 w-auto mb-4"
+              className="h-16 w-auto mb-2"
             />
             <p className="text-c2 text-sm leading-snug max-w-sm">
               {siteConfig.description}
@@ -75,7 +75,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-c3 pt-2 text-center text-c2 text-xs">
+        <div className="border-t border-c3 pt-1 text-center text-c2 text-xs">
           <p>&copy; 2025 Estudio Jurídico Dra. Guadalupe Juárez. Todos los derechos reservados.</p>
         </div>
       </div>

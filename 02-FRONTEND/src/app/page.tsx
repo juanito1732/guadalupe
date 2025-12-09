@@ -14,29 +14,13 @@ export default function Home() {
     <main className="min-h-screen bg-white">
       <Navbar />
       <Hero />
-
-      <div className="py-8">
-        <SectionDivider />
-      </div>
-
+      <SectionDivider />
       <About />
-
-      <div className="py-8">
-        <SectionDivider />
-      </div>
-
+      <SectionDivider />
       <Services />
-
-      <div className="py-8">
-        <SectionDivider />
-      </div>
-
+      <SectionDivider />
       <Testimonials />
-
-      <div className="py-8">
-        <SectionDivider />
-      </div>
-
+      <SectionDivider />
       <Contact />
 
       <Footer />
