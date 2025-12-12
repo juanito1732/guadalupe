@@ -1,7 +1,7 @@
 'use client'
 
 import { siteConfig } from '@/data/config'
-import { FaInstagram, FaWhatsapp, FaTiktok, FaFacebook } from 'react-icons/fa'
+import { FaWhatsapp, FaTiktok, FaFacebook } from 'react-icons/fa'
 
 export default function Footer() {
   return (
