@@ -1,4 +1,4 @@
-# Guadis v2.0 - Landing Page
+# Guadalupe v2.0 - Landing Page
 
 Estudio Jurídico Dra. Guadalupe Juárez - Sitio web profesional construido con Next.js 14, React 18 y Tailwind CSS.
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-OG Image Generator - Crea og-image.jpg profesional para Guadis
+OG Image Generator - Crea og-image.jpg profesional para Guadalupe
 Uso: python3 generate-og-image.py
 
 Genera una imagen 1200x630 px lista para Open Graph
@@ -160,7 +160,7 @@ def create_og_image(palette_name='azules', company_name='Estudio Jurídico Dra. 
 def main():
     """Función principal"""
     print("=" * 70)
-    print("🎨 OG IMAGE GENERATOR - Estudio Jurídico Guadis")
+    print("🎨 OG IMAGE GENERATOR - Estudio Jurídico Guadalupe")
     print("=" * 70)
     print()
 

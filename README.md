@@ -1,11 +1,12 @@
-# 🏛️ Guadis - Estudio Jurídico Dra. Guadalupe Juárez
+# 🏛️ Guadalupe - Estudio Jurídico Dra. Guadalupe Juárez
 
 **Landing Page Profesional | Next.js 14 + React 18 + TypeScript + Tailwind CSS**
 
 **Versión:** 2.0.0
 **Status:** ✅ Production Ready
-**Live:** https://guadis-landing.vercel.app
-**Repository:** https://github.com/juanito1732/guadis-landing
+**Live:** https://guadalupe.vercel.app
+**Dominio final:** https://estudiomgj.com.ar (pendiente DNS)
+**Repository:** https://github.com/juanito1732/guadalupe
 
 ---
 
@@ -25,7 +26,7 @@
 
 ## 📖 Descripción
 
-**Guadis** es una landing page profesional para el Estudio Jurídico Dra. Guadalupe Juárez.
+**Estudio Jurídico Guadalupe** es una landing page profesional para el Estudio Jurídico de la Dra. María Guadalupe Juárez.
 
 **Características clave:**
 - ✅ Diseño moderno y responsivo
@@ -62,7 +63,7 @@
 ## 📁 Estructura del Proyecto
 
 ```
-/guadis/
+/guadalupe/
 ├── 02-FRONTEND/                    [CÓDIGO PRINCIPAL]
 │   ├── src/
 │   │   ├── app/
@@ -124,8 +125,8 @@
 
 ### 1. Clonar el repositorio
 ```bash
-git clone https://github.com/juanito1732/guadis-landing.git
-cd guadis-landing/02-FRONTEND
+git clone https://github.com/juanito1732/guadalupe.git
+cd guadalupe/02-FRONTEND
 ```
 
 ### 2. Instalar dependencias
@@ -138,7 +139,7 @@ npm install
 cat .env.local
 # Output:
 # NEXT_PUBLIC_SITE_URL=http://localhost:3000
-# NEXT_PUBLIC_SITE_NAME=Guadis (Dev)
+# NEXT_PUBLIC_SITE_NAME=Guadalupe (Dev)
 ```
 
 ### 4. Iniciar servidor de desarrollo
@@ -200,12 +201,12 @@ export default function Component({ ...props }: ComponentProps) {
 
 ### Variables de entorno en producción
 ```bash
-NEXT_PUBLIC_SITE_URL=https://guadis-landing.vercel.app
-NEXT_PUBLIC_SITE_NAME=Guadis
+NEXT_PUBLIC_SITE_URL=https://guadalupe.vercel.app
+NEXT_PUBLIC_SITE_NAME=Guadalupe
 ```
 
 ### Deploy automático
-1. Hacer cambios en rama `main`
+1. Hacer cambios en rama `main` o `dev`
 2. Hacer `git push`
 3. Vercel detecta cambios automáticamente
 4. Build inicia en 30 segundos
@@ -214,10 +215,10 @@ NEXT_PUBLIC_SITE_NAME=Guadis
 ### Verificar deploy
 ```bash
 # Ver estado en dashboard
-https://vercel.com/juanito1732/guadis-landing
+https://vercel.com/dashboard
 
-# Logs de build
-https://vercel.com/juanito1732/guadis-landing/deployments
+# Sitio en vivo
+https://guadalupe.vercel.app
 ```
 
 ---
@@ -229,23 +230,25 @@ Ubicación: `02-FRONTEND/src/data/config.ts`
 
 ```typescript
 export const siteConfig = {
-  name: 'Estudio Jurídico Dra. Guadalupe Juárez',
+  name: 'Estudio Jurídico Dra. María Guadalupe Juárez',
+  shortName: 'Guadalupe',
   description: '20+ años de experiencia...',
   contact: {
-    email: 'contacto@guadis.com.ar',
-    phone: '+54 (11) XXXX-XXXX',  // Actualizar
-    address: 'Balcarce 50, Buenos Aires'
+    email: 'guadalupejuarez@estudiomgj.com.ar',
+    phone: '+54 (2266) 481512',
+    address: 'Balcarce, Buenos Aires, Argentina'
   },
   nav: [...],
   social: {
-    facebook: 'URL',
-    linkedin: 'URL'
+    facebook: 'https://facebook.com/estudiolegal.guadalupe',
+    linkedin: 'https://linkedin.com/company/estudio-juridico-guadalupe'
   }
 }
 ```
 
-### Campos editable
+### Campos editables
 - **name**: Nombre del estudio
+- **shortName**: Nombre corto
 - **description**: Descripción corta
 - **contact.email**: Email de contacto
 - **contact.phone**: Teléfono
@@ -255,6 +258,7 @@ export const siteConfig = {
 
 **Actualizar después de cambios:**
 ```bash
+cd 02-FRONTEND
 npm run build  # Compilar localmente
 git add -A
 git commit -m "update: Datos del cliente"
@@ -269,7 +273,7 @@ git push origin main  # Vercel despliega automáticamente
 
 **1. Azules** (Predeterminada)
 - Colors: #E8F5FD → #1B5B7E
-- Profesional, confía, limpio
+- Profesional, confiable, limpio
 
 **2. Earth**
 - Colors: #E9D2C0 → #8D4424
@@ -307,11 +311,10 @@ const azulespalette = PALETTES.azules
 ## 📚 Documentación
 
 ### Archivos importantes
-- **LEER-PRIMERO.md** - Guía para principiantes
-- **QUICK-REFERENCE-JAMES.md** - Referencia rápida para desarrolladores
-- **GUIA-ACTUALIZACION-DATOS-CLIENTE.md** - Cómo actualizar datos
-- **RESUMEN-AUDITORIA-JAMES-WEB.md** - Auditoría técnica completa
-- **AUDITORIA-TECNICA-PROFUNDA.md** - Análisis técnico detallado
+- **README.md** - Este archivo
+- **00-DOCUMENTACION/** - Documentación técnica del proyecto
+- **REPORTE-LIMPIEZA-GUADIS.md** - Limpieza de referencias antiguas
+- **AUDITORIA-PROFUNDA-GUADIS.md** - Auditoría de migración
 
 ### Links externos
 - [Next.js Docs](https://nextjs.org/docs)
@@ -333,7 +336,7 @@ const azulespalette = PALETTES.azules
 - [ ] Hacer `git push`
 - [ ] Verificar deploy en Vercel (2-5 min)
 - [ ] Probar sitio en vivo
-- [ ] Verificar SEO en Google Search Console
+- [ ] Configurar DNS para estudiomgj.com.ar
 
 ---
 
@@ -342,7 +345,7 @@ const azulespalette = PALETTES.azules
 ### Build falla localmente
 ```bash
 # Limpiar cache
-npm run clean
+cd 02-FRONTEND
 rm -rf .next node_modules
 npm install
 npm run build
@@ -359,7 +362,7 @@ git commit -m "fix: descripción"
 git push origin main
 
 # Verificar en dashboard de Vercel
-https://vercel.com/juanito1732/guadis-landing
+https://vercel.com/dashboard
 ```
 
 ### Paletas no se aplican
@@ -406,15 +409,15 @@ headers: [
 
 ---
 
-## 📞 Contacto y Soporte
+## 📞 Contacto
 
-**Para actualizaciones de contenido:** Ver `GUIA-ACTUALIZACION-DATOS-CLIENTE.md`
-**Para problemas técnicos:** Ver `AUDITORIA-TECNICA-PROFUNDA.md`
-**Para guía rápida:** Ver `QUICK-REFERENCE-JAMES.md`
+**Cliente:** Dra. María Guadalupe Juárez
+**Email:** guadalupejuarez@estudiomgj.com.ar
+**Teléfono:** +54 (2266) 481512
+**Dominio:** estudiomgj.com.ar
 
 ---
 
 **Versión:** 2.0.0
-**Última actualización:** 19 Nov 2025
+**Última actualización:** 12 Dic 2025
 **Status:** ✅ Production Ready
-

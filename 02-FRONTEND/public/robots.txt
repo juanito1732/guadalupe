@@ -1,5 +1,5 @@
 # Robots.txt for Estudio Jurídico Dra. Guadalupe Juárez
-# Generated for guadis-landing.vercel.app
+# Generated for guadalupe.vercel.app
 
 User-agent: *
 Allow: /
@@ -12,8 +12,8 @@ Allow: /
 Crawl-delay: 1
 
 # Sitemaps
-Sitemap: https://guadis.com.ar/sitemap.xml
-Sitemap: https://guadis-landing.vercel.app/sitemap.xml
+Sitemap: https://guadalupe.com.ar/sitemap.xml
+Sitemap: https://guadalupe.vercel.app/sitemap.xml
 
 # Specific rules for search engines
 User-agent: Googlebot
