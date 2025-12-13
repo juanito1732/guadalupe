@@ -40,7 +40,7 @@ export default function Navbar() {
         scrolled ? 'bg-c1 shadow-lg' : 'bg-c1 shadow-sm'
       } border-b border-c2`}
     >
-      <div className="container-custom h-16 sm:h-20 flex items-center justify-between">
+      <div className="container-custom h-24 sm:h-28 md:h-32 flex items-center justify-between">
         {/* Logo - Responsive */}
         <a href="#hero" className="flex items-center gap-2 sm:gap-3">
           <Image
@@ -48,7 +48,7 @@ export default function Navbar() {
             alt="Estudio Jurídico Logo"
             width={120}
             height={120}
-            className="h-16 sm:h-20 md:h-24 w-auto"
+            className="h-24 sm:h-28 md:h-32 w-auto"
             priority
           />
         </a>
@@ -96,7 +96,7 @@ export default function Navbar() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="fixed inset-0 bg-black/20 backdrop-blur-sm md:hidden top-16 sm:top-20"
+              className="fixed inset-0 bg-black/20 backdrop-blur-sm md:hidden top-24 sm:top-28 md:top-32"
               onClick={() => setIsOpen(false)}
             />
 

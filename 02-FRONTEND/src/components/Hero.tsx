@@ -5,7 +5,7 @@ import { FaChevronDown } from 'react-icons/fa'
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative min-h-screen pt-20 sm:pt-32 md:pt-40 overflow-hidden flex items-center">
+    <section id="hero" className="relative min-h-screen pt-28 sm:pt-36 md:pt-44 overflow-hidden flex items-center">
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-hero opacity-90" />
 
