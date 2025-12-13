@@ -27,7 +27,7 @@ export default function Footer() {
           {/* Redes Sociales - Touch optimizado */}
           <div className="flex items-center justify-center gap-3 sm:gap-4 flex-shrink-0">
             <a
-              href="https://tiktok.com"
+              href={siteConfig.social.tiktok}
               target="_blank"
               rel="noopener noreferrer"
               className="text-c2 hover:text-white transition-all duration-300 p-3 rounded-lg hover:bg-c4 active:bg-c4 hover:shadow-lg active:scale-95 touch-manipulation"
@@ -36,7 +36,7 @@ export default function Footer() {
               <FaTiktok size={24} />
             </a>
             <a
-              href="https://facebook.com"
+              href={siteConfig.social.facebook}
               target="_blank"
               rel="noopener noreferrer"
               className="text-c2 hover:text-white transition-all duration-300 p-3 rounded-lg hover:bg-c4 active:bg-c4 hover:shadow-lg active:scale-95 touch-manipulation"
