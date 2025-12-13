@@ -45,11 +45,11 @@ export default function Footer() {
               <FaFacebook size={24} />
             </a>
             <a
-              href="https://wa.me"
+              href="https://wa.me/542266481512?text=Hola,%20quisiera%20consultar%20sobre%20asesoría%20legal"
               target="_blank"
               rel="noopener noreferrer"
               className="text-c2 hover:text-white transition-all duration-300 p-3 rounded-lg hover:bg-c4 active:bg-c4 hover:shadow-lg active:scale-95 touch-manipulation"
-              aria-label="WhatsApp"
+              aria-label="WhatsApp - Contactar al Estudio"
             >
               <FaWhatsapp size={24} />
             </a>
