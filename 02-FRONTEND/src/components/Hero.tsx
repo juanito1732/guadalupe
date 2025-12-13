@@ -43,7 +43,7 @@ export default function Hero() {
             href="#contact"
             className="inline-block px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-c4 to-c5 text-white font-bold rounded-lg hover:shadow-2xl transition-all text-sm sm:text-base touch-manipulation"
           >
-            Solicita Consulta Gratuita
+            Solicita Tu Consulta Gratuita
           </motion.a>
         </motion.div>
       </div>
