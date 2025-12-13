@@ -4,8 +4,8 @@
 
 **Versión:** 2.0.0
 **Status:** ✅ Production Ready
-**Live:** https://guadalupe.vercel.app
-**Dominio final:** https://estudiomgj.com.ar (pendiente DNS)
+**Live:** https://estudiomgj.com.ar
+**Dominio:** https://www.estudiomgj.com.ar
 **Repository:** https://github.com/juanito1732/guadalupe
 
 ---
@@ -201,8 +201,8 @@ export default function Component({ ...props }: ComponentProps) {
 
 ### Variables de entorno en producción
 ```bash
-NEXT_PUBLIC_SITE_URL=https://guadalupe.vercel.app
-NEXT_PUBLIC_SITE_NAME=Guadalupe
+NEXT_PUBLIC_SITE_URL=https://estudiomgj.com.ar
+NEXT_PUBLIC_SITE_NAME=Estudio MGJ
 ```
 
 ### Deploy automático
@@ -218,7 +218,8 @@ NEXT_PUBLIC_SITE_NAME=Guadalupe
 https://vercel.com/dashboard
 
 # Sitio en vivo
-https://guadalupe.vercel.app
+https://estudiomgj.com.ar
+https://www.estudiomgj.com.ar
 ```
 
 ---
@@ -327,16 +328,18 @@ const azulespalette = PALETTES.azules
 
 ## ✅ Checklist para deployment
 
-- [ ] Actualizar datos del cliente en `config.ts`
-- [ ] Verificar teléfono y email
-- [ ] Probar formulario de contacto
-- [ ] Cambiar paleta en sitio local
-- [ ] `npm run build` sin errores
-- [ ] `npm run lint` sin warnings
-- [ ] Hacer `git push`
-- [ ] Verificar deploy en Vercel (2-5 min)
-- [ ] Probar sitio en vivo
-- [ ] Configurar DNS para estudiomgj.com.ar
+- [x] Actualizar datos del cliente en `config.ts`
+- [x] Verificar teléfono y email
+- [x] Probar formulario de contacto
+- [x] Cambiar paleta en sitio local
+- [x] `npm run build` sin errores
+- [x] `npm run lint` sin warnings
+- [x] Hacer `git push`
+- [x] Verificar deploy en Vercel (2-5 min)
+- [x] Probar sitio en vivo
+- [x] Configurar DNS para estudiomgj.com.ar
+- [x] Certificado SSL activo y válido
+- [x] Sitio en producción funcionando
 
 ---
 
@@ -418,6 +421,8 @@ headers: [
 
 ---
 
-**Versión:** 2.0.0
-**Última actualización:** 12 Dic 2025
-**Status:** ✅ Production Ready
+**Versión:** 2.1.0
+**Última actualización:** 13 Dic 2025
+**Status:** ✅ En Producción - HTTPS Activo
+**DNS:** Configurado y propagado
+**SSL:** Válido hasta Mar 2026
