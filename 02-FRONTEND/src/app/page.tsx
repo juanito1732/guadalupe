@@ -7,22 +7,16 @@ import Services from '@/components/Services'
 import Testimonials from '@/components/Testimonials'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
-import SectionDivider from '@/components/SectionDivider'
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
       <Navbar />
       <Hero />
-      <SectionDivider />
       <About />
-      <SectionDivider />
       <Services />
-      <SectionDivider />
       <Testimonials />
-      <SectionDivider />
       <Contact />
-
       <Footer />
     </main>
   )
