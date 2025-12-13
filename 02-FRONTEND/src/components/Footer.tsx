@@ -11,7 +11,7 @@ export default function Footer() {
         {/* Layout responsive: columna en móvil, fila en desktop */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 mb-4 md:mb-2">
           {/* Logo & Descripción */}
-          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 text-center sm:text-left w-full md:w-auto">
+          <div className="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left w-full md:w-auto">
             <Image
               src="/logo-estudio-juridico-white.svg"
               alt="Estudio Jurídico Logo"
@@ -19,7 +19,7 @@ export default function Footer() {
               height={120}
               className="h-24 sm:h-28 md:h-32 w-auto flex-shrink-0"
             />
-            <p className="text-c2 text-xs sm:text-sm leading-snug max-w-xs md:max-w-sm">
+            <p className="text-c2 text-xs sm:text-sm leading-tight max-w-sm md:max-w-md lg:max-w-lg">
               {siteConfig.description}
             </p>
           </div>
