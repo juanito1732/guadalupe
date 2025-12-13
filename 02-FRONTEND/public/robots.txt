@@ -1,5 +1,5 @@
 # Robots.txt for Estudio Jurídico Dra. Guadalupe Juárez
-# Generated for guadalupe.vercel.app
+# estudiomgj.com.ar
 
 User-agent: *
 Allow: /
@@ -12,8 +12,7 @@ Allow: /
 Crawl-delay: 1
 
 # Sitemaps
-Sitemap: https://guadalupe.com.ar/sitemap.xml
-Sitemap: https://guadalupe.vercel.app/sitemap.xml
+Sitemap: https://estudiomgj.com.ar/sitemap.xml
 
 # Specific rules for search engines
 User-agent: Googlebot
