@@ -5,7 +5,7 @@ import { FaChevronDown } from 'react-icons/fa'
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative min-h-screen pt-28 sm:pt-36 md:pt-44 overflow-hidden flex items-center">
+    <section id="hero" className="relative min-h-screen pt-32 sm:pt-36 md:pt-44 pb-12 sm:pb-16 overflow-hidden flex items-center">
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-hero opacity-90" />
 
@@ -21,17 +21,17 @@ export default function Hero() {
           className="max-w-2xl"
         >
           {/* Subtítulo - Responsive */}
-          <p className="text-c2 text-sm sm:text-base md:text-lg font-semibold tracking-wide sm:tracking-widest uppercase mb-4 sm:mb-6">
+          <p className="text-c2 text-xs xs:text-sm sm:text-base md:text-lg font-semibold tracking-wide sm:tracking-widest uppercase mb-3 xs:mb-4 sm:mb-6">
             Asesoría Jurídica Profesional
           </p>
 
           {/* Título Principal - Muy responsive */}
-          <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-4 sm:mb-6 leading-tight">
+          <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-3 xs:mb-4 sm:mb-6 leading-tight">
             Tu Abogada de Confianza
           </h1>
 
           {/* Descripción - Responsive */}
-          <p className="text-base sm:text-lg md:text-xl text-c2 mb-6 sm:mb-8 leading-relaxed max-w-xl">
+          <p className="text-sm xs:text-base sm:text-lg md:text-xl text-c2 mb-5 xs:mb-6 sm:mb-8 leading-relaxed max-w-xl">
             Con 20+ años de experiencia resolviendo casos de familia, sucesiones y amparos de salud.
             Profesionalismo, integridad y resultados.
           </p>
@@ -41,7 +41,7 @@ export default function Hero() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             href="#contact"
-            className="inline-block px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-c4 to-c5 text-white font-bold rounded-lg hover:shadow-2xl transition-all text-sm sm:text-base touch-manipulation"
+            className="inline-block px-6 xs:px-7 sm:px-8 py-3.5 sm:py-4 bg-gradient-to-r from-c4 to-c5 text-white font-bold rounded-lg hover:shadow-2xl transition-all text-sm sm:text-base touch-manipulation"
           >
             Solicita Tu Consulta Gratuita
           </motion.a>
