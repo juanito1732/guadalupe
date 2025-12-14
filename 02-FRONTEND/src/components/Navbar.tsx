@@ -96,7 +96,7 @@ export default function Navbar() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="fixed inset-0 bg-black/20 backdrop-blur-sm md:hidden top-24 sm:top-28 md:top-32"
+              className="fixed inset-0 bg-black/20 md:hidden top-24 sm:top-28 md:top-32 z-40"
               onClick={() => setIsOpen(false)}
             />
 
@@ -106,7 +106,7 @@ export default function Navbar() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3, ease: 'easeOut' }}
-              className="md:hidden bg-white border-t-2 border-c3 shadow-2xl"
+              className="md:hidden bg-white border-t-2 border-c3 shadow-2xl relative z-50"
             >
               <div className="container-custom py-6 space-y-1">
                 {siteConfig.nav.map((item, index) => (
