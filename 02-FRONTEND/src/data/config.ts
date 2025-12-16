@@ -15,6 +15,7 @@ export const siteConfig = {
 
   social: {
     facebook: 'https://www.facebook.com/p/Estudio-Juridico-Mar%C3%ADa-Guadalupe-Ju%C3%A1rez-100069142612034/',
+    instagram: 'https://www.instagram.com/estudiojuridicojuarez?igsh=MjQzZHNhYm43aXdq',
     tiktok: 'https://www.tiktok.com/@estudio.jurdico.juarez',
     linkedin: 'https://linkedin.com/company/estudio-juridico-guadalupe',
   },
@@ -53,6 +54,7 @@ export const generateJsonLd = () => {
     areaServed: 'AR',
     sameAs: [
       siteConfig.social.facebook,
+      siteConfig.social.instagram,
       siteConfig.social.tiktok,
       siteConfig.social.linkedin,
     ],
