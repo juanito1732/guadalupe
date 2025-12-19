@@ -8,10 +8,10 @@ export default function Footer() {
   return (
     <footer className="bg-c5 text-white py-6 sm:py-8 md:py-4">
       <div className="container-custom px-4 sm:px-6">
-        {/* Layout responsive: columna en móvil, fila en desktop */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 mb-4 md:mb-2">
-          {/* Logo & Descripción */}
-          <div className="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left w-full md:w-auto">
+        {/* Layout responsive: 3 columnas en desktop */}
+        <div className="flex flex-col md:grid md:grid-cols-3 items-center gap-6 md:gap-8 mb-4 md:mb-2">
+          {/* Logo - Izquierda */}
+          <div className="flex justify-center md:justify-start">
             <Image
               src="/logo-estudio-juridico-white.svg"
               alt="Estudio Jurídico Logo"
@@ -19,13 +19,17 @@ export default function Footer() {
               height={120}
               className="h-24 sm:h-28 md:h-32 w-auto flex-shrink-0"
             />
-            <p className="text-c2 text-xs sm:text-sm leading-tight max-w-sm md:max-w-md lg:max-w-lg">
+          </div>
+
+          {/* Descripción - Centro */}
+          <div className="flex items-center justify-center">
+            <p className="text-c2 text-xs sm:text-sm leading-tight text-center max-w-sm">
               {siteConfig.description}
             </p>
           </div>
 
-          {/* Redes Sociales - Touch optimizado */}
-          <div className="flex items-center justify-center gap-3 sm:gap-4 flex-shrink-0">
+          {/* Redes Sociales - Derecha */}
+          <div className="flex items-center justify-center md:justify-end gap-3 sm:gap-4 flex-shrink-0">
             <a
               href={siteConfig.social.tiktok}
               target="_blank"
