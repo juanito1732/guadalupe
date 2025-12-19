@@ -23,7 +23,7 @@ export default function Footer() {
 
           {/* Descripción - Centro */}
           <div className="flex items-center justify-center">
-            <p className="text-c2 text-xs sm:text-sm leading-relaxed text-center max-w-lg md:max-w-xl lg:max-w-2xl">
+            <p className="text-c2 text-xs sm:text-sm leading-relaxed text-center max-w-xl md:max-w-2xl lg:max-w-3xl">
               {siteConfig.description}
             </p>
           </div>
