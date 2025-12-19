@@ -17,7 +17,7 @@ export const siteConfig = {
     facebook: 'https://www.facebook.com/p/Estudio-Juridico-Mar%C3%ADa-Guadalupe-Ju%C3%A1rez-100069142612034/',
     instagram: 'https://www.instagram.com/estudiojuridicojuarez?igsh=MjQzZHNhYm43aXdq',
     tiktok: 'https://www.tiktok.com/@estudio.jurdico.juarez',
-    linkedin: 'https://linkedin.com/company/estudio-juridico-guadalupe',
+    linkedin: 'https://ar.linkedin.com/in/maria-guadalupe-juarez-46090297',
   },
 
   nav: [

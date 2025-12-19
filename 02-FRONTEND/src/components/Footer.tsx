@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import { siteConfig } from '@/data/config'
-import { FaWhatsapp, FaTiktok, FaFacebook, FaInstagram } from 'react-icons/fa'
+import { FaWhatsapp, FaTiktok, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa'
 
 export default function Footer() {
   return (
@@ -52,6 +52,15 @@ export default function Footer() {
               aria-label="Instagram"
             >
               <FaInstagram size={24} />
+            </a>
+            <a
+              href={siteConfig.social.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-c2 hover:text-white transition-all duration-300 p-3 rounded-lg hover:bg-c4 active:bg-c4 hover:shadow-lg active:scale-95 touch-manipulation"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin size={24} />
             </a>
             <a
               href="https://wa.me/542266481512?text=Hola,%20quisiera%20consultar%20sobre%20asesoría%20legal"
