@@ -40,10 +40,12 @@ export default function Hero() {
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="#contact"
+            href="https://wa.me/542266481512?text=Hola,%20quisiera%20solicitar%20una%20consulta"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block px-6 xs:px-7 sm:px-8 py-3.5 sm:py-4 bg-gradient-to-r from-c4 to-c5 text-white font-bold rounded-lg hover:shadow-2xl transition-all text-sm sm:text-base touch-manipulation"
           >
-            Solicita Tu Consulta Gratuita
+            Solicita tu consulta
           </motion.a>
         </motion.div>
       </div>
