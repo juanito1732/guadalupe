@@ -7,6 +7,11 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  safelist: [
+    'max-w-3xl',
+    'md:max-w-2xl',
+    'lg:max-w-3xl',
+  ],
   theme: {
     screens: {
       'xs': '475px',
