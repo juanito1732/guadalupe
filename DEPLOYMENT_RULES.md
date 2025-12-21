@@ -436,7 +436,87 @@ Verificación de salud
 
 ---
 
+## 12. TAILWIND CSS: SAFELIST Y PURGE ⚠️ CRÍTICO
+
+### ❌ Problema: Clases CSS no aparecen en producción
+
+**Síntoma**: Estilos funcionan en desarrollo pero no en producción/preview de Vercel.
+
+**Causa**: Tailwind CSS elimina clases que no detecta en el código durante el proceso de "purge" (optimización).
+
+**Ejemplo del problema**:
+```tsx
+// Footer.tsx - clases dinámicas aplicadas
+<p className="max-w-xl md:max-w-2xl lg:max-w-3xl">
+```
+
+Si estas clases se agregan después del build inicial, Tailwind puede no detectarlas y eliminarlas del CSS final.
+
+### ✅ Solución: Usar safelist en tailwind.config.ts
+
+**Archivo**: `02-FRONTEND/tailwind.config.ts`
+
+```typescript
+const config: Config = {
+  darkMode: 'class',
+  content: [
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  // ⭐ AGREGAR SAFELIST PARA CLASES DINÁMICAS
+  safelist: [
+    'max-w-3xl',
+    'md:max-w-2xl',
+    'lg:max-w-3xl',
+    // Agregar aquí cualquier clase que se use dinámicamente
+  ],
+  theme: {
+    // ... resto de la config
+  }
+}
+```
+
+### Cuándo usar safelist:
+
+1. **Clases agregadas después del build inicial**
+2. **Clases aplicadas dinámicamente** (via props, state, etc.)
+3. **Clases con variantes responsivas complejas** (sm:, md:, lg:, xl:)
+4. **Clases de componentes reutilizables** que pueden no estar en uso inicialmente
+
+### Verificar que las clases se generaron:
+
+```bash
+# Después del build
+grep "lg:max-w-3xl" 02-FRONTEND/.next/static/css/*.css
+
+# Debe retornar algo como:
+# .lg\:max-w-3xl{max-width:48rem}
+```
+
+### ⚠️ IMPORTANTE:
+- **SIEMPRE** limpiar el cache después de cambiar `tailwind.config.ts`:
+  ```bash
+  rm -rf 02-FRONTEND/.next
+  npm run build
+  ```
+- **NO abusar** de safelist (aumenta el tamaño del CSS)
+- **PREFERIR** detectar clases automáticamente cuando sea posible
+
+### Debugging:
+
+Si los estilos no aparecen en producción:
+
+1. Verificar que la clase está en `tailwind.config.ts` safelist
+2. Limpiar `.next/` localmente
+3. Hacer rebuild: `npm run build`
+4. Verificar CSS generado: `grep "tu-clase" .next/static/css/*.css`
+5. Commit y push
+6. Forzar redeploy en Vercel (sin cache)
+
+---
+
 **Documento creado**: 2025-12-08
-**Última actualización**: 2025-12-08
-**Versión**: 1.0
+**Última actualización**: 2025-12-19
+**Versión**: 1.1
 **Aplicable a**: Guadalupe y proyectos OSIRIS futuros
