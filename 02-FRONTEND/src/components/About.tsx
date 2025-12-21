@@ -27,7 +27,7 @@ export default function About() {
       <div className="container-custom">
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
           <h2 className="text-2xl xs:text-3xl sm:text-4xl font-serif font-bold mb-3 sm:mb-4">Sobre Nuestro Estudio</h2>
-          <p className="text-base sm:text-lg md:text-xl text-c3 max-w-2xl mx-auto px-2">
+          <p className="text-base sm:text-lg md:text-xl text-c4 max-w-2xl mx-auto px-2">
             Durante más de 20 años hemos ayudado a personas en todo el país a resolver sus problemas de familia, sucesiones y amparos de salud.
           </p>
         </div>
@@ -51,7 +51,7 @@ export default function About() {
                 {feature.title}
               </h3>
 
-              <p className="text-sm sm:text-base text-c3 leading-relaxed">
+              <p className="text-sm sm:text-base text-c4 leading-relaxed">
                 {feature.description}
               </p>
             </motion.div>

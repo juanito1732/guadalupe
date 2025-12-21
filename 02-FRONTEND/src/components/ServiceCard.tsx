@@ -21,7 +21,7 @@ export default function ServiceCard({ service }: { service: Service }) {
         {service.title}
       </h3>
 
-      <p className="text-sm sm:text-base text-c3 mb-5 sm:mb-6 leading-relaxed">
+      <p className="text-sm sm:text-base text-c4 mb-5 sm:mb-6 leading-relaxed">
         {service.description}
       </p>
 

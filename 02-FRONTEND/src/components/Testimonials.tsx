@@ -17,7 +17,7 @@ export default function Testimonials() {
       <div className="container-custom">
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
           <h2 className="text-2xl xs:text-3xl sm:text-4xl font-serif font-bold mb-3 sm:mb-4">¿Qué Dicen Nuestros Clientes?</h2>
-          <p className="text-base sm:text-lg md:text-xl text-c3 px-2">
+          <p className="text-base sm:text-lg md:text-xl text-c4 px-2">
             Confían en nuestro profesionalismo y dedicación
           </p>
         </div>

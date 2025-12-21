@@ -15,7 +15,7 @@ export default function TestimonialCard({ testimonial }: { testimonial: Testimon
         <h4 className="font-serif font-bold text-base sm:text-lg text-c5">
           {testimonial.name}
         </h4>
-        <p className="text-c3 mb-3 sm:mb-4 text-xs sm:text-sm font-medium">
+        <p className="text-c4 mb-3 sm:mb-4 text-xs sm:text-sm font-medium">
           {testimonial.profession}
         </p>
 

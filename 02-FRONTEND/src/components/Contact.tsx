@@ -41,7 +41,7 @@ export default function Contact() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold mb-3 sm:mb-4 text-c5">
             Contactanos
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-c3">
+          <p className="text-base sm:text-lg md:text-xl text-c4">
             Estamos aquí para ayudarte. Dejanos tus consultas
           </p>
         </div>
@@ -63,7 +63,7 @@ export default function Contact() {
                   required
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className={`w-full px-4 sm:px-6 py-3 sm:py-4 border-2 rounded-lg bg-white text-c5 placeholder-c2 focus:outline-none transition-all text-base touch-manipulation ${
+                  className={`w-full px-4 sm:px-6 py-3 sm:py-4 border-2 rounded-lg bg-white text-c5 placeholder-c3 focus:outline-none transition-all text-base touch-manipulation ${
                     emailError ? 'border-red-500 focus:ring-2 focus:ring-red-500' : 'border-c3 focus:border-c4 focus:ring-2 focus:ring-c4 focus:ring-opacity-20'
                   }`}
                   aria-describedby={emailError ? "email-error" : undefined}
@@ -86,7 +86,7 @@ export default function Contact() {
                   required
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-4 sm:px-6 py-3 sm:py-4 border-2 border-c3 rounded-lg bg-white text-c5 placeholder-c2 focus:outline-none focus:border-c4 focus:ring-2 focus:ring-c4 focus:ring-opacity-20 transition-all text-base touch-manipulation resize-none"
+                  className="w-full px-4 sm:px-6 py-3 sm:py-4 border-2 border-c3 rounded-lg bg-white text-c5 placeholder-c3 focus:outline-none focus:border-c4 focus:ring-2 focus:ring-c4 focus:ring-opacity-20 transition-all text-base touch-manipulation resize-none"
                 />
               </div>
 
@@ -126,7 +126,7 @@ export default function Contact() {
               <FaPhone size={24} className="text-c4 flex-shrink-0 mt-1" />
               <div>
                 <h4 className="font-bold text-base sm:text-lg text-c5 mb-1">Teléfono</h4>
-                <p className="text-c3 text-sm sm:text-base">{siteConfig.contact.phone}</p>
+                <p className="text-c4 text-sm sm:text-base">{siteConfig.contact.phone}</p>
               </div>
             </a>
 
@@ -137,7 +137,7 @@ export default function Contact() {
               <FaEnvelope size={24} className="text-c4 flex-shrink-0 mt-1" />
               <div>
                 <h4 className="font-bold text-base sm:text-lg text-c5 mb-1">Email</h4>
-                <p className="text-c3 text-sm sm:text-base break-all">{siteConfig.contact.email}</p>
+                <p className="text-c4 text-sm sm:text-base break-all">{siteConfig.contact.email}</p>
               </div>
             </a>
 
@@ -145,7 +145,7 @@ export default function Contact() {
               <FaMapPin size={24} className="text-c4 flex-shrink-0 mt-1" />
               <div>
                 <h4 className="font-bold text-base sm:text-lg text-c5 mb-1">Dirección</h4>
-                <p className="text-c3 text-sm sm:text-base">{siteConfig.contact.address}</p>
+                <p className="text-c4 text-sm sm:text-base">{siteConfig.contact.address}</p>
               </div>
             </div>
 
@@ -153,7 +153,7 @@ export default function Contact() {
               <FaClock size={24} className="text-c4 flex-shrink-0 mt-1" />
               <div>
                 <h4 className="font-bold text-base sm:text-lg text-c5 mb-1">Horario</h4>
-                <p className="text-c3 text-sm sm:text-base">{siteConfig.contact.hours}</p>
+                <p className="text-c4 text-sm sm:text-base">{siteConfig.contact.hours}</p>
               </div>
             </div>
           </motion.div>

@@ -23,7 +23,7 @@ export default function Footer() {
 
           {/* Descripción - Centro */}
           <div className="flex items-center justify-center">
-            <p className="text-c2 text-xs sm:text-sm leading-relaxed text-center max-w-xl md:max-w-2xl lg:max-w-3xl">
+            <p className="text-c1 text-xs sm:text-sm leading-relaxed text-center max-w-xl md:max-w-2xl lg:max-w-3xl">
               {siteConfig.description}
             </p>
           </div>
@@ -34,7 +34,7 @@ export default function Footer() {
               href={siteConfig.social.tiktok}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-c2 hover:text-white transition-all duration-300 p-3 rounded-lg hover:bg-c4 active:bg-c4 hover:shadow-lg active:scale-95 touch-manipulation"
+              className="text-c1 hover:text-white transition-all duration-300 p-3 rounded-lg hover:bg-c4 active:bg-c4 hover:shadow-lg active:scale-95 touch-manipulation"
               aria-label="TikTok"
             >
               <FaTiktok size={24} />
@@ -43,7 +43,7 @@ export default function Footer() {
               href={siteConfig.social.facebook}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-c2 hover:text-white transition-all duration-300 p-3 rounded-lg hover:bg-c4 active:bg-c4 hover:shadow-lg active:scale-95 touch-manipulation"
+              className="text-c1 hover:text-white transition-all duration-300 p-3 rounded-lg hover:bg-c4 active:bg-c4 hover:shadow-lg active:scale-95 touch-manipulation"
               aria-label="Facebook"
             >
               <FaFacebook size={24} />
@@ -52,7 +52,7 @@ export default function Footer() {
               href={siteConfig.social.instagram}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-c2 hover:text-white transition-all duration-300 p-3 rounded-lg hover:bg-c4 active:bg-c4 hover:shadow-lg active:scale-95 touch-manipulation"
+              className="text-c1 hover:text-white transition-all duration-300 p-3 rounded-lg hover:bg-c4 active:bg-c4 hover:shadow-lg active:scale-95 touch-manipulation"
               aria-label="Instagram"
             >
               <FaInstagram size={24} />
@@ -61,7 +61,7 @@ export default function Footer() {
               href={siteConfig.social.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-c2 hover:text-white transition-all duration-300 p-3 rounded-lg hover:bg-c4 active:bg-c4 hover:shadow-lg active:scale-95 touch-manipulation"
+              className="text-c1 hover:text-white transition-all duration-300 p-3 rounded-lg hover:bg-c4 active:bg-c4 hover:shadow-lg active:scale-95 touch-manipulation"
               aria-label="LinkedIn"
             >
               <FaLinkedin size={24} />
@@ -70,7 +70,7 @@ export default function Footer() {
               href="https://wa.me/542266481512?text=Hola,%20quisiera%20consultar%20sobre%20asesoría%20legal"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-c2 hover:text-white transition-all duration-300 p-3 rounded-lg hover:bg-c4 active:bg-c4 hover:shadow-lg active:scale-95 touch-manipulation"
+              className="text-c1 hover:text-white transition-all duration-300 p-3 rounded-lg hover:bg-c4 active:bg-c4 hover:shadow-lg active:scale-95 touch-manipulation"
               aria-label="WhatsApp - Contactar al Estudio"
             >
               <FaWhatsapp size={24} />
@@ -79,7 +79,7 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-c3 pt-3 sm:pt-2 text-center text-c2 text-xs sm:text-sm">
+        <div className="border-t border-c3 pt-3 sm:pt-2 text-center text-c1 text-xs sm:text-sm">
           <p>&copy; 2025 Estudio Jurídico Dra. Guadalupe Juárez. Todos los derechos reservados.</p>
         </div>
       </div>
