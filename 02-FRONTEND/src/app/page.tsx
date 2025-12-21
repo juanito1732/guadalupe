@@ -10,15 +10,17 @@ import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white">
+    <>
       <Navbar />
-      <Hero />
-      <About />
-      <Services />
-      <Testimonials />
-      <Contact />
+      <main className="min-h-screen bg-white">
+        <Hero />
+        <About />
+        <Services />
+        <Testimonials />
+        <Contact />
+      </main>
       <Footer />
-    </main>
+    </>
   )
 }
 /* Vercel Fresh Build Trigger - Wed Nov 26 08:55:00 PM -03 2025 */

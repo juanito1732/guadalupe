@@ -98,7 +98,8 @@ export default function Navbar() {
               transition={{ duration: 0.2 }}
               className="fixed inset-0 bg-black/20 md:hidden top-24 sm:top-28 md:top-32 z-40"
               onClick={() => setIsOpen(false)}
-              aria-hidden="true"
+              role="presentation"
+              tabIndex={-1}
             />
 
             {/* Menu Panel */}
