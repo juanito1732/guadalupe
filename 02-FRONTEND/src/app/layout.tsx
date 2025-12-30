@@ -4,6 +4,7 @@ import './globals.css'
 import { siteConfig, generateJsonLd } from '@/data/config'
 import ThemeProvider from '@/components/ThemeProvider'
 import PaletteInitializer from '@/components/PaletteInitializer'
+import { Analytics } from '@vercel/analytics/react'
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -142,6 +143,7 @@ export default function RootLayout({
         <ThemeProvider>
           {children}
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )
