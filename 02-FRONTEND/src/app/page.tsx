@@ -23,5 +23,5 @@ export default function Home() {
     </>
   )
 }
-/* Vercel Fresh Build Trigger - Wed Nov 26 08:55:00 PM -03 2025 */
-/* Force rebuild with updated client data - guadalupejuarez@estudiomgj.com.ar */
+/* Vercel Fresh Build Trigger - Mon Dec 30 03:10:00 AM -03 2025 */
+/* Force rebuild with updated contact info - estudiomariagjuarez@gmail.com */

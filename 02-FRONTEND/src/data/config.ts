@@ -7,10 +7,10 @@ export const siteConfig = {
   locale: 'es-AR',
 
   contact: {
-    email: 'guadalupejuarez@estudiomgj.com.ar',
+    email: 'estudiomariagjuarez@gmail.com',
     phone: '+54 (2266) 481512',
     address: '13 N° 515, B7620 Balcarce',
-    hours: 'Lun-Vie 9:00 a 18:00 hs | Consultas previas por correo',
+    hours: 'Lun-Vie 9:00 a 17:00 hs',
   },
 
   social: {
