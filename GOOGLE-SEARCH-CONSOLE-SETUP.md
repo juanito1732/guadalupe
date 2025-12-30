@@ -1,8 +1,8 @@
 # 🔍 GOOGLE SEARCH CONSOLE - GUÍA DE SETUP
 
-**Última actualización:** 19 Nov 2025
-**Estado:** Listo para configurar
-**URL del sitio:** https://guadis-landing.vercel.app
+**Última actualización:** 30 Dic 2025
+**Estado:** ✅ CONFIGURADO - Dominio actualizado
+**URL del sitio:** https://estudiomgj.com.ar
 
 ---
 
@@ -52,8 +52,8 @@ Se abrirá un modal con 2 opciones:
 │  □ ejemplo.com                       │  ← Selecciona SOLO con dominio
 │                                      │    personalizado
 │  URL Prefix                          │
-│  ⦿ https://guadis-landing.vercel.app │  ← Selecciona ESTO
-│                                      │    (temporalmente)
+│  ⦿ https://estudiomgj.com.ar         │  ← Selecciona ESTO
+│                                      │    (dominio final)
 │                                      │
 │          [Continuar]                 │
 └──────────────────────────────────────┘
@@ -125,7 +125,7 @@ Se abrirá un campo de texto.
 ### 4.3 Ingresar URL del Sitemap
 
 ```
-https://guadis-landing.vercel.app/sitemap.xml
+https://estudiomgj.com.ar/sitemap.xml
 ```
 
 Haz click en "Enviar".
@@ -184,7 +184,7 @@ En el menú superior, busca el campo de texto.
 ### 6.2 Ingresar URL principal
 
 ```
-https://guadis-landing.vercel.app
+https://estudiomgj.com.ar
 ```
 
 Presiona Enter.
@@ -296,7 +296,7 @@ Deberías ver:
 **Causa:** La URL del sitemap es incorrecta.
 
 **Solución:**
-1. Verifica que el sitio está live: https://guadis-landing.vercel.app/sitemap.xml
+1. Verifica que el sitio está live: https://estudiomgj.com.ar/sitemap.xml
 2. Si funciona, intenta nuevamente en GSC
 3. Espera 24 horas
 
@@ -338,7 +338,7 @@ Deberías ver:
 ### Para completar la verificación:
 
 1. **Accede a GSC:** https://search.google.com/search-console
-2. **Agregue propiedad** con tu URL: https://guadis-landing.vercel.app
+2. **Agregue propiedad** con tu URL: https://estudiomgj.com.ar
 3. **En la pantalla de verificación:**
    - Copia el código HTML de verificación (meta tag)
    - Envíamelo a través del chat
@@ -383,7 +383,7 @@ Después de completar Google Search Console:
 
 ---
 
-**Verificación completada:** 19 Nov 2025
-**Responsable:** Claude Code
-**Status:** ✅ Listo para setup
+**Última actualización:** 30 Dic 2025
+**Responsable:** Claude Code + OSIRIS
+**Status:** ✅ Configurado con dominio final estudiomgj.com.ar
 
