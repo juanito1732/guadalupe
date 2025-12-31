@@ -791,3 +791,6 @@ GUADIS v2.0 está COMPLETAMENTE LISTO para Vercel deployment. Código profesiona
 
 ## [2025-12-31]
 - test: Verificar auto-actualización de fecha en ESTADO
+
+## [2025-12-31]
+- test: Verificar hook con cambio real en ESTADO
