@@ -782,3 +782,6 @@ GUADIS v2.0 está COMPLETAMENTE LISTO para Vercel deployment. Código profesiona
 
 ## [2025-12-31]
 - feat: Sistema de sincronización automática OSIRIS activo
+
+## [2025-12-31]
+- test: Validar sistema de hooks pre-commit + post-commit
