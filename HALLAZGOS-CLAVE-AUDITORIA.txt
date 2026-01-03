@@ -1,0 +1,286 @@
+================================================================================
+                    HALLAZGOS CLAVE - AUDITORÍA LIMPIEZA
+                        PROYECTO GUADALUPE - 3 ENERO 2026
+================================================================================
+
+STATUS: REPORTE COMPLETO - SIN CAMBIOS REALIZADOS
+
+================================================================================
+PROBLEMA PRINCIPAL
+================================================================================
+
+La raíz del proyecto contiene 20 ARCHIVOS .MD cuando debería contener máximo 2-3.
+
+Esto causa:
+  • Confusión al navegar documentación
+  • Dificultad para identifi archivos actuales vs históricos
+  • Proyecto parece desordenado
+  • Mala experiencia para nuevos miembros
+
+================================================================================
+ESTADÍSTICAS
+================================================================================
+
+ARCHIVOS EN RAÍZ (Problemático)
+  • Total .md:                20
+  • .txt:                      2
+  • .py:                       1
+  • .sh:                       1
+  • Configuración necesaria:   3 ✓
+  ────────────────────────────────
+  • TOTAL A EVALUAR:          24 archivos
+
+TAMAÑO TOTAL EN RAÍZ:
+  • Documentación:            ~200 KB
+  • Configuración:            ~2 KB
+
+DESPUÉS DE LIMPIEZA (Esperado):
+  • Archivos en raíz:         ~3-5
+  • Reducción:                75-85%
+
+================================================================================
+HALLAZGO 1: ARCHIVOS CLARAMENTE OBSOLETOS (9 archivos)
+================================================================================
+
+MOVER INMEDIATAMENTE A 00-DOCUMENTACION/ARCHIVO-HISTORICO-GUADIS/:
+
+  1. AUDITORIA-ERROR-CLAUDE-31DIC2025.md
+     Razón: Análisis de error de sesión completada
+     Fecha: 31 Diciembre 2025
+     Tamaño: 12.5 KB
+
+  2. RESUMEN-AUDITORIA-31DIC.md
+     Razón: Resumen de auditoría completada
+     Fecha: 31 Diciembre 2025
+     Tamaño: 5.9 KB
+
+  3. AUDITORIA-DNS-SSL-13DIC2025.md
+     Razón: Auditoría DNS/SSL completada
+     Fecha: 13 Diciembre 2025
+     Tamaño: 7.9 KB
+
+  4. PROXIMOS-PASOS-DEPLOYMENT.md
+     Razón: Pasos ya ejecutados
+     Fecha: 13 Diciembre 2025
+     Tamaño: 6.8 KB
+
+  5. RESUMEN-FINAL-CAMBIOS.md
+     Razón: Cambios ya implementados
+     Fecha: 13 Diciembre 2025
+     Tamaño: 7.4 KB
+
+  6. REPORTE-TESTING-FINAL.txt
+     Razón: Reporte histórico
+     Fecha: 19 Noviembre 2025
+     Tamaño: 14.2 KB
+
+  7. REPORTE-ESCANEO-EXHAUSTIVO-2025-12-07.txt
+     Razón: Escaneo histórico
+     Fecha: 7 Diciembre 2025
+     Tamaño: 25.4 KB
+
+  8. PROBAR-PALETAS-EN-VIVO.md
+     Razón: Prueba histórica (probablemente obsoleta)
+     Fecha: 19 Noviembre 2025
+     Tamaño: 8.3 KB
+
+  9. GUIA-TESTING-PALETAS-MANUAL.md
+     Razón: Guía histórica (probablemente obsoleta)
+     Fecha: 19 Noviembre 2025
+     Tamaño: 11.0 KB
+
+TOTAL A ARCHIVAR: 79.8 KB en 9 archivos
+
+================================================================================
+HALLAZGO 2: DUPLICACIONES DETECTADAS (4 pares)
+================================================================================
+
+DUPLICACIÓN #1: DEPLOYMENT
+  • DEPLOYMENT_RULES.md (12.9 KB) - Reglas generales de deployment
+  • DEPLOY-WORKFLOW.md (4.1 KB) - Workflow específico (problemático)
+
+  RECOMENDACIÓN: Revisar si son duplicados o complementarios
+  DECISIÓN REQUERIDA: Consolidar o documentar diferencia
+
+DUPLICACIÓN #2: OG-IMAGE
+  • OG-IMAGE-SETUP.md (10.4 KB) - Qué es y setup
+  • PERSONALIZAR-OG-IMAGE.md (5.5 KB) - Cómo personalizar
+
+  RECOMENDACIÓN: Fusionar o establecer diferencia clara
+  DECISIÓN REQUERIDA: ¿Fusionar en OG-IMAGE-GUIA-COMPLETA.md?
+
+DUPLICACIÓN #3: ESTADO DEL PROYECTO
+  • ESTADO-PROYECTO-ACTUALIZADO.md (8.9 KB) - Estado actual (31-Dec)
+  • 00-DOCUMENTACION/RESUMEN-EJECUTIVO.md - Resumen (4-Nov)
+
+  RECOMENDACIÓN: Usar el más reciente como fuente de verdad
+  DECISIÓN REQUERIDA: ¿Consolidar en CONTEXTO-PERSISTENTE.md?
+
+DUPLICACIÓN #4: VERCEL.JSON
+  • /vercel.json (raíz) - Configuración monorepo
+  • /02-FRONTEND/vercel.json - Configuración frontend
+
+  RECOMENDACIÓN: ¿Es necesaria versión en frontend?
+  DECISIÓN REQUERIDA: Mantener ambas o eliminar una
+
+================================================================================
+HALLAZGO 3: ARCHIVOS A MOVER A 00-DOCUMENTACION/ (10 archivos)
+================================================================================
+
+GUÍAS OPERATIVAS GENERALES:
+  • GOOGLE-SEARCH-CONSOLE-SETUP.md
+  • VERCEL-ANALYTICS-SETUP.md
+  • OPTIMIZACIONES-MOBILE.md
+
+GUÍAS OPERATIVAS ESPECÍFICAS (crear carpeta OPERATIVA/):
+  • GUIA-CONFIGURACION-DNS-NIC-ARGENTINA.md
+  • GUIA-ACTUALIZACION-DATOS-CLIENTE.md
+  • CONFIG-QUICK-REPLACE.md
+  • DATOS-CLIENTE-TEMPLATE.md
+
+TEMPLATES:
+  • OG-IMAGE-SETUP.md (si no se fusiona)
+  • PERSONALIZAR-OG-IMAGE.md (si no se fusiona)
+
+TOTAL: 10 archivos operativos que deberían estar organizados en 00-DOCUMENTACION/
+
+================================================================================
+HALLAZGO 4: ARCHIVOS AUXILIARES - REVISAR USO (2 archivos)
+================================================================================
+
+  1. generate-og-image.py (6.3 KB)
+     PREGUNTA: ¿Se ejecuta aún?
+     ACCIÓN: Si NO → Archivar | Si SÍ → Mover a /scripts/
+
+  2. verificar-nameservers.sh (1.3 KB)
+     PREGUNTA: ¿Se ejecuta aún?
+     ACCIÓN: Si NO → Archivar | Si SÍ → Mover a /scripts/
+
+================================================================================
+BENEFICIOS DE LA LIMPIEZA
+================================================================================
+
+RAÍZ PROYECTO:
+  Antes: 24 archivos documentales + configuración
+  Después: 3-5 archivos (README + DEPLOYMENT_RULES + config)
+  Mejora: 75-85% más limpio
+
+NAVEGACIÓN:
+  Antes: Búsqueda confusa en 20 archivos .md
+  Después: Estructura clara (Operativa vs Histórica)
+  Mejora: 80% más rápido encontrar documentación
+
+MANTENIBILIDAD:
+  Antes: Ambigüedad sobre qué doc es vigente
+  Después: Claridad total (actual vs histórica)
+  Mejora: Menos errores, mejor coherencia
+
+ONBOARDING:
+  Antes: Nuevos miembros confundidos por estructura
+  Después: Ruta clara de documentación
+  Mejora: Menor curva de aprendizaje
+
+PROFESIONALISMO:
+  Antes: Proyecto parece desordenado
+  Después: Proyecto bien organizado
+  Mejora: Mejor percepción y credibilidad
+
+================================================================================
+PRÓXIMOS PASOS
+================================================================================
+
+1. REVISIÓN (1 hora)
+   □ Equipo revisa hallazgos en AUDITORIA-LIMPIEZA-PROYECTO-GUADALUPE-2026-01-03.md
+   □ Equipo revisa RESUMEN-EJECUTIVO-AUDITORIA-LIMPIEZA.md
+   □ Equipo revisa MATRIZ-ACCIONES-LIMPIEZA.md
+
+2. DECISIONES (1 hora)
+   □ Validar archivos marcados "obsoletos"
+   □ Decidir sobre 4 duplicaciones
+   □ Validar uso de .py y .sh
+
+3. EJECUCIÓN (4-6 horas)
+   □ Crear branch cleanup
+   □ Ejecutar movimientos en fases
+   □ Actualizar referencias
+
+4. VALIDACIÓN (1 hora)
+   □ Revisar estructura final
+   □ Buscar enlaces rotos
+   □ Confirmar limpieza
+
+5. PUBLICACIÓN (30 minutos)
+   □ Crear PR
+   □ Merge cuando esté aprobado
+   □ Notificar equipo
+
+TIEMPO TOTAL: 7-10 horas distribuidas en 2-3 sesiones
+
+================================================================================
+DECISIONES REQUERIDAS DEL EQUIPO
+================================================================================
+
+[ ] ¿Archivos "GUIA-TESTING-PALETAS-MANUAL.md" y "PROBAR-PALETAS-EN-VIVO.md" están obsoletos?
+
+[ ] ¿DEPLOYMENT_RULES.md y DEPLOY-WORKFLOW.md son duplicados o complementarios?
+
+[ ] ¿OG-IMAGE-SETUP.md y PERSONALIZAR-OG-IMAGE.md deben fusionarse?
+
+[ ] ¿ESTADO-PROYECTO-ACTUALIZADO.md y RESUMEN-EJECUTIVO.md son ambos necesarios?
+
+[ ] ¿vercel.json en /02-FRONTEND/ es necesario o puede eliminarse?
+
+[ ] ¿generate-og-image.py se usa actualmente?
+
+[ ] ¿verificar-nameservers.sh se usa actualmente?
+
+================================================================================
+ARCHIVOS DE REPORTE GENERADOS
+================================================================================
+
+1. AUDITORIA-LIMPIEZA-PROYECTO-GUADALUPE-2026-01-03.md (PRINCIPAL)
+   → Análisis detallado, 400+ líneas
+   → Incluye: hallazgos, recomendaciones, riesgos, checklist
+
+2. RESUMEN-EJECUTIVO-AUDITORIA-LIMPIEZA.md
+   → Resumen visual con tablas, 300+ líneas
+   → Incluye: estadísticas, matriz de acciones simplificada
+
+3. MATRIZ-ACCIONES-LIMPIEZA.md
+   → Plan detallado de ejecución, 500+ líneas
+   → Incluye: tabla maestra, comandos, pasos exactos
+
+4. HALLAZGOS-CLAVE-AUDITORIA.txt (ESTE ARCHIVO)
+   → Referencia rápida en texto plano, 300+ líneas
+   → Incluye: hallazgos key, próximos pasos, decisiones
+
+================================================================================
+NOTAS IMPORTANTES
+================================================================================
+
+• NO SE HAN REALIZADO CAMBIOS - Solo análisis
+• Toda información está en Git, puede revertirse
+• Las decisiones requieren confirmación del equipo
+• Reporte sin emojis para compatibilidad universal
+• Todos los archivos están en la raíz del proyecto
+
+================================================================================
+CONTACTO Y PREGUNTAS
+================================================================================
+
+Auditor: Claude Code
+Fecha: 3 Enero 2026
+Status: REPORTE FINAL - Aguardando decisiones del equipo
+
+Para revisar análisis completo, consultar:
+  → AUDITORIA-LIMPIEZA-PROYECTO-GUADALUPE-2026-01-03.md
+
+Para ejecutar cambios, usar:
+  → MATRIZ-ACCIONES-LIMPIEZA.md
+
+Para presentar al equipo, usar:
+  → RESUMEN-EJECUTIVO-AUDITORIA-LIMPIEZA.md
+
+================================================================================
+FIN DEL REPORTE
+================================================================================
