@@ -800,3 +800,6 @@ GUADIS v2.0 está COMPLETAMENTE LISTO para Vercel deployment. Código profesiona
 
 ## [2026-01-03]
 - docs: Agregar reportes completos de auditoría de limpieza
+
+## [2026-01-03]
+- clean: Mover archivos obsoletos a ARCHIVO-HISTORICO-GUADIS (Fase 1)
