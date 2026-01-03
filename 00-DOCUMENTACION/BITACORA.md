@@ -806,3 +806,6 @@ GUADIS v2.0 está COMPLETAMENTE LISTO para Vercel deployment. Código profesiona
 
 ## [2026-01-03]
 - docs: Agregar hallazgos clave de auditoría múltiple
+
+## [2026-01-03]
+- docs: Agregar README de auditoría de limpieza
