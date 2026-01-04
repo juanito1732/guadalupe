@@ -6,7 +6,7 @@ import { content } from '@/data/content'
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative min-h-screen pt-32 sm:pt-36 md:pt-44 pb-12 sm:pb-16 overflow-hidden flex items-center">
+    <section id="hero" className="scroll-mt-24 sm:scroll-mt-28 md:scroll-mt-32 relative min-h-screen pt-32 sm:pt-36 md:pt-44 pb-12 sm:pb-16 overflow-hidden flex items-center">
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-hero opacity-90" />
 

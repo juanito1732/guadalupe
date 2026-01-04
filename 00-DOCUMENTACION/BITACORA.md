@@ -812,3 +812,6 @@ GUADIS v2.0 está COMPLETAMENTE LISTO para Vercel deployment. Código profesiona
 
 ## [2026-01-04]
 - feat: Centralizar contenido de página en content.ts
+
+## [2026-01-04]
+- fix: Ajustar scroll offset para navegación con header fijo
