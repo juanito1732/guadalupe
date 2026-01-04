@@ -5,6 +5,7 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
 import { siteConfig } from '@/data/config'
+import { content } from '@/data/content'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -70,7 +71,7 @@ export default function Navbar() {
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden p-3 -mr-2 touch-manipulation active:scale-95 transition-transform"
-          aria-label={isOpen ? 'Cerrar menú' : 'Abrir menú'}
+          aria-label={isOpen ? content.navbar.closeMenu : content.navbar.openMenu}
           aria-expanded={isOpen}
         >
           <motion.div

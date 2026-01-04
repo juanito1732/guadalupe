@@ -2,33 +2,27 @@
 
 import { motion } from 'framer-motion'
 import { FaFileAlt, FaClock, FaShieldAlt } from 'react-icons/fa'
+import { content } from '@/data/content'
 
-const features = [
-  {
-    icon: FaClock,
-    title: '20+ Años de Experiencia',
-    description: 'Desde 2004 brindamos asesoramiento y patrocinio jurídico integral en todas nuestras áreas de especialización.'
-  },
-  {
-    icon: FaFileAlt,
-    title: 'Especialización Integral',
-    description: 'Especialistas en familia, civil y amparos de salud. Desde investigación hasta sentencia, cubrimos todo el proceso.'
-  },
-  {
-    icon: FaShieldAlt,
-    title: 'Confidencialidad Garantizada',
-    description: 'Protegemos tus datos personales con total discreción. Tu privacidad es nuestra prioridad.'
-  },
-]
+const iconMap = {
+  0: FaClock,
+  1: FaFileAlt,
+  2: FaShieldAlt,
+}
+
+const features = content.about.features.map((feature, idx) => ({
+  ...feature,
+  icon: iconMap[idx as keyof typeof iconMap],
+}))
 
 export default function About() {
   return (
     <section id="about" className="py-12 sm:py-16 md:py-20 px-4 bg-c1">
       <div className="container-custom">
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
-          <h2 className="text-2xl xs:text-3xl sm:text-4xl font-serif font-bold mb-3 sm:mb-4">Sobre Nuestro Estudio</h2>
+          <h2 className="text-2xl xs:text-3xl sm:text-4xl font-serif font-bold mb-3 sm:mb-4">{content.about.title}</h2>
           <p className="text-base sm:text-lg md:text-xl text-c4 max-w-2xl mx-auto px-2">
-            Durante más de 20 años hemos ayudado a personas en todo el país a resolver sus problemas de familia, sucesiones y amparos de salud.
+            {content.about.description}
           </p>
         </div>
 

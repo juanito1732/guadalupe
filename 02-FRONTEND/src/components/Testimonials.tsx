@@ -1,15 +1,16 @@
 'use client'
 
 import Script from 'next/script'
+import { content } from '@/data/content'
 
 export default function Testimonials() {
   return (
     <section id="testimonials" className="py-12 sm:py-16 md:py-20 px-4 bg-c1">
       <div className="container-custom">
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
-          <h2 className="text-2xl xs:text-3xl sm:text-4xl font-serif font-bold mb-3 sm:mb-4">¿Qué Dicen Nuestros Clientes?</h2>
+          <h2 className="text-2xl xs:text-3xl sm:text-4xl font-serif font-bold mb-3 sm:mb-4">{content.testimonials.title}</h2>
           <p className="text-base sm:text-lg md:text-xl text-c4 px-2">
-            Confían en nuestro profesionalismo y dedicación
+            {content.testimonials.description}
           </p>
         </div>
 

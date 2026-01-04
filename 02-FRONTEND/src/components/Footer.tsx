@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import { siteConfig } from '@/data/config'
+import { content } from '@/data/content'
 import { FaWhatsapp, FaTiktok, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa'
 
 export default function Footer() {
@@ -14,7 +15,7 @@ export default function Footer() {
           <div className="flex justify-center md:justify-start">
             <Image
               src="/logo-estudio-juridico-white.svg"
-              alt="Estudio Jurídico Logo"
+              alt={content.footer.about.title}
               width={120}
               height={120}
               className="h-24 sm:h-28 md:h-32 w-auto flex-shrink-0"
@@ -80,7 +81,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="border-t border-c3 pt-3 sm:pt-2 text-center text-c1 text-xs sm:text-sm">
-          <p>&copy; 2025 Estudio Jurídico Dra. Guadalupe Juárez. Todos los derechos reservados.</p>
+          <p>&copy; 2025 Estudio Jurídico Dra. Guadalupe Juárez. {content.footer.copyright.text}</p>
         </div>
       </div>
     </footer>

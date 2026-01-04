@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { FaPhone, FaEnvelope, FaMapPin, FaClock } from 'react-icons/fa'
 import { siteConfig } from '@/data/config'
+import { content } from '@/data/content'
 
 interface ContactFormData {
   email: string
@@ -39,10 +40,10 @@ export default function Contact() {
       <div className="container-custom">
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold mb-3 sm:mb-4 text-c5">
-            Contactanos
+            {content.contact.title}
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-c4">
-            Estamos aquí para ayudarte. Dejanos tus consultas
+            {content.contact.description}
           </p>
         </div>
 
@@ -54,12 +55,12 @@ export default function Contact() {
             <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
               <div>
                 <label htmlFor="email" className="block text-sm sm:text-base font-semibold text-c5 mb-2">
-                  Tu Email *
+                  {content.contact.info.emailLabel} *
                 </label>
                 <input
                   id="email"
                   type="email"
-                  placeholder="ejemplo@correo.com"
+                  placeholder={content.contact.form.emailPlaceholder}
                   required
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -70,18 +71,18 @@ export default function Contact() {
                 />
                 {emailError && (
                   <p id="email-error" className="text-red-600 text-sm mt-2 font-semibold">
-                    Por favor ingresa un email válido
+                    {content.contact.errors.emailInvalid}
                   </p>
                 )}
               </div>
 
               <div>
                 <label htmlFor="message" className="block text-sm sm:text-base font-semibold text-c5 mb-2">
-                  Tu Mensaje *
+                  {content.contact.info.messageLabel} *
                 </label>
                 <textarea
                   id="message"
-                  placeholder="Cuéntanos cómo podemos ayudarte..."
+                  placeholder={content.contact.form.messagePlaceholder}
                   rows={5}
                   required
                   value={formData.message}
@@ -95,9 +96,9 @@ export default function Contact() {
                 whileTap={{ scale: 0.97 }}
                 type="submit"
                 className="w-full py-4 sm:py-4 bg-c4 hover:bg-c5 active:bg-c5 text-white font-bold rounded-lg transition-all duration-300 shadow-md hover:shadow-lg active:shadow-md focus:ring-2 focus:ring-offset-2 focus:ring-c4 text-base sm:text-lg touch-manipulation"
-                aria-label="Enviar consulta"
+                aria-label={content.contact.form.submitButton}
               >
-                Enviar Consulta
+                {content.contact.form.submitButton}
               </motion.button>
 
               {submitted && (
@@ -108,7 +109,7 @@ export default function Contact() {
                   role="status"
                   aria-live="polite"
                 >
-                  ✓ Consulta enviada correctamente
+                  ✓ {content.contact.form.successMessage}
                 </motion.p>
               )}
             </form>
@@ -125,7 +126,7 @@ export default function Contact() {
             >
               <FaPhone size={24} className="text-c4 flex-shrink-0 mt-1" />
               <div>
-                <h4 className="font-bold text-base sm:text-lg text-c5 mb-1">Teléfono</h4>
+                <h4 className="font-bold text-base sm:text-lg text-c5 mb-1">{content.contact.info.phoneLabel}</h4>
                 <p className="text-c4 text-sm sm:text-base">{siteConfig.contact.phone}</p>
               </div>
             </a>
@@ -136,7 +137,7 @@ export default function Contact() {
             >
               <FaEnvelope size={24} className="text-c4 flex-shrink-0 mt-1" />
               <div>
-                <h4 className="font-bold text-base sm:text-lg text-c5 mb-1">Email</h4>
+                <h4 className="font-bold text-base sm:text-lg text-c5 mb-1">{content.contact.info.emailLabel}</h4>
                 <p className="text-c4 text-sm sm:text-base break-all">{siteConfig.contact.email}</p>
               </div>
             </a>
@@ -144,7 +145,7 @@ export default function Contact() {
             <div className="flex gap-3 sm:gap-4 p-4 sm:p-5 md:p-6 bg-white rounded-lg border-2 border-c3">
               <FaMapPin size={24} className="text-c4 flex-shrink-0 mt-1" />
               <div>
-                <h4 className="font-bold text-base sm:text-lg text-c5 mb-1">Dirección</h4>
+                <h4 className="font-bold text-base sm:text-lg text-c5 mb-1">{content.contact.info.addressLabel}</h4>
                 <p className="text-c4 text-sm sm:text-base">{siteConfig.contact.address}</p>
               </div>
             </div>
@@ -152,7 +153,7 @@ export default function Contact() {
             <div className="flex gap-3 sm:gap-4 p-4 sm:p-5 md:p-6 bg-white rounded-lg border-2 border-c3">
               <FaClock size={24} className="text-c4 flex-shrink-0 mt-1" />
               <div>
-                <h4 className="font-bold text-base sm:text-lg text-c5 mb-1">Horario</h4>
+                <h4 className="font-bold text-base sm:text-lg text-c5 mb-1">{content.contact.info.hoursLabel}</h4>
                 <p className="text-c4 text-sm sm:text-base">{siteConfig.contact.hours}</p>
               </div>
             </div>
