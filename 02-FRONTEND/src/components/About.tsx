@@ -34,10 +34,27 @@ export default function About() {
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
           <h2 className="text-2xl xs:text-3xl sm:text-4xl font-serif font-bold mb-3 sm:mb-4 whitespace-pre-line">{content.about.title}</h2>
           <h3 className="text-xl xs:text-2xl sm:text-3xl font-serif font-semibold mb-6 sm:mb-8 text-c5">{content.about.subtitle}</h3>
+
           <div className="max-w-4xl mx-auto px-2">
-            <p className={`text-justify text-base sm:text-lg md:text-xl text-c4 ${!isExpanded ? 'line-clamp-3' : ''}`}>
-              {content.about.description}
+            {/* Primer bloque de texto */}
+            <p className={`text-justify text-base sm:text-lg md:text-xl text-c4 whitespace-pre-line mb-6 ${!isExpanded ? 'line-clamp-3' : ''}`}>
+              {content.about.description1}
             </p>
+
+            {isExpanded && (
+              <>
+                {/* Subtítulo intermedio */}
+                <h4 className="text-lg xs:text-xl sm:text-2xl font-serif font-bold mb-4 text-c5">
+                  {content.about.subtitle2}
+                </h4>
+
+                {/* Segundo bloque de texto */}
+                <p className="text-justify text-base sm:text-lg md:text-xl text-c4 whitespace-pre-line">
+                  {content.about.description2}
+                </p>
+              </>
+            )}
+
             <button
               onClick={() => setIsExpanded(!isExpanded)}
               className="mt-4 px-4 py-2 text-sm sm:text-base font-semibold text-c5 hover:text-c6 transition-colors duration-200"
