@@ -13,7 +13,7 @@ export default function ServiceCard({ service }: { service: Service }) {
     <motion.div
       whileHover={{ translateY: -10 }}
       transition={{ duration: 0.4, ease: 'easeInOut' }}
-      className="p-8 sm:p-10 bg-c1 rounded-xl border-2 border-c3 shadow-md hover:shadow-xl transition-all duration-300 hover:border-c4 flex flex-col h-full"
+      className="p-8 sm:p-10 bg-c1 rounded-xl border-2 border-c3 shadow-md hover:shadow-xl transition-all duration-300 hover:border-c4 flex flex-col"
     >
       <div className="mb-6 sm:mb-8 flex justify-center">
         <div className="w-14 h-14 sm:w-16 sm:h-16 bg-c4 rounded-xl flex items-center justify-center text-white shadow-lg hover:shadow-xl transition-shadow hover:bg-c5">
