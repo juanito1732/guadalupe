@@ -83,11 +83,11 @@ export default function About() {
                 {feature.title}
               </h3>
 
-              <p className={`text-justify text-sm sm:text-base text-c4 leading-relaxed flex-grow ${idx === 1 && !expandedFeatures[idx] && feature.description.length > 150 ? 'line-clamp-3' : ''}`}>
+              <p className={`text-justify text-sm sm:text-base text-c4 leading-relaxed flex-grow ${(idx === 1 || idx === 2) && !expandedFeatures[idx] && feature.description.length > 150 ? 'line-clamp-3' : ''}`}>
                 {feature.description}
               </p>
 
-              {idx === 1 && feature.description.length > 150 && (
+              {(idx === 1 || idx === 2) && feature.description.length > 150 && (
                 <button
                   onClick={() => toggleFeature(idx)}
                   className="mt-4 text-sm font-semibold text-c5 hover:text-c6 transition-colors duration-200 self-center"
