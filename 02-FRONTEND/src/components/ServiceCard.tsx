@@ -17,7 +17,7 @@ export default function ServiceCard({ service }: { service: Service }) {
     <motion.div
       whileHover={{ translateY: -10 }}
       transition={{ duration: 0.4, ease: 'easeInOut' }}
-      className="p-8 sm:p-10 bg-c1 rounded-xl border-2 border-c3 shadow-md hover:shadow-xl transition-all duration-300 hover:border-c4"
+      className="p-8 sm:p-10 bg-c1 rounded-xl border-2 border-c3 shadow-md hover:shadow-xl transition-all duration-300 hover:border-c4 flex flex-col h-full"
     >
       <div className="mb-6 sm:mb-8 flex justify-center">
         <div className="w-14 h-14 sm:w-16 sm:h-16 bg-c4 rounded-xl flex items-center justify-center text-white shadow-lg hover:shadow-xl transition-shadow hover:bg-c5">
@@ -29,22 +29,22 @@ export default function ServiceCard({ service }: { service: Service }) {
         {service.title}
       </h3>
 
-      <p className="text-justify text-sm sm:text-base text-c4 mb-7 sm:mb-8 leading-relaxed">
+      <p className="text-justify text-sm sm:text-base text-c4 mb-7 sm:mb-8 leading-relaxed min-h-[120px]">
         {displayText}
       </p>
 
       {shouldTruncate && (
-        <div className="flex justify-center">
+        <div className="flex justify-center mb-7 sm:mb-8">
           <button
             onClick={() => setIsExpanded(!isExpanded)}
-            className="mt-6 px-4 py-2 text-sm font-bold text-c5 hover:text-c4 transition-colors duration-200"
+            className="px-4 py-2 text-sm font-bold text-c5 hover:text-c4 transition-colors duration-200"
           >
             {isExpanded ? 'Leer menos' : 'Leer más'}
           </button>
         </div>
       )}
 
-      <ul className="space-y-4 sm:space-y-5 flex flex-col items-center">
+      <ul className="space-y-4 sm:space-y-5 flex flex-col items-center mt-auto">
         {service.features.map((feature, idx) => (
           <li key={idx} className="flex items-start text-justify">
             <span className="text-c4 mr-2 sm:mr-3 font-bold text-base sm:text-lg flex-shrink-0">✓</span>
