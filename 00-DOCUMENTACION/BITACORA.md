@@ -926,3 +926,6 @@ GUADIS v2.0 está COMPLETAMENTE LISTO para Vercel deployment. Código profesiona
 
 ## [2026-01-07]
 - Fix: Igualar tamaño de todos los subtítulos al de Nuestros Servicios
+
+## [2026-01-07]
+- Actualizar iconos de servicios con iconos únicos y relevantes
