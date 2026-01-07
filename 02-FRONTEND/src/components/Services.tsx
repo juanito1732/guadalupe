@@ -17,7 +17,7 @@ export default function Services() {
           </h3>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-12">
           {content.services.list.map((service) => (
             <ServiceCard key={service.id} service={service} />
           ))}

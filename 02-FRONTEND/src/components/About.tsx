@@ -66,7 +66,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12 items-stretch">
           {features.map((feature, idx) => (
             <motion.div
               key={idx}

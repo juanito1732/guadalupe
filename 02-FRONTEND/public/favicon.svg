@@ -1,27 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#1B5B7E">
-  <!-- Laurel izquierdo -->
-  <path d="M205 190c-5 3-10 7-15 12-8-10-12-22-12-35 0-30 24-54 54-54 8 0 15 2 22 5-25 10-42 34-49 72zm-20 30c-5 8-8 17-8 27 0 30 24 54 54 54 15 0 28-6 38-16-30-10-60-35-84-65zm10-110c-3 5-5 10-7 16-12-8-27-13-43-13-35 0-63 28-63 63 0 18 8 34 20 46 20-30 50-75 93-112zm-15 180c0 10 2 19 5 28-15 5-31 8-48 8-35 0-63-28-63-63 0-20 9-37 24-49 15 30 45 60 82 76z"/>
+  <!-- Figura de la Dama de la Justicia simplificada -->
 
-  <!-- Laurel derecho -->
-  <path d="M307 190c5 3 10 7 15 12 8-10 12-22 12-35 0-30-24-54-54-54-8 0-15 2-22 5 25 10 42 34 49 72zm20 30c5 8 8 17 8 27 0 30-24 54-54 54-15 0-28-6-38-16 30-10 60-35 84-65zm-10-110c3 5 5 10 7 16 12-8 27-13 43-13 35 0 63 28 63 63 0 18-8 34-20 46-20-30-50-75-93-112zm15 180c0 10-2 19-5 28 15 5 31 8 48 8 35 0 63-28 63-63 0-20-9-37-24-49-15 30-45 60-82 76z"/>
+  <!-- Cabeza con venda -->
+  <ellipse cx="256" cy="120" rx="45" ry="50"/>
+  <rect x="220" y="100" width="72" height="18" rx="4"/>
 
-  <!-- Balanza - Base -->
-  <path d="M256 440c-8 0-15-7-15-15V220c0-8 7-15 15-15s15 7 15 15v205c0 8-7 15-15 15z"/>
+  <!-- Cuerpo (vestido) -->
+  <path d="M256 160 L220 200 L200 420 L230 440 L282 440 L312 420 L292 200 Z"/>
 
-  <!-- Balanza - Plato izquierdo -->
-  <path d="M180 250l30 60h-60l30-60z"/>
-  <ellipse cx="180" cy="315" rx="40" ry="8"/>
+  <!-- Brazo izquierdo con balanza -->
+  <path d="M220 200 L140 180 L140 200"/>
 
-  <!-- Balanza - Plato derecho -->
-  <path d="M332 250l30 60h-60l30-60z"/>
-  <ellipse cx="332" cy="315" rx="40" ry="8"/>
+  <!-- Brazo derecho con espada -->
+  <path d="M292 200 L350 350"/>
+  <rect x="348" y="350" width="6" height="80" rx="2"/>
+  <path d="M340 350 L360 350 L354 340 Z"/>
 
-  <!-- Balanza - Barra horizontal -->
-  <path d="M180 220h152c8 0 15 7 15 15s-7 15-15 15H180c-8 0-15-7-15-15s7-15 15-15z"/>
+  <!-- Balanza izquierda -->
+  <line x1="100" y1="195" x2="180" y2="195" stroke="#1B5B7E" stroke-width="4"/>
+  <path d="M110 195 L100 215 L120 215 Z"/>
+  <ellipse cx="110" cy="218" rx="15" ry="3"/>
+  <path d="M170 195 L160 215 L180 215 Z"/>
+  <ellipse cx="170" cy="218" rx="15" ry="3"/>
+  <line x1="140" y1="180" x2="140" y2="195" stroke="#1B5B7E" stroke-width="3"/>
 
-  <!-- Balanza - Soporte central superior -->
-  <circle cx="256" cy="205" r="8"/>
-
-  <!-- Base inferior -->
-  <ellipse cx="256" cy="440" rx="50" ry="12"/>
+  <!-- Base/pedestal -->
+  <rect x="200" y="440" width="112" height="12"/>
+  <rect x="190" y="452" width="132" height="20"/>
+  <rect x="180" y="472" width="152" height="28"/>
 </svg>
