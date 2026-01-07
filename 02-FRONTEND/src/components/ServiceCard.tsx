@@ -25,7 +25,7 @@ export default function ServiceCard({ service }: { service: Service }) {
         {service.title}
       </h3>
 
-      <div className={`mb-6 sm:mb-7 ${!isExpanded ? 'h-20' : ''}`}>
+      <div className={`mb-6 sm:mb-7 ${!isExpanded ? 'h-[72px]' : ''}`}>
         <p className={`text-left text-sm sm:text-base text-c4 leading-relaxed whitespace-pre-line ${!isExpanded ? 'line-clamp-3' : ''}`}>
           {service.description}
         </p>

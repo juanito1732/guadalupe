@@ -85,7 +85,7 @@ export default function About() {
                 {feature.title}
               </h3>
 
-              <div className={`mb-6 ${(idx === 1 || idx === 2) && !expandedFeatures[idx] && feature.description.length > 150 ? 'h-20' : ''}`}>
+              <div className={`mb-6 ${(idx === 1 || idx === 2) && !expandedFeatures[idx] && feature.description.length > 150 ? 'h-[72px]' : ''}`}>
                 <p className={`text-left text-sm sm:text-base text-c4 leading-relaxed ${(idx === 1 || idx === 2) && !expandedFeatures[idx] && feature.description.length > 150 ? 'line-clamp-3' : ''}`}>
                   {feature.description}
                 </p>

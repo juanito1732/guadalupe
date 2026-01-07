@@ -986,3 +986,6 @@ GUADIS v2.0 está COMPLETAMENTE LISTO para Vercel deployment. Código profesiona
 
 ## [2026-01-07]
 - Fix card alignment with fixed height when collapsed
+
+## [2026-01-07]
+- Adjust card height to h-[72px] for proper 3-line alignment
