@@ -965,3 +965,6 @@ GUADIS v2.0 está COMPLETAMENTE LISTO para Vercel deployment. Código profesiona
 
 ## [2026-01-07]
 - Clean up unused variables in ServiceCard
+
+## [2026-01-07]
+- Fix text formatting and button alignment in service cards
