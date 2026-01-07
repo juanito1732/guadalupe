@@ -12,7 +12,7 @@ export default function Services() {
           <p className="text-base sm:text-lg md:text-xl text-c4 max-w-2xl mx-auto px-2 text-justify whitespace-pre-line mb-4">
             {content.services.description}
           </p>
-          <h3 className="text-xl xs:text-2xl sm:text-3xl font-serif font-bold text-center text-c5 mt-6">
+          <h3 className="text-2xl xs:text-3xl sm:text-4xl font-serif font-bold text-center text-c5 mt-6">
             {content.services.subtitle}
           </h3>
         </div>
