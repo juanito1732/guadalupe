@@ -20,11 +20,11 @@ export default function ServiceCard({ service }: { service: Service }) {
         </div>
       </div>
 
-      <h3 className="text-lg sm:text-xl font-serif font-bold mb-2 sm:mb-3 text-c5">
+      <h3 className="text-center text-lg sm:text-xl font-serif font-bold mb-2 sm:mb-3 text-c5">
         {service.title}
       </h3>
 
-      <p className={`text-sm sm:text-base text-c4 mb-5 sm:mb-6 leading-relaxed ${isExpanded ? '' : 'line-clamp-2'}`}>
+      <p className={`text-center text-sm sm:text-base text-c4 mb-5 sm:mb-6 leading-relaxed ${isExpanded ? '' : 'line-clamp-2'}`}>
         {service.description}
       </p>
 

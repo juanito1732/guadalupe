@@ -69,7 +69,7 @@ export default function About() {
                 {feature.description}
               </p>
 
-              {feature.description.length > 150 && (
+              {idx === 1 && feature.description.length > 150 && (
                 <button
                   onClick={() => toggleFeature(idx)}
                   className="mt-4 text-sm font-semibold text-c5 hover:text-c6 transition-colors duration-200 self-center"
