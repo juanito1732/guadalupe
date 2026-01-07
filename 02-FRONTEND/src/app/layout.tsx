@@ -81,11 +81,11 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/favicon.jpg',
-        type: 'image/jpeg',
+        url: '/favicon.svg',
+        type: 'image/svg+xml',
       },
     ],
-    shortcut: '/favicon.jpg',
+    shortcut: '/favicon.svg',
   },
 }
 

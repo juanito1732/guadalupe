@@ -1,53 +1,91 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 512" fill="#1B5B7E">
-  <!-- Cabeza -->
-  <ellipse cx="90" cy="65" rx="22" ry="25"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 900" fill="none">
+  <g fill="#1B5B7E">
+    <!-- Cabeza -->
+    <ellipse cx="200" cy="95" rx="38" ry="42"/>
 
-  <!-- Venda en los ojos -->
-  <rect x="68" y="58" width="44" height="10" rx="2"/>
-  <path d="M65 63 L50 58 L50 68 L65 68 Z"/>
-  <path d="M115 63 L130 58 L130 68 L115 68 Z"/>
+    <!-- Venda -->
+    <rect x="165" y="85" width="70" height="14" rx="3"/>
+    <!-- Telas colgantes de la venda -->
+    <path d="M160 95 Q155 105 152 115 L148 125 Q145 130 150 135 L155 120 Q158 110 162 100 Z"/>
+    <path d="M240 95 Q245 105 248 115 L252 125 Q255 130 250 135 L245 120 Q242 110 238 100 Z"/>
 
-  <!-- Cuello -->
-  <rect x="82" y="88" width="16" height="12"/>
+    <!-- Cuello -->
+    <path d="M185 135 L185 150 L215 150 L215 135"/>
 
-  <!-- Hombros y brazos -->
-  <path d="M65 100 L75 95 L82 100"/>
-  <path d="M115 100 L105 95 L98 100"/>
+    <!-- Hombros -->
+    <path d="M165 150 Q160 155 155 160 L175 165 L185 155 Z"/>
+    <path d="M235 150 Q240 155 245 160 L225 165 L215 155 Z"/>
 
-  <!-- Brazo izquierdo (con espada hacia abajo) -->
-  <line x1="65" y1="100" x2="45" y2="180" stroke="#1B5B7E" stroke-width="8"/>
-  <line x1="45" y1="180" x2="45" y2="320" stroke="#1B5B7E" stroke-width="5"/>
-  <!-- Espada -->
-  <rect x="42" y="320" width="6" height="100" rx="1"/>
-  <path d="M35 315 L55 315 L48 305 Z"/>
-  <ellipse cx="45" cy="422" rx="8" ry="3"/>
+    <!-- Brazo izquierdo con espada (hacia abajo) -->
+    <path d="M165 165 Q150 175 140 200 L130 250 L125 350 L120 500 L118 600 Q115 650 120 700 L122 720 L125 730"/>
+    <!-- Manga izquierda -->
+    <path d="M165 165 L155 185 L145 210 Q140 230 138 250 L135 280 L140 290 L145 270 L150 240 Q155 210 165 185 Z"/>
 
-  <!-- Brazo derecho (con balanza levantada) -->
-  <line x1="115" y1="100" x2="135" y2="120" stroke="#1B5B7E" stroke-width="8"/>
+    <!-- Espada -->
+    <g transform="translate(105, 720)">
+      <!-- Empuñadura -->
+      <ellipse cx="15" cy="5" rx="10" ry="5"/>
+      <rect x="12" y="5" width="6" height="20" rx="2"/>
+      <!-- Guarda -->
+      <rect x="5" y="25" width="20" height="4" rx="1"/>
+      <!-- Hoja -->
+      <path d="M13 29 L11 150 L15 155 L19 150 L17 29 Z"/>
+      <!-- Punta -->
+      <path d="M11 150 L15 160 L19 150 Z"/>
+    </g>
 
-  <!-- Balanza -->
-  <line x1="110" y1="115" x2="160" y2="115" stroke="#1B5B7E" stroke-width="3"/>
-  <circle cx="135" cy="110" r="4"/>
-  <line x1="135" y1="110" x2="135" y2="115" stroke="#1B5B7E" stroke-width="3"/>
+    <!-- Brazo derecho con balanza (levantado) -->
+    <path d="M235 165 Q245 170 255 175 L275 185 Q285 190 295 192"/>
+    <!-- Manga derecha -->
+    <path d="M235 165 L245 180 L260 190 Q270 195 280 198 L285 200 L282 195 L270 188 Q258 183 245 175 Z"/>
 
-  <!-- Platillos de la balanza -->
-  <path d="M115 115 L110 130 L120 130 Z"/>
-  <ellipse cx="115" cy="132" rx="8" ry="2"/>
-  <path d="M155 115 L150 130 L160 130 Z"/>
-  <ellipse cx="155" cy="132" rx="8" ry="2"/>
+    <!-- Mano con balanza -->
+    <g transform="translate(285, 185)">
+      <!-- Mano -->
+      <ellipse cx="10" cy="5" rx="8" ry="6"/>
+      <!-- Vara central -->
+      <line x1="10" y1="0" x2="10" y2="-15" stroke="#1B5B7E" stroke-width="3"/>
+      <circle cx="10" cy="-15" r="4"/>
+      <!-- Barra horizontal -->
+      <line x1="-25" y1="-15" x2="45" y2="-15" stroke="#1B5B7E" stroke-width="2.5"/>
 
-  <!-- Torso (vestido) -->
-  <path d="M75 100 L65 140 L50 420 L70 440 L110 440 L130 420 L115 140 L105 100 Z"/>
+      <!-- Platillo izquierdo -->
+      <g transform="translate(-25, -15)">
+        <line x1="0" y1="0" x2="-2" y2="25" stroke="#1B5B7E" stroke-width="2"/>
+        <line x1="0" y1="0" x2="2" y2="25" stroke="#1B5B7E" stroke-width="2"/>
+        <path d="M-15 25 L-10 30 L10 30 L15 25 Z"/>
+        <ellipse cx="0" cy="32" rx="18" ry="4"/>
+      </g>
 
-  <!-- Pliegues del vestido -->
-  <line x1="90" y1="120" x2="85" y2="280" stroke="#1B5B7E" stroke-width="2" opacity="0.3"/>
-  <line x1="90" y1="120" x2="95" y2="280" stroke="#1B5B7E" stroke-width="2" opacity="0.3"/>
-  <path d="M70 280 Q80 300 70 320" stroke="#1B5B7E" stroke-width="2" fill="none" opacity="0.3"/>
-  <path d="M110 280 Q100 300 110 320" stroke="#1B5B7E" stroke-width="2" fill="none" opacity="0.3"/>
+      <!-- Platillo derecho -->
+      <g transform="translate(45, -15)">
+        <line x1="0" y1="0" x2="-2" y2="25" stroke="#1B5B7E" stroke-width="2"/>
+        <line x1="0" y1="0" x2="2" y2="25" stroke="#1B5B7E" stroke-width="2"/>
+        <path d="M-15 25 L-10 30 L10 30 L15 25 Z"/>
+        <ellipse cx="0" cy="32" rx="18" ry="4"/>
+      </g>
+    </g>
 
-  <!-- Base/Pedestal -->
-  <rect x="50" y="440" width="80" height="8"/>
-  <rect x="40" y="448" width="100" height="12"/>
-  <rect x="30" y="460" width="120" height="20"/>
-  <rect x="20" y="480" width="140" height="32"/>
+    <!-- Torso y vestido -->
+    <path d="M175 165 Q170 180 165 200 L155 250 Q150 300 145 350 L140 420 Q135 500 130 580 L125 660 Q120 720 122 760 L125 800 Q128 820 140 830 L260 830 Q272 820 275 800 L278 760 Q280 720 275 660 L270 580 Q265 500 260 420 L255 350 Q250 300 245 250 L235 200 Q230 180 225 165 Z"/>
+
+    <!-- Pliegues del vestido -->
+    <path d="M185 220 Q183 300 180 400 L178 500 Q176 600 175 700" stroke="#1B5B7E" stroke-width="2" fill="none" opacity="0.3"/>
+    <path d="M200 220 Q200 300 200 400 L200 500 Q200 600 200 700" stroke="#1B5B7E" stroke-width="2.5" fill="none" opacity="0.25"/>
+    <path d="M215 220 Q217 300 220 400 L222 500 Q224 600 225 700" stroke="#1B5B7E" stroke-width="2" fill="none" opacity="0.3"/>
+
+    <!-- Pliegues laterales -->
+    <path d="M160 350 Q165 380 160 410 Q155 440 160 470" stroke="#1B5B7E" stroke-width="2" fill="none" opacity="0.25"/>
+    <path d="M240 350 Q235 380 240 410 Q245 440 240 470" stroke="#1B5B7E" stroke-width="2" fill="none" opacity="0.25"/>
+
+    <!-- Sombras del vestido -->
+    <path d="M145 400 Q150 450 145 500 L140 550 Q135 600 138 650" stroke="#1B5B7E" stroke-width="3" fill="none" opacity="0.2"/>
+    <path d="M255 400 Q250 450 255 500 L260 550 Q265 600 262 650" stroke="#1B5B7E" stroke-width="3" fill="none" opacity="0.2"/>
+
+    <!-- Pedestal -->
+    <rect x="130" y="830" width="140" height="15" rx="2"/>
+    <rect x="115" y="845" width="170" height="18" rx="2"/>
+    <rect x="100" y="863" width="200" height="22" rx="2"/>
+    <rect x="80" y="885" width="240" height="15" rx="2"/>
+  </g>
 </svg>
