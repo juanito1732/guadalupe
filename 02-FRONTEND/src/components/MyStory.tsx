@@ -7,10 +7,10 @@ export default function MyStory() {
   const [isExpanded, setIsExpanded] = useState(false)
 
   return (
-    <section id="my-story" className="scroll-mt-24 sm:scroll-mt-28 md:scroll-mt-32 py-14 sm:py-18 md:py-24 px-4 bg-c1">
+    <section id="my-story" className="scroll-mt-24 sm:scroll-mt-28 md:scroll-mt-32 py-16 sm:py-20 md:py-28 px-4 bg-c1">
       <div className="container-custom">
-        <div className="text-center mb-11 sm:mb-14 md:mb-18">
-          <h2 className="text-2xl xs:text-3xl sm:text-4xl font-serif font-bold mb-4 sm:mb-5">
+        <div className="text-center mb-12 sm:mb-16 md:mb-20">
+          <h2 className="text-2xl xs:text-3xl sm:text-4xl font-serif font-bold mb-5 sm:mb-6">
             {content.myStory.title}
           </h2>
         </div>
@@ -24,7 +24,7 @@ export default function MyStory() {
             <div className="flex justify-center">
               <button
                 onClick={() => setIsExpanded(!isExpanded)}
-                className="mt-5 px-4 py-2 text-sm font-bold text-c5 hover:text-c4 transition-colors duration-200"
+                className="mt-6 px-4 py-2 text-sm font-bold text-c5 hover:text-c4 transition-colors duration-200"
               >
                 {isExpanded ? 'Leer menos' : 'Leer más'}
               </button>

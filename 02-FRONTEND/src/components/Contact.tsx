@@ -36,10 +36,10 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="scroll-mt-24 sm:scroll-mt-28 md:scroll-mt-32 py-14 sm:py-18 md:py-24 px-4 bg-c1">
+    <section id="contact" className="scroll-mt-24 sm:scroll-mt-28 md:scroll-mt-32 py-16 sm:py-20 md:py-28 px-4 bg-c1">
       <div className="container-custom">
-        <div className="text-center mb-11 sm:mb-14 md:mb-18">
-          <h2 className="text-2xl xs:text-3xl sm:text-4xl font-serif font-bold mb-4 sm:mb-5 text-c5">
+        <div className="text-center mb-12 sm:mb-16 md:mb-20">
+          <h2 className="text-2xl xs:text-3xl sm:text-4xl font-serif font-bold mb-5 sm:mb-6 text-c5">
             {content.contact.title}
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-c4">
@@ -47,7 +47,7 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-9 sm:gap-11 md:gap-14 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 md:gap-16 max-w-5xl mx-auto">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
