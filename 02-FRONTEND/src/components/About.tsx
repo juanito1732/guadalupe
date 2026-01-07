@@ -33,7 +33,7 @@ export default function About() {
       <div className="container-custom">
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
           <h2 className="text-2xl xs:text-3xl sm:text-4xl font-serif font-bold mb-3 sm:mb-4 whitespace-pre-line">{content.about.title}</h2>
-          <h3 className="text-xl xs:text-2xl sm:text-3xl font-serif font-semibold mb-6 sm:mb-8 text-c5">{content.about.subtitle}</h3>
+          <h3 className="text-xl xs:text-2xl sm:text-3xl font-serif font-bold mb-6 sm:mb-8 text-c5">{content.about.subtitle}</h3>
 
           <div className="max-w-4xl mx-auto px-2">
             {/* Primer bloque de texto */}

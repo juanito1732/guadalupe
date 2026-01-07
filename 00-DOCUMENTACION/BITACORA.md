@@ -920,3 +920,6 @@ GUADIS v2.0 está COMPLETAMENTE LISTO para Vercel deployment. Código profesiona
 
 ## [2026-01-07]
 - Fix: Centrar todos los botones 'Leer más' en todas las tarjetas
+
+## [2026-01-07]
+- Fix: Corregir font-weight de subtítulo en About (font-semibold → font-bold)
