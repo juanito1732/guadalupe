@@ -24,7 +24,7 @@ export default function ServiceCard({ service }: { service: Service }) {
         {service.title}
       </h3>
 
-      <p className={`text-center text-sm sm:text-base text-c4 mb-5 sm:mb-6 leading-relaxed ${isExpanded ? '' : 'line-clamp-2'}`}>
+      <p className={`text-center text-sm sm:text-base text-c4 mb-5 sm:mb-6 leading-relaxed ${service.description.length > 200 && !isExpanded ? 'line-clamp-2' : ''}`}>
         {service.description}
       </p>
 
