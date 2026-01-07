@@ -24,7 +24,7 @@ export default function ServiceCard({ service }: { service: Service }) {
         {service.title}
       </h3>
 
-      <p className={`text-center text-sm sm:text-base text-c4 mb-5 sm:mb-6 leading-relaxed ${service.description.length > 200 && !isExpanded ? 'line-clamp-2' : ''}`}>
+      <p className={`text-justify text-sm sm:text-base text-c4 mb-5 sm:mb-6 leading-relaxed ${service.description.length > 200 && !isExpanded ? 'line-clamp-2' : ''}`}>
         {service.description}
       </p>
 
@@ -39,7 +39,7 @@ export default function ServiceCard({ service }: { service: Service }) {
 
       <ul className="space-y-2 sm:space-y-3 flex flex-col items-center">
         {service.features.map((feature, idx) => (
-          <li key={idx} className="flex items-start">
+          <li key={idx} className="flex items-start text-justify">
             <span className="text-c4 mr-2 sm:mr-3 font-bold text-base sm:text-lg flex-shrink-0">✓</span>
             <span className="text-xs sm:text-sm text-c5 leading-relaxed">
               {feature}

@@ -854,3 +854,6 @@ GUADIS v2.0 está COMPLETAMENTE LISTO para Vercel deployment. Código profesiona
 
 ## [2026-01-07]
 - fix: Aislar expansión de tarjeta con items-start en grid
+
+## [2026-01-07]
+- feat: Justificar todos los textos de la página

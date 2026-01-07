@@ -34,7 +34,7 @@ export default function About() {
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
           <h2 className="text-2xl xs:text-3xl sm:text-4xl font-serif font-bold mb-3 sm:mb-4">{content.about.title}</h2>
           <div className="max-w-4xl mx-auto px-2">
-            <p className={`text-base sm:text-lg md:text-xl text-c4 ${!isExpanded ? 'line-clamp-3' : ''}`}>
+            <p className={`text-justify text-base sm:text-lg md:text-xl text-c4 ${!isExpanded ? 'line-clamp-3' : ''}`}>
               {content.about.description}
             </p>
             <button
@@ -65,7 +65,7 @@ export default function About() {
                 {feature.title}
               </h3>
 
-              <p className={`text-center text-sm sm:text-base text-c4 leading-relaxed flex-grow ${idx === 1 && !expandedFeatures[idx] && feature.description.length > 150 ? 'line-clamp-3' : ''}`}>
+              <p className={`text-justify text-sm sm:text-base text-c4 leading-relaxed flex-grow ${idx === 1 && !expandedFeatures[idx] && feature.description.length > 150 ? 'line-clamp-3' : ''}`}>
                 {feature.description}
               </p>
 
