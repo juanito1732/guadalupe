@@ -836,3 +836,6 @@ GUADIS v2.0 está COMPLETAMENTE LISTO para Vercel deployment. Código profesiona
 
 ## [2026-01-07]
 - fix: Agregar punto final a descripción Confidencialidad Garantizada
+
+## [2026-01-07]
+- fix: Ensanchar Hero y centrar features en ServiceCard

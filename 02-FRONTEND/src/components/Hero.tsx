@@ -32,7 +32,7 @@ export default function Hero() {
           </h1>
 
           {/* Descripción - Responsive */}
-          <p className="text-sm xs:text-base sm:text-lg md:text-xl text-c2 mb-5 xs:mb-6 sm:mb-8 leading-relaxed max-w-4xl mx-auto">
+          <p className="text-sm xs:text-base sm:text-lg md:text-xl text-c2 mb-5 xs:mb-6 sm:mb-8 leading-relaxed max-w-6xl mx-auto">
             {content.hero.description}
           </p>
 
