@@ -866,3 +866,6 @@ GUADIS v2.0 está COMPLETAMENTE LISTO para Vercel deployment. Código profesiona
 
 ## [2026-01-07]
 - Actualizar contenido con mensajes clave y tono más empático
+
+## [2026-01-07]
+- Corregir tipografías duplicadas y ajustar footer
