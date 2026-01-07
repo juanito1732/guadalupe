@@ -81,11 +81,11 @@ export default function About() {
                 </div>
               </div>
 
-              <h3 className="text-center text-lg sm:text-xl font-serif font-bold mb-4 sm:mb-5">
+              <h3 className="text-center text-lg sm:text-xl font-serif font-bold mb-4 sm:mb-5 min-h-[72px] sm:min-h-[78px] flex items-center justify-center">
                 {feature.title}
               </h3>
 
-              <div className={`mb-6 ${(idx === 1 || idx === 2) && !expandedFeatures[idx] && feature.description.length > 150 ? 'h-[72px]' : ''}`}>
+              <div className={`mb-6 ${(idx === 1 || idx === 2) && !expandedFeatures[idx] && feature.description.length > 150 ? 'h-[69px] sm:h-[78px]' : ''}`}>
                 <p className={`text-left text-sm sm:text-base text-c4 leading-relaxed ${(idx === 1 || idx === 2) && !expandedFeatures[idx] && feature.description.length > 150 ? 'line-clamp-3' : ''}`}>
                   {feature.description}
                 </p>

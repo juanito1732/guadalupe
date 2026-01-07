@@ -21,11 +21,11 @@ export default function ServiceCard({ service }: { service: Service }) {
         </div>
       </div>
 
-      <h3 className="text-center text-lg sm:text-xl font-serif font-bold mb-4 sm:mb-5 text-c5">
+      <h3 className="text-center text-lg sm:text-xl font-serif font-bold mb-4 sm:mb-5 text-c5 min-h-[72px] sm:min-h-[78px] flex items-center justify-center">
         {service.title}
       </h3>
 
-      <div className={`mb-6 sm:mb-7 ${!isExpanded ? 'h-[72px]' : ''}`}>
+      <div className={`mb-6 sm:mb-7 ${!isExpanded ? 'h-[69px] sm:h-[78px]' : ''}`}>
         <p className={`text-left text-sm sm:text-base text-c4 leading-relaxed whitespace-pre-line ${!isExpanded ? 'line-clamp-3' : ''}`}>
           {service.description}
         </p>
