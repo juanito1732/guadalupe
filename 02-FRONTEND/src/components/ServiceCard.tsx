@@ -7,6 +7,11 @@ import ServiceIcon from './ServiceIcon'
 
 export default function ServiceCard({ service }: { service: Service }) {
   const [isExpanded, setIsExpanded] = useState(false)
+  const MAX_CHARS = 200
+  const shouldTruncate = service.description.length > MAX_CHARS
+  const displayText = !isExpanded && shouldTruncate
+    ? service.description.substring(0, MAX_CHARS) + '...'
+    : service.description
 
   return (
     <motion.div
@@ -24,11 +29,11 @@ export default function ServiceCard({ service }: { service: Service }) {
         {service.title}
       </h3>
 
-      <p className={`text-justify text-sm sm:text-base text-c4 mb-7 sm:mb-8 leading-relaxed ${service.description.length > 200 && !isExpanded ? 'line-clamp-2' : ''}`}>
-        {service.description}
+      <p className="text-justify text-sm sm:text-base text-c4 mb-7 sm:mb-8 leading-relaxed">
+        {displayText}
       </p>
 
-      {service.description.length > 200 && (
+      {shouldTruncate && (
         <div className="flex justify-center">
           <button
             onClick={() => setIsExpanded(!isExpanded)}
