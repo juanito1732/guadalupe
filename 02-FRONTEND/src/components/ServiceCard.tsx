@@ -14,7 +14,7 @@ export default function ServiceCard({ service }: { service: Service }) {
       transition={{ duration: 0.4, ease: 'easeInOut' }}
       className="p-6 sm:p-8 bg-c1 rounded-xl border-2 border-c3 shadow-md hover:shadow-xl transition-all duration-300 hover:border-c4"
     >
-      <div className="mb-4 sm:mb-6">
+      <div className="mb-4 sm:mb-6 flex justify-center">
         <div className="w-14 h-14 sm:w-16 sm:h-16 bg-c4 rounded-xl flex items-center justify-center text-white shadow-lg hover:shadow-xl transition-shadow hover:bg-c5">
           <ServiceIcon type={service.iconType} size={28} />
         </div>
@@ -28,23 +28,12 @@ export default function ServiceCard({ service }: { service: Service }) {
         {service.description}
       </p>
 
-      {!isExpanded && (
+      {service.description.length > 100 && (
         <button
-          onClick={() => setIsExpanded(true)}
+          onClick={() => setIsExpanded(!isExpanded)}
           className="text-c4 hover:text-c5 font-semibold text-sm mb-5 sm:mb-6 transition-colors duration-200 inline-flex items-center gap-1"
         >
-          Leer más
-          <span className="text-xs">→</span>
-        </button>
-      )}
-
-      {isExpanded && (
-        <button
-          onClick={() => setIsExpanded(false)}
-          className="text-c4 hover:text-c5 font-semibold text-sm mb-5 sm:mb-6 transition-colors duration-200 inline-flex items-center gap-1"
-        >
-          Leer menos
-          <span className="text-xs">←</span>
+          {isExpanded ? 'Leer menos ←' : 'Leer más →'}
         </button>
       )}
 
