@@ -29,12 +29,14 @@ export default function ServiceCard({ service }: { service: Service }) {
       </p>
 
       {service.description.length > 200 && (
-        <button
-          onClick={() => setIsExpanded(!isExpanded)}
-          className="mt-4 px-4 py-2 text-sm font-bold text-c5 hover:text-c4 transition-colors duration-200"
-        >
-          {isExpanded ? 'Leer menos' : 'Leer más'}
-        </button>
+        <div className="flex justify-center">
+          <button
+            onClick={() => setIsExpanded(!isExpanded)}
+            className="mt-4 px-4 py-2 text-sm font-bold text-c5 hover:text-c4 transition-colors duration-200"
+          >
+            {isExpanded ? 'Leer menos' : 'Leer más'}
+          </button>
+        </div>
       )}
 
       <ul className="space-y-2 sm:space-y-3 flex flex-col items-center">

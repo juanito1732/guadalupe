@@ -21,12 +21,14 @@ export default function MyStory() {
               {content.myStory.content}
             </p>
 
-            <button
-              onClick={() => setIsExpanded(!isExpanded)}
-              className="mt-4 px-4 py-2 text-sm font-bold text-c5 hover:text-c4 transition-colors duration-200"
-            >
-              {isExpanded ? 'Leer menos' : 'Leer más'}
-            </button>
+            <div className="flex justify-center">
+              <button
+                onClick={() => setIsExpanded(!isExpanded)}
+                className="mt-4 px-4 py-2 text-sm font-bold text-c5 hover:text-c4 transition-colors duration-200"
+              >
+                {isExpanded ? 'Leer menos' : 'Leer más'}
+              </button>
+            </div>
           </div>
         </div>
       </div>

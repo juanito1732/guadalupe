@@ -55,12 +55,14 @@ export default function About() {
               </>
             )}
 
-            <button
-              onClick={() => setIsExpanded(!isExpanded)}
-              className="mt-4 px-4 py-2 text-sm font-bold text-c5 hover:text-c4 transition-colors duration-200"
-            >
-              {isExpanded ? 'Leer menos' : 'Leer más'}
-            </button>
+            <div className="flex justify-center">
+              <button
+                onClick={() => setIsExpanded(!isExpanded)}
+                className="mt-4 px-4 py-2 text-sm font-bold text-c5 hover:text-c4 transition-colors duration-200"
+              >
+                {isExpanded ? 'Leer menos' : 'Leer más'}
+              </button>
+            </div>
           </div>
         </div>
 
@@ -88,12 +90,14 @@ export default function About() {
               </p>
 
               {(idx === 1 || idx === 2) && feature.description.length > 150 && (
-                <button
-                  onClick={() => toggleFeature(idx)}
-                  className="mt-4 text-sm font-bold text-c5 hover:text-c4 transition-colors duration-200 self-center"
-                >
-                  {expandedFeatures[idx] ? 'Leer menos' : 'Leer más'}
-                </button>
+                <div className="flex justify-center">
+                  <button
+                    onClick={() => toggleFeature(idx)}
+                    className="mt-4 px-4 py-2 text-sm font-bold text-c5 hover:text-c4 transition-colors duration-200"
+                  >
+                    {expandedFeatures[idx] ? 'Leer menos' : 'Leer más'}
+                  </button>
+                </div>
               )}
             </motion.div>
           ))}

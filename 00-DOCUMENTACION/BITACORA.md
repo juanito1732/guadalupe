@@ -917,3 +917,6 @@ GUADIS v2.0 está COMPLETAMENTE LISTO para Vercel deployment. Código profesiona
 
 ## [2026-01-07]
 - Fix: Estandarizar todos los subtítulos al mismo estilo Title Case
+
+## [2026-01-07]
+- Fix: Centrar todos los botones 'Leer más' en todas las tarjetas
