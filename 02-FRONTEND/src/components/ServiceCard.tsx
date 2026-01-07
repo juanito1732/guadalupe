@@ -29,9 +29,11 @@ export default function ServiceCard({ service }: { service: Service }) {
         {service.title}
       </h3>
 
-      <p className="text-justify text-sm sm:text-base text-c4 mb-7 sm:mb-8 leading-relaxed min-h-[120px]">
-        {displayText}
-      </p>
+      <div className="mb-7 sm:mb-8">
+        <p className={`text-justify text-sm sm:text-base text-c4 leading-relaxed ${!isExpanded ? 'line-clamp-4' : ''}`}>
+          {service.description}
+        </p>
+      </div>
 
       {shouldTruncate && (
         <div className="flex justify-center mb-7 sm:mb-8">

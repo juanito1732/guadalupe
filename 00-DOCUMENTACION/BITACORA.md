@@ -959,3 +959,6 @@ GUADIS v2.0 está COMPLETAMENTE LISTO para Vercel deployment. Código profesiona
 
 ## [2026-01-07]
 - Align 'Leer más' buttons at same position across all cards
+
+## [2026-01-07]
+- Fix button alignment using line-clamp-4
