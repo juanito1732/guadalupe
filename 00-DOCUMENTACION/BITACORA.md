@@ -941,3 +941,6 @@ GUADIS v2.0 está COMPLETAMENTE LISTO para Vercel deployment. Código profesiona
 
 ## [2026-01-07]
 - Crear favicon SVG vectorial de la imagen original
+
+## [2026-01-07]
+- Add blue favicon with Lady Justice icon
