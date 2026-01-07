@@ -5,7 +5,7 @@ import ServiceCard from './ServiceCard'
 
 export default function Services() {
   return (
-    <section id="services" className="scroll-mt-24 sm:scroll-mt-28 md:scroll-mt-32 py-12 sm:py-16 md:py-20 px-4 bg-c1">
+    <section id="services" className="scroll-mt-24 sm:scroll-mt-28 md:scroll-mt-32 py-12 sm:py-16 md:py-20 px-4 bg-white">
       <div className="container-custom">
         <div className="mb-10 sm:mb-12 md:mb-16">
           <h2 className="text-2xl xs:text-3xl sm:text-4xl font-serif font-bold mb-3 sm:mb-4 text-center">{content.services.title}</h2>
