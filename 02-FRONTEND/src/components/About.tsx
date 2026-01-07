@@ -91,7 +91,9 @@ export default function About() {
                 </p>
               </div>
 
-              {(idx === 1 || idx === 2) && feature.description.length > 150 && (
+              {idx === 0 ? (
+                <div className="h-[44px]"></div>
+              ) : (idx === 1 || idx === 2) && feature.description.length > 150 ? (
                 <div className="flex justify-center">
                   <button
                     onClick={() => toggleFeature(idx)}
@@ -100,7 +102,7 @@ export default function About() {
                     {expandedFeatures[idx] ? 'Leer menos' : 'Leer más'}
                   </button>
                 </div>
-              )}
+              ) : null}
             </motion.div>
           ))}
         </div>
