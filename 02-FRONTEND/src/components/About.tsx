@@ -37,7 +37,7 @@ export default function About() {
 
           <div className="max-w-4xl mx-auto px-2">
             {/* Primer bloque de texto */}
-            <p className={`text-justify text-base sm:text-lg md:text-xl text-c4 whitespace-pre-line mb-8 ${!isExpanded ? 'line-clamp-3' : ''}`}>
+            <p className={`text-left text-base sm:text-lg md:text-xl text-c4 whitespace-pre-line mb-8 ${!isExpanded ? 'line-clamp-3' : ''}`}>
               {content.about.description1}
             </p>
 
@@ -49,7 +49,7 @@ export default function About() {
                 </h4>
 
                 {/* Segundo bloque de texto */}
-                <p className="text-justify text-base sm:text-lg md:text-xl text-c4 whitespace-pre-line">
+                <p className="text-left text-base sm:text-lg md:text-xl text-c4 whitespace-pre-line">
                   {content.about.description2}
                 </p>
               </>
@@ -85,7 +85,7 @@ export default function About() {
                 {feature.title}
               </h3>
 
-              <p className={`text-justify text-sm sm:text-base text-c4 leading-relaxed flex-grow ${(idx === 1 || idx === 2) && !expandedFeatures[idx] && feature.description.length > 150 ? 'line-clamp-3' : ''}`}>
+              <p className={`text-left text-sm sm:text-base text-c4 leading-relaxed flex-grow ${(idx === 1 || idx === 2) && !expandedFeatures[idx] && feature.description.length > 150 ? 'line-clamp-3' : ''}`}>
                 {feature.description}
               </p>
 

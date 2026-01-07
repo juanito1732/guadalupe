@@ -17,7 +17,7 @@ export default function MyStory() {
 
         <div className="max-w-4xl mx-auto">
           <div className="prose prose-lg max-w-none">
-            <p className={`text-justify text-base sm:text-lg md:text-xl text-c4 leading-relaxed whitespace-pre-line ${!isExpanded ? 'line-clamp-6' : ''}`}>
+            <p className={`text-left text-base sm:text-lg md:text-xl text-c4 leading-relaxed whitespace-pre-line ${!isExpanded ? 'line-clamp-6' : ''}`}>
               {content.myStory.content}
             </p>
 

@@ -37,7 +37,7 @@ export default function Hero() {
           </h1>
 
           {/* Descripción - Responsive */}
-          <p className="text-justify text-sm xs:text-base sm:text-lg md:text-xl text-c2 mb-5 xs:mb-6 sm:mb-8 leading-relaxed max-w-full">
+          <p className="text-left text-sm xs:text-base sm:text-lg md:text-xl text-c2 mb-5 xs:mb-6 sm:mb-8 leading-relaxed max-w-full">
             {content.hero.description}
           </p>
 

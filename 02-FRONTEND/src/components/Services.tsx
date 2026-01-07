@@ -9,7 +9,7 @@ export default function Services() {
       <div className="container-custom">
         <div className="mb-12 sm:mb-16 md:mb-20">
           <h2 className="text-2xl xs:text-3xl sm:text-4xl font-serif font-bold mb-5 sm:mb-6 text-center">{content.services.title}</h2>
-          <p className="text-base sm:text-lg md:text-xl text-c4 max-w-2xl mx-auto px-2 text-justify whitespace-pre-line mb-6">
+          <p className="text-base sm:text-lg md:text-xl text-c4 max-w-2xl mx-auto px-2 text-left whitespace-pre-line mb-6">
             {content.services.description}
           </p>
           <h3 className="text-2xl xs:text-3xl sm:text-4xl font-serif font-bold text-center text-c5 mt-8">
