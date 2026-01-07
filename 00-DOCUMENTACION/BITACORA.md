@@ -872,3 +872,6 @@ GUADIS v2.0 está COMPLETAMENTE LISTO para Vercel deployment. Código profesiona
 
 ## [2026-01-07]
 - Ampliar ancho del texto del footer para evitar viudas tipográficas
+
+## [2026-01-07]
+- Prevenir viudas tipográficas en texto del footer

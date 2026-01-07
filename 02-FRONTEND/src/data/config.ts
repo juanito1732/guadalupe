@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: 'Estudio Jurídico Dra. María Guadalupe Juárez',
   shortName: 'Guadalupe',
-  description: 'Más de 20 años de experiencia en asesoría legal integral especializada en derecho de familia, sucesiones, amparos de salud y derecho de daños. Brindamos soluciones legales con enfoque personalizado y perspectiva de género para cada cliente.',
+  description: 'Más de 20 años de experiencia en asesoría legal integral especializada en derecho de familia, sucesiones, amparos de salud y derecho de daños. Brindamos soluciones legales con enfoque personalizado y perspectiva de género para cada\u00A0cliente.',
   url: 'https://estudiomgj.com.ar',
   ogImage: 'https://estudiomgj.com.ar/og-image.jpg',
   locale: 'es-AR',

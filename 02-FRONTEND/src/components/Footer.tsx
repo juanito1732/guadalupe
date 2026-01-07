@@ -24,7 +24,7 @@ export default function Footer() {
 
           {/* Descripción - Centro */}
           <div className="flex items-center justify-center">
-            <p className="text-c1 text-xs sm:text-sm leading-relaxed text-justify max-w-2xl md:max-w-3xl lg:max-w-4xl">
+            <p className="text-c1 text-xs sm:text-sm leading-relaxed text-justify max-w-2xl md:max-w-3xl lg:max-w-4xl" style={{ textWrap: 'pretty', orphans: 3, widows: 3 }}>
               {siteConfig.description}
             </p>
           </div>
