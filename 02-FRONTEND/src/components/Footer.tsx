@@ -12,7 +12,7 @@ export default function Footer() {
         {/* Layout responsive: 3 columnas en desktop */}
         <div className="flex flex-col md:grid md:grid-cols-3 items-center gap-6 md:gap-8 mb-4 md:mb-2">
           {/* Logo - Izquierda */}
-          <div className="flex flex-col items-center md:items-start gap-3">
+          <div className="flex items-center gap-4 justify-center md:justify-start">
             <Image
               src="/logo-estudio-juridico-white.svg"
               alt={content.footer.about.title}
@@ -29,7 +29,7 @@ export default function Footer() {
               <img
                 src="http://www.afip.gob.ar/images/f960/DATAWEB.jpg"
                 alt="Data Fiscal AFIP"
-                className="w-16 sm:w-20 h-auto"
+                className="w-12 sm:w-16 h-auto"
               />
             </a>
           </div>

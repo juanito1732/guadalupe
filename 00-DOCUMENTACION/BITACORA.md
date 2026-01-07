@@ -860,3 +860,6 @@ GUADIS v2.0 está COMPLETAMENTE LISTO para Vercel deployment. Código profesiona
 
 ## [2026-01-07]
 - feat: Agregar logo Data Fiscal AFIP en footer
+
+## [2026-01-07]
+- fix: Posicionar logo Data Fiscal a la derecha y reducir tamaño
