@@ -893,3 +893,6 @@ GUADIS v2.0 está COMPLETAMENTE LISTO para Vercel deployment. Código profesiona
 
 ## [2026-01-07]
 - Fix: Agregar sección Mi Historia y corregir estructura About
+
+## [2026-01-07]
+- Fix: Restaurar título principal 'Tu Abogada de Confianza' en Hero
