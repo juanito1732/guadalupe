@@ -37,9 +37,9 @@ export default function ServiceCard({ service }: { service: Service }) {
         </button>
       )}
 
-      <ul className="space-y-2 sm:space-y-3 text-center">
+      <ul className="space-y-2 sm:space-y-3 flex flex-col items-center">
         {service.features.map((feature, idx) => (
-          <li key={idx} className="flex items-center justify-center">
+          <li key={idx} className="flex items-start">
             <span className="text-c4 mr-2 sm:mr-3 font-bold text-base sm:text-lg flex-shrink-0">✓</span>
             <span className="text-xs sm:text-sm text-c5 leading-relaxed">
               {feature}
