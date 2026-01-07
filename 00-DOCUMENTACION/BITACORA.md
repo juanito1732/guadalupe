@@ -890,3 +890,6 @@ GUADIS v2.0 está COMPLETAMENTE LISTO para Vercel deployment. Código profesiona
 
 ## [2026-01-07]
 - Fix: Separar título y subtítulo en Hero section
+
+## [2026-01-07]
+- Fix: Agregar sección Mi Historia y corregir estructura About

@@ -1,0 +1,317 @@
+================================================================================
+                      COMIENZA AQUI - AUDITORÍA LIMPIEZA
+                        PROYECTO GUADALUPE 2026-01-03
+================================================================================
+
+Bienvenido. Se ha completado una auditoría de limpieza documentacional.
+
+Este archivo te guía a dónde ir primero.
+
+================================================================================
+¿QUIÉN ERES?
+================================================================================
+
+OPCIÓN A - Soy PM o Decision Maker
+  └─ Ve a: PASO 1 abajo
+
+OPCIÓN B - Soy Developer que ejecutará cambios
+  └─ Ve a: PASO 2 abajo
+
+OPCIÓN C - Soy Auditor revisando completitud
+  └─ Ve a: PASO 3 abajo
+
+OPCIÓN D - No sé, quiero resumen general
+  └─ Ve a: PASO 4 abajo
+
+================================================================================
+PASO 1: PM / DECISION MAKER
+================================================================================
+
+Tiempo requerido: 20-30 minutos
+
+1. Lee este archivo hasta aquí (2 minutos)
+
+2. Lee: HALLAZGOS-CLAVE-AUDITORIA.txt
+   Ubicación: /guadalupe/
+   Lee: Secciones "PROBLEMA PRINCIPAL" y "HALLAZGOS PRINCIPALES"
+   Tiempo: 10 minutos
+
+3. Lee: RESUMEN-EJECUTIVO-AUDITORIA-LIMPIEZA.md
+   Ubicación: /guadalupe/
+   Lee: Secciones "MATRIZ DE ACCIONES" y "DECISIONES REQUERIDAS"
+   Tiempo: 10 minutos
+
+4. Toma decisiones sobre los 6 puntos en "DECISIONES REQUERIDAS"
+
+5. Comunica decisiones al equipo técnico
+
+LISTO. Ahora el equipo técnico puede proceder.
+
+================================================================================
+PASO 2: DEVELOPER EJECUTOR
+================================================================================
+
+Tiempo requerido: 1-2 horas
+
+1. Lee este archivo hasta aquí (2 minutos)
+
+2. Lee: AUDITORIA-LIMPIEZA-README.md
+   Ubicación: /guadalupe/00-DOCUMENTACION/
+   Lee: Todo, especialmente "FLUJO DE LECTURA" para developers
+   Tiempo: 10 minutos
+
+3. Lee: RESUMEN-EJECUTIVO-AUDITORIA-LIMPIEZA.md
+   Ubicación: /guadalupe/
+   Lee: Cuidadosamente la tabla maestra de archivos
+   Tiempo: 20 minutos
+
+4. Lee: MATRIZ-ACCIONES-LIMPIEZA.md
+   Ubicación: /guadalupe/
+   Lee: "TABLA MAESTRA" y "PLAN DE EJECUCIÓN PASO A PASO"
+   Tiempo: 30 minutos
+
+5. Si tienes preguntas sobre análisis detallado:
+   Lee: AUDITORIA-LIMPIEZA-PROYECTO-GUADALUPE-2026-01-03.md
+   Ubicación: /guadalupe/
+   Lee: Según necesidad
+   Tiempo: Variable
+
+6. Ejecuta cambios siguiendo MATRIZ-ACCIONES-LIMPIEZA.md exactamente
+
+LISTO. Ahora tienes plan claro para la ejecución.
+
+================================================================================
+PASO 3: AUDITOR / REVISOR
+================================================================================
+
+Tiempo requerido: 2-3 horas
+
+1. Lee este archivo hasta aquí (2 minutos)
+
+2. Lee: INDICE-REPORTES-AUDITORIA.md
+   Ubicación: /guadalupe/
+   Lee: Todo
+   Tiempo: 15 minutos
+
+3. Lee en orden:
+   a) HALLAZGOS-CLAVE-AUDITORIA.txt (15 minutos)
+   b) RESUMEN-EJECUTIVO-AUDITORIA-LIMPIEZA.md (30 minutos)
+   c) AUDITORIA-LIMPIEZA-PROYECTO-GUADALUPE-2026-01-03.md (60 minutos)
+   d) MATRIZ-ACCIONES-LIMPIEZA.md (30 minutos)
+
+4. Verifica completitud y coherencia
+
+LISTO. Tienes auditoría completa.
+
+================================================================================
+PASO 4: RESUMEN GENERAL RÁPIDO
+================================================================================
+
+Tiempo requerido: 10-15 minutos
+
+PROBLEMA:
+  • 20 archivos .md en raíz cuando debería haber 3-5
+  • Documentación operativa, histórica y de auditoría mezclada
+  • 4 potenciales duplicaciones
+  • Estructura poco profesional
+
+SOLUCIÓN:
+  • Mover 9 archivos obsoletos a ARCHIVO-HISTORICO
+  • Consolidar/resolver 4 duplicaciones
+  • Reorganizar 10 archivos operativos a OPERATIVA/
+  • Revisar 2 scripts auxiliares
+
+BENEFICIO:
+  • Raíz 75-85% más limpia
+  • Mejor navegación
+  • Proyecto más profesional
+  • Menos confusión
+
+ESFUERZO:
+  • 7-10 horas distribuidas
+  • 2-3 sesiones de trabajo
+  • Bajo riesgo
+
+DOCUMENTOS:
+  • 7 documentos generados
+  • 1900+ líneas de análisis
+  • Matriz de acciones detallada
+
+LISTO. Ahora lee HALLAZGOS-CLAVE-AUDITORIA.txt para detalles.
+
+================================================================================
+DOCUMENTOS DISPONIBLES
+================================================================================
+
+EN RAÍZ (/guadalupe/):
+
+  1. COMIENZA-AQUI-AUDITORIA.txt (este archivo)
+     → Guía de lectura rápida
+     → LEER PRIMERO
+
+  2. HALLAZGOS-CLAVE-AUDITORIA.txt
+     → Hallazgos principales resumidos
+     → Leer para overview
+
+  3. RESUMEN-EJECUTIVO-AUDITORIA-LIMPIEZA.md
+     → Resumen visual con tablas
+     → Leer para entender proyecto
+
+  4. AUDITORIA-LIMPIEZA-PROYECTO-GUADALUPE-2026-01-03.md
+     → Análisis completo y detallado
+     → Leer para comprender TODO
+
+  5. MATRIZ-ACCIONES-LIMPIEZA.md
+     → Plan de ejecución paso a paso
+     → Leer si vas a ejecutar cambios
+
+  6. INDICE-REPORTES-AUDITORIA.md
+     → Índice de todos los reportes
+     → Leer para entender estructura
+
+  7. REPORTE-FINAL-AUDITORIA-2026-01-03.txt
+     → Resumen final ejecutivo
+     → Leer para conclusiones
+
+EN 00-DOCUMENTACION/:
+
+  8. AUDITORIA-LIMPIEZA-README.md
+     → Guía de lectura por rol
+     → Leer para orientación
+
+================================================================================
+PRÓXIMOS PASOS INMEDIATOS
+================================================================================
+
+HOY:
+  [ ] Identifica tu rol (PM, Dev, Auditor, General)
+  [ ] Sigue el paso correspondiente (1-4 arriba)
+  [ ] Lee documentos indicados
+  [ ] Toma tiempo para entender
+
+ESTA SEMANA:
+  [ ] Equipo técnico valida decisiones requeridas
+  [ ] Equipomanifiesta si hay preguntas
+  [ ] PM comunica decisiones
+
+PRÓXIMA SEMANA:
+  [ ] Dev prepara branch: cleanup/documentacion-2026-01-03
+  [ ] Dev comienza ejecución según MATRIZ-ACCIONES
+
+================================================================================
+DECISIONES REQUERIDAS DEL EQUIPO
+================================================================================
+
+Antes de ejecución, responder SÍ O NO:
+
+1. ¿Archivos testing (GUIA-TESTING-PALETAS-MANUAL, PROBAR-PALETAS) obsoletos?
+   [ ] SÍ  [ ] NO
+
+2. ¿DEPLOYMENT_RULES y DEPLOY-WORKFLOW son duplicados?
+   [ ] CONSOLIDAR EN UNO  [ ] MANTENER SEPARADOS CON DOCUMENTACIÓN
+
+3. ¿OG-IMAGE-SETUP y PERSONALIZAR-OG-IMAGE se fusionan?
+   [ ] FUSIONAR  [ ] MANTENER SEPARADOS
+
+4. ¿vercel.json en /02-FRONTEND/ es necesario?
+   [ ] MANTENER  [ ] ELIMINAR
+
+5. ¿generate-og-image.py se usa actualmente?
+   [ ] SÍ  [ ] NO
+
+6. ¿verificar-nameservers.sh se usa actualmente?
+   [ ] SÍ  [ ] NO
+
+NOTA: PM recoge respuestas y comunica a Dev antes de PASO 5
+
+================================================================================
+RECOMENDACIONES GENERALES
+================================================================================
+
+• NO HAY CAMBIOS AÚN - Solo revisión y reporte
+• Git preserva todo si hay cambios
+• Mejor leer documentos correctamente que apurar
+• Hacer decisiones ANTES de ejecutar cambios
+• Ejecutar en fases pequeñas, no todo junto
+• Actualizar referencias después de cada fase
+
+================================================================================
+PREGUNTAS FRECUENTES
+================================================================================
+
+P: ¿Necesito leer todos los documentos?
+R: No. Lee según tu rol (1-4 arriba)
+
+P: ¿Cuánto tiempo toma?
+R: 20 minutos (PM) a 3 horas (Auditor completo)
+
+P: ¿Afecta esto al proyecto en vivo?
+R: No, solo reorganiza documentación
+
+P: ¿Puede revertirse?
+R: Sí, Git preserva todo
+
+P: ¿Quién ejecuta los cambios?
+R: Un Developer después que PM da OK
+
+P: ¿Necesito validación antes de empezar?
+R: Sí, PM debe responder 6 decisiones
+
+P: ¿Dónde están los archivos?
+R: Todos en /guadalupe/ y subdirectorios
+
+P: ¿Cuál es la prioridad?
+R: MEDIA-ALTA (beneficio 75%, esfuerzo 7-10h)
+
+================================================================================
+GUÍA VISUAL DE UBICACIÓN
+================================================================================
+
+EN /guadalupe/:
+  ├── COMIENZA-AQUI-AUDITORIA.txt ........... LEER PRIMERO
+  ├── HALLAZGOS-CLAVE-AUDITORIA.txt ........ Hallazgos
+  ├── RESUMEN-EJECUTIVO-AUDITORIA-LIMPIEZA.md  Resumen visual
+  ├── AUDITORIA-LIMPIEZA-PROYECTO-GUADALUPE-2026-01-03.md  Análisis
+  ├── MATRIZ-ACCIONES-LIMPIEZA.md .......... Plan ejecución
+  ├── INDICE-REPORTES-AUDITORIA.md ........ Índice reportes
+  ├── REPORTE-FINAL-AUDITORIA-2026-01-03.txt  Conclusiones
+  │
+  └── 00-DOCUMENTACION/
+      └── AUDITORIA-LIMPIEZA-README.md .... Guía por rol
+
+================================================================================
+CONTACTO Y SOPORTE
+================================================================================
+
+Auditor: Claude Code
+Fecha: 3 Enero 2026
+Status: COMPLETO - Sin cambios realizados
+
+Para preguntas o dudas:
+  1. Busca respuesta en documentos apropiados
+  2. Si es pregunta técnica → MATRIZ-ACCIONES-LIMPIEZA.md
+  3. Si es sobre decisiones → RESUMEN-EJECUTIVO-AUDITORIA-LIMPIEZA.md
+  4. Si es general → HALLAZGOS-CLAVE-AUDITORIA.txt
+  5. Si aún no responde → AUDITORIA-LIMPIEZA-PROYECTO-GUADALUPE-2026-01-03.md
+
+================================================================================
+¿LISTO PARA COMENZAR?
+================================================================================
+
+PASO 1 (Recomendado para todos):
+  Lee HALLAZGOS-CLAVE-AUDITORIA.txt (10 minutos)
+
+LUEGO:
+  Ve al paso de tu rol (arriba)
+
+PREGUNTAS:
+  Consulta documentos apropiados
+
+LISTO:
+  Comunica decisiones y comienza ejecución cuando esté OK
+
+================================================================================
+
+COMIENZA CON: HALLAZGOS-CLAVE-AUDITORIA.txt
+
+================================================================================
