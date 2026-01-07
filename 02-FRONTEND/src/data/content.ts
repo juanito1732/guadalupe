@@ -42,7 +42,7 @@ export const content = {
       },
       {
         title: 'Confidencialidad Garantizada',
-        description: 'Uno de los principios rectores de nuestro estudio, es el secreto profesional, es por ello que ninguna información confidencial relacionada con los negocios de nuestros clientes y con los asuntos que se nos han confiado será develada por el Estudio',
+        description: 'Uno de los principios rectores de nuestro estudio, es el secreto profesional, es por ello que ninguna información confidencial relacionada con los negocios de nuestros clientes y con los asuntos que se nos han confiado será develada por el Estudio.',
       },
     ],
   },
