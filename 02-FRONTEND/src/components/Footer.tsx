@@ -12,7 +12,7 @@ export default function Footer() {
         {/* Layout responsive: 3 columnas en desktop */}
         <div className="flex flex-col md:grid md:grid-cols-3 items-center gap-6 md:gap-8 mb-4 md:mb-2">
           {/* Logo - Izquierda */}
-          <div className="flex justify-center md:justify-start">
+          <div className="flex flex-col items-center md:items-start gap-3">
             <Image
               src="/logo-estudio-juridico-white.svg"
               alt={content.footer.about.title}
@@ -20,6 +20,18 @@ export default function Footer() {
               height={120}
               className="h-24 sm:h-28 md:h-32 w-auto flex-shrink-0"
             />
+            {/* Logo Data Fiscal AFIP */}
+            <a
+              href="http://qr.afip.gob.ar/?qr=dSEHzgWf6BvhK-zuZdBtrw,,"
+              target="_F960AFIPInfo"
+              className="opacity-80 hover:opacity-100 transition-opacity"
+            >
+              <img
+                src="http://www.afip.gob.ar/images/f960/DATAWEB.jpg"
+                alt="Data Fiscal AFIP"
+                className="w-16 sm:w-20 h-auto"
+              />
+            </a>
           </div>
 
           {/* Descripción - Centro */}
