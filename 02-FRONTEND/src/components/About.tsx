@@ -65,7 +65,7 @@ export default function About() {
                 {feature.title}
               </h3>
 
-              <p className={`text-center text-sm sm:text-base text-c4 leading-relaxed flex-grow ${!expandedFeatures[idx] && feature.description.length > 150 ? 'line-clamp-3' : ''}`}>
+              <p className={`text-center text-sm sm:text-base text-c4 leading-relaxed flex-grow ${idx === 1 && !expandedFeatures[idx] && feature.description.length > 150 ? 'line-clamp-3' : ''}`}>
                 {feature.description}
               </p>
 
