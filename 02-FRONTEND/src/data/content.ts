@@ -16,9 +16,9 @@ export const content = {
   // SECCIÓN HERO (Portada principal)
   // ============================================
   hero: {
-    subtitle: 'Asesoría Jurídica Profesional',
+    subtitle: 'Resolver, Reparar, Reconstruir y Prosperar',
     title: 'Tu Abogada de Confianza',
-    description: 'Con 20+ años de experiencia resolviendo casos de familia, sucesiones y amparos de salud. Profesionalismo, integridad y resultados.',
+    description: 'En la vida cotidiana, estamos inmersos en todo tipo de situaciones regidas por el derecho. Cada acto que ejercemos por pequeño que parezca se encuentra regulado en nuestro ordenamiento legal, por eso es importante conocer tus derechos y obligaciones en detalle. Durante Más de 20 años, nuestro estudio de servicios jurídicos integrales ha estado ayudando a personas en todo el país, a resolver diferentes problemas relacionados con alimentos, cuidado personal, comunicación con los hijos, divorcios, liquidación de sociedad conyugal, compensaciones económicas, sucesiones, disposiciones de última voluntad, medidas clínicas anticipadas, pactos de convivencia, acuerdos prenupciales, daños ocasionados en las relaciones de familia, amparos de salud, entre otros.',
     ctaButton: 'Solicita tu consulta',
     ctaUrl: 'https://wa.me/542266481512?text=Hola,%20quisiera%20solicitar%20una%20consulta',
   },
@@ -27,8 +27,9 @@ export const content = {
   // SECCIÓN ABOUT (Sobre Nosotros)
   // ============================================
   about: {
-    title: 'Sobre Nuestro Estudio',
-    description: 'Durante más de 20 años hemos ayudado a personas en todo el país a resolver sus problemas de familia, sucesiones y amparos de salud.',
+    title: 'Estamos Aquí Para Ayudarte',
+    subtitle: 'RECORDÁ… NO PODÉS DEFENDER NI EXIGIR DERECHOS QUE NO CONOCÉS, POR ESO SIEMPRE CONSULTÁ A TU ABOGADA DE CONFIANZA',
+    description: 'El estudio brinda asesoramiento y patrocinio jurídico integral desde el año 2004, habiendo comenzado en la ciudad de La Plata, para luego expandirnos hacia Mar del Plata y Balcarce, donde actualmente reside nuestra sede y desde donde trabajamos en toda la provincia de Buenos Aires y resto del país.\n\nProveemos servicios de consultoría, asesoramiento legal y defensa en juicio en casos de familia, sucesiones, daños y amparos de salud, contando con especialistas en cada área, cubriendo desde la investigación preliminar del caso, hasta la etapa final del mismo sea prejudicial, o judicial, siguiendo cada etapa con gran profesionalismo.\n\nNuestro objetivo es brindarte soluciones eficaces e innovadoras, tratando de otorgarte siempre los mayores beneficios y sobre todo tranquilidad y seguridad durante todo el proceso.\n\nPor una abogacía diferente.\n\nAbogamos por el respeto y cumplimiento de todos tus derechos sin vulnerar el derecho del otro, procuramos un acompañamiento permanente en la resolución de los conflictos legales, en un marco de contención, empatía y confianza que permite al cliente sentirse cómodo/a y seguro/a a la hora de buscar asesoramiento jurídico y confiar sus asuntos.\n\nCreemos que una abogacía diferente es posible, generando un ambiente de calidez y amabilidad que busca conectar con el otro sin rivalidades, evitando caer en los estereotipos de siempre que lo único que hacen es generar más conflicto y alejarnos de las soluciones.\n\nEntendemos que enfrentar una situación jurídica muchas veces es estresante y a veces angustiante, por eso trabajamos de manera interdisciplinaria para brindarte tranquilidad al mismo tiempo que encontramos la solución.\n\nTrabajamos en el respeto absoluto de los principios generales del derecho y su ferviente aplicación.\n\nContamos con un 92% de efectividad en la firma de convenios, donde se acuerdan y respetan los derechos de ambas partes, protegiendo además un fin social, que colabora en la construcción de una sociedad mejor y menos conflictiva.',
 
     features: [
       {
@@ -37,11 +38,11 @@ export const content = {
       },
       {
         title: 'Especialización Integral',
-        description: 'Especialistas en familia, civil y amparos de salud. Desde investigación hasta sentencia, cubrimos todo el proceso.',
+        description: 'Aspiramos a mantener con nuestros clientes una relación duradera y satisfactoria brindando un servicio de primer nivel, en el marco de la más absoluta discreción y dedicación. Contamos con especialistas altamente calificados en el manejo de negociaciones que nos permite obtener un altísimo grado de efectividad en etapa prejudicial, simplificando de esa manera los procesos y acelerando los resultados para que nuestros clientes, encuentren efectiva y satisfactoria solución en el menor tiempo posible.',
       },
       {
         title: 'Confidencialidad Garantizada',
-        description: 'Protegemos tus datos personales con total discreción. Tu privacidad es nuestra prioridad.',
+        description: 'Uno de los principios rectores de nuestro estudio, es el secreto profesional, es por ello que ninguna información confidencial relacionada con los negocios de nuestros clientes y con los asuntos que se nos han confiado será develada por el Estudio',
       },
     ],
   },
@@ -51,7 +52,7 @@ export const content = {
   // ============================================
   services: {
     title: 'Nuestros Servicios',
-    description: 'Ofrecemos un amplio espectro de servicios jurídicos diseñados para cubrir todas tus necesidades legales.',
+    description: 'Los abogados tenemos una única misión: Ayudar a las personas a defender sus derechos y hacerlos valer ante terceros, procurando la máxima justicia en cada caso. El abogado utiliza el conocimiento de la ley para obtener el cumplimiento de sus derechos, haciendo respetar a cada individuo.',
 
     list: [
       {
@@ -183,7 +184,7 @@ export const content = {
   footer: {
     about: {
       title: 'Estudio Jurídico',
-      description: 'Más de 20 años brindando asesoramiento legal integral con profesionalismo y dedicación.',
+      description: 'Más de 20 años de experiencia en asesoría legal integral especializada en derecho de familia, sucesiones, amparos de salud y derecho de daños. Brindamos soluciones legales con enfoque personalizado y perspectiva de género para cada cliente.',
     },
 
     links: {

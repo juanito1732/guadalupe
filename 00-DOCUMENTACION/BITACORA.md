@@ -815,3 +815,6 @@ GUADIS v2.0 está COMPLETAMENTE LISTO para Vercel deployment. Código profesiona
 
 ## [2026-01-04]
 - fix: Ajustar scroll offset para navegación con header fijo
+
+## [2026-01-07]
+- feat: Actualizar contenido con textos de la clienta y agregar Leer más

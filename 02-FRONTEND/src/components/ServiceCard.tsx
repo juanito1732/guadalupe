@@ -1,10 +1,13 @@
 'use client'
 
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Service } from '@/data/services'
 import ServiceIcon from './ServiceIcon'
 
 export default function ServiceCard({ service }: { service: Service }) {
+  const [isExpanded, setIsExpanded] = useState(false)
+
   return (
     <motion.div
       whileHover={{ translateY: -10 }}
@@ -21,9 +24,29 @@ export default function ServiceCard({ service }: { service: Service }) {
         {service.title}
       </h3>
 
-      <p className="text-sm sm:text-base text-c4 mb-5 sm:mb-6 leading-relaxed">
+      <p className={`text-sm sm:text-base text-c4 mb-5 sm:mb-6 leading-relaxed ${isExpanded ? '' : 'line-clamp-2'}`}>
         {service.description}
       </p>
+
+      {!isExpanded && (
+        <button
+          onClick={() => setIsExpanded(true)}
+          className="text-c4 hover:text-c5 font-semibold text-sm mb-5 sm:mb-6 transition-colors duration-200 inline-flex items-center gap-1"
+        >
+          Leer más
+          <span className="text-xs">→</span>
+        </button>
+      )}
+
+      {isExpanded && (
+        <button
+          onClick={() => setIsExpanded(false)}
+          className="text-c4 hover:text-c5 font-semibold text-sm mb-5 sm:mb-6 transition-colors duration-200 inline-flex items-center gap-1"
+        >
+          Leer menos
+          <span className="text-xs">←</span>
+        </button>
+      )}
 
       <ul className="space-y-2 sm:space-y-3">
         {service.features.map((feature, idx) => (

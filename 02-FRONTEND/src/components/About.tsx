@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { FaFileAlt, FaClock, FaShieldAlt } from 'react-icons/fa'
 import { content } from '@/data/content'
@@ -16,14 +17,24 @@ const features = content.about.features.map((feature, idx) => ({
 }))
 
 export default function About() {
+  const [isExpanded, setIsExpanded] = useState(false)
+
   return (
     <section id="about" className="scroll-mt-24 sm:scroll-mt-28 md:scroll-mt-32 py-12 sm:py-16 md:py-20 px-4 bg-c1">
       <div className="container-custom">
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
           <h2 className="text-2xl xs:text-3xl sm:text-4xl font-serif font-bold mb-3 sm:mb-4">{content.about.title}</h2>
-          <p className="text-base sm:text-lg md:text-xl text-c4 max-w-2xl mx-auto px-2">
-            {content.about.description}
-          </p>
+          <div className="max-w-2xl mx-auto px-2">
+            <p className={`text-base sm:text-lg md:text-xl text-c4 ${!isExpanded ? 'line-clamp-3' : ''}`}>
+              {content.about.description}
+            </p>
+            <button
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="mt-4 px-4 py-2 text-sm sm:text-base font-semibold text-c5 hover:text-c6 transition-colors duration-200"
+            >
+              {isExpanded ? 'Leer menos' : 'Leer más'}
+            </button>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
