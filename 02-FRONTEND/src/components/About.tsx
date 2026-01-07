@@ -85,15 +85,17 @@ export default function About() {
                 {feature.title}
               </h3>
 
-              <p className={`text-left text-sm sm:text-base text-c4 leading-relaxed flex-grow ${(idx === 1 || idx === 2) && !expandedFeatures[idx] && feature.description.length > 150 ? 'line-clamp-3' : ''}`}>
-                {feature.description}
-              </p>
+              <div className={`mb-6 ${(idx === 1 || idx === 2) && !expandedFeatures[idx] && feature.description.length > 150 ? 'h-20' : ''}`}>
+                <p className={`text-left text-sm sm:text-base text-c4 leading-relaxed ${(idx === 1 || idx === 2) && !expandedFeatures[idx] && feature.description.length > 150 ? 'line-clamp-3' : ''}`}>
+                  {feature.description}
+                </p>
+              </div>
 
               {(idx === 1 || idx === 2) && feature.description.length > 150 && (
                 <div className="flex justify-center">
                   <button
                     onClick={() => toggleFeature(idx)}
-                    className="mt-6 px-4 py-2 text-sm font-bold text-c5 hover:text-c4 transition-colors duration-200"
+                    className="px-4 py-2 text-sm font-bold text-c5 hover:text-c4 transition-colors duration-200"
                   >
                     {expandedFeatures[idx] ? 'Leer menos' : 'Leer más'}
                   </button>

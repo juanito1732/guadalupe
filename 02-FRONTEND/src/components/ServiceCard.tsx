@@ -25,14 +25,14 @@ export default function ServiceCard({ service }: { service: Service }) {
         {service.title}
       </h3>
 
-      <div className="flex-grow mb-6 sm:mb-7">
+      <div className={`mb-6 sm:mb-7 ${!isExpanded ? 'h-20' : ''}`}>
         <p className={`text-left text-sm sm:text-base text-c4 leading-relaxed whitespace-pre-line ${!isExpanded ? 'line-clamp-3' : ''}`}>
           {service.description}
         </p>
       </div>
 
       {shouldShowButton && (
-        <div className="flex justify-center mb-6 sm:mb-7">
+        <div className="flex justify-center">
           <button
             onClick={() => setIsExpanded(!isExpanded)}
             className="px-4 py-2 text-sm font-bold text-c5 hover:text-c4 transition-colors duration-200"
