@@ -899,3 +899,6 @@ GUADIS v2.0 está COMPLETAMENTE LISTO para Vercel deployment. Código profesiona
 
 ## [2026-01-07]
 - Fix: Separar contenido About en dos bloques con subtítulo intermedio
+
+## [2026-01-07]
+- Fix: Separar subtítulo 'ÁREAS DE PRÁCTICA' en Services

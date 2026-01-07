@@ -9,9 +9,12 @@ export default function Services() {
       <div className="container-custom">
         <div className="mb-10 sm:mb-12 md:mb-16">
           <h2 className="text-2xl xs:text-3xl sm:text-4xl font-serif font-bold mb-3 sm:mb-4 text-center">{content.services.title}</h2>
-          <p className="text-base sm:text-lg md:text-xl text-c4 max-w-2xl mx-auto px-2 text-justify">
+          <p className="text-base sm:text-lg md:text-xl text-c4 max-w-2xl mx-auto px-2 text-justify whitespace-pre-line mb-4">
             {content.services.description}
           </p>
+          <h3 className="text-xl xs:text-2xl sm:text-3xl font-serif font-bold text-center text-c5 mt-6">
+            {content.services.subtitle}
+          </h3>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">

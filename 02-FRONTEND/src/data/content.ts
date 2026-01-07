@@ -49,7 +49,8 @@ export const content = {
   // ============================================
   services: {
     title: 'Nuestros Servicios',
-    description: 'Los abogados tenemos una única misión: "Ayudar a las personas a defender sus derechos y hacerlos valer ante terceros", procurando la máxima justicia en cada caso.\n\nEl abogado utiliza el conocimiento de la ley para obtener el cumplimiento de sus derechos, haciendo respetar a cada individuo.\n\nÁREAS DE PRÁCTICA',
+    description: 'Los abogados tenemos una única misión: "Ayudar a las personas a defender sus derechos y hacerlos valer ante terceros", procurando la máxima justicia en cada caso.\n\nEl abogado utiliza el conocimiento de la ley para obtener el cumplimiento de sus derechos, haciendo respetar a cada individuo.',
+    subtitle: 'ÁREAS DE PRÁCTICA',
 
     list: [
       {
