@@ -884,3 +884,6 @@ GUADIS v2.0 está COMPLETAMENTE LISTO para Vercel deployment. Código profesiona
 
 ## [2026-01-07]
 - Contenido FINAL - Solo lo especificado por el cliente
+
+## [2026-01-07]
+- Fix: Mostrar los 12 servicios del cliente desde content.ts
