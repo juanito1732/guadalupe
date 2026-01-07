@@ -10,8 +10,8 @@ export const content = {
   // SECCIÓN HERO (Portada principal)
   // ============================================
   hero: {
-    subtitle: 'Resolver, Reparar, Reconstruir y Prosperar\nSOMOS ESPECIALISTAS EN DERECHO DE DAÑOS Y FAMILIA',
-    title: 'Tu Abogada de Confianza',
+    title: 'Resolver, Reparar, Reconstruir y Prosperar',
+    subtitle: 'SOMOS ESPECIALISTAS EN DERECHO DE DAÑOS Y FAMILIA',
     description: 'En la vida cotidiana, estamos inmersos en todo tipo de situaciones regidas por el derecho. Cada acto que ejercemos por pequeño que parezca se encuentra regulado en nuestro ordenamiento legal, por eso es importante conocer tus derechos y obligaciones en detalle. Durante Más de 20 años, nuestro estudio de servicios jurídicos integrales ha estado ayudando a personas en todo el país, a resolver diferentes problemas relacionados con alimentos, cuidado personal, comunicación con los hijos, divorcios, liquidación de sociedad conyugal, compensaciones económicas, sucesiones, disposiciones de última voluntad, medidas clínicas anticipadas, pactos de convivencia, acuerdos prenupciales, daños ocasionados en las relaciones de familia, amparos de salud, entre otros. Profesionalismo, integridad y resultados.',
     ctaButton: 'Solicita tu consulta',
     ctaUrl: 'https://wa.me/542266481512?text=Hola,%20quisiera%20solicitar%20una%20consulta',

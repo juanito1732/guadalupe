@@ -21,15 +21,15 @@ export default function Hero() {
           transition={{ duration: 1.2, ease: 'easeOut' }}
           className="max-w-2xl"
         >
-          {/* Subtítulo - Responsive */}
-          <p className="text-c2 text-xs xs:text-sm sm:text-base md:text-lg font-semibold tracking-wide sm:tracking-widest uppercase mb-3 xs:mb-4 sm:mb-6">
-            {content.hero.subtitle}
-          </p>
-
           {/* Título Principal - Muy responsive */}
           <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-3 xs:mb-4 sm:mb-6 leading-tight">
             {content.hero.title}
           </h1>
+
+          {/* Subtítulo - Responsive - Debajo del título */}
+          <p className="text-c2 text-xs xs:text-sm sm:text-base md:text-lg font-semibold tracking-wide sm:tracking-widest uppercase mb-3 xs:mb-4 sm:mb-6">
+            {content.hero.subtitle}
+          </p>
 
           {/* Descripción - Responsive */}
           <p className="text-justify text-sm xs:text-base sm:text-lg md:text-xl text-c2 mb-5 xs:mb-6 sm:mb-8 leading-relaxed max-w-full">
