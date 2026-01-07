@@ -848,3 +848,6 @@ GUADIS v2.0 está COMPLETAMENTE LISTO para Vercel deployment. Código profesiona
 
 ## [2026-01-07]
 - fix: Aislar expansión tarjeta y ensanchar textos
+
+## [2026-01-07]
+- fix: Reducir ancho About description 30% (max-w-6xl a max-w-4xl)
