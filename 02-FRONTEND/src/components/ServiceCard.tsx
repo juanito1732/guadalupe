@@ -12,19 +12,19 @@ export default function ServiceCard({ service }: { service: Service }) {
     <motion.div
       whileHover={{ translateY: -10 }}
       transition={{ duration: 0.4, ease: 'easeInOut' }}
-      className="p-6 sm:p-8 bg-c1 rounded-xl border-2 border-c3 shadow-md hover:shadow-xl transition-all duration-300 hover:border-c4"
+      className="p-7 sm:p-9 bg-c1 rounded-xl border-2 border-c3 shadow-md hover:shadow-xl transition-all duration-300 hover:border-c4"
     >
-      <div className="mb-4 sm:mb-6 flex justify-center">
+      <div className="mb-5 sm:mb-7 flex justify-center">
         <div className="w-14 h-14 sm:w-16 sm:h-16 bg-c4 rounded-xl flex items-center justify-center text-white shadow-lg hover:shadow-xl transition-shadow hover:bg-c5">
           <ServiceIcon type={service.iconType} size={28} />
         </div>
       </div>
 
-      <h3 className="text-center text-lg sm:text-xl font-serif font-bold mb-2 sm:mb-3 text-c5">
+      <h3 className="text-center text-lg sm:text-xl font-serif font-bold mb-3 sm:mb-4 text-c5">
         {service.title}
       </h3>
 
-      <p className={`text-justify text-sm sm:text-base text-c4 mb-5 sm:mb-6 leading-relaxed ${service.description.length > 200 && !isExpanded ? 'line-clamp-2' : ''}`}>
+      <p className={`text-justify text-sm sm:text-base text-c4 mb-6 sm:mb-7 leading-relaxed ${service.description.length > 200 && !isExpanded ? 'line-clamp-2' : ''}`}>
         {service.description}
       </p>
 
@@ -32,14 +32,14 @@ export default function ServiceCard({ service }: { service: Service }) {
         <div className="flex justify-center">
           <button
             onClick={() => setIsExpanded(!isExpanded)}
-            className="mt-4 px-4 py-2 text-sm font-bold text-c5 hover:text-c4 transition-colors duration-200"
+            className="mt-5 px-4 py-2 text-sm font-bold text-c5 hover:text-c4 transition-colors duration-200"
           >
             {isExpanded ? 'Leer menos' : 'Leer más'}
           </button>
         </div>
       )}
 
-      <ul className="space-y-2 sm:space-y-3 flex flex-col items-center">
+      <ul className="space-y-3 sm:space-y-4 flex flex-col items-center">
         {service.features.map((feature, idx) => (
           <li key={idx} className="flex items-start text-justify">
             <span className="text-c4 mr-2 sm:mr-3 font-bold text-base sm:text-lg flex-shrink-0">✓</span>

@@ -5,10 +5,10 @@ import { content } from '@/data/content'
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="scroll-mt-24 sm:scroll-mt-28 md:scroll-mt-32 py-12 sm:py-16 md:py-20 px-4 bg-white">
+    <section id="testimonials" className="scroll-mt-24 sm:scroll-mt-28 md:scroll-mt-32 py-14 sm:py-18 md:py-24 px-4 bg-white">
       <div className="container-custom">
-        <div className="text-center mb-10 sm:mb-12 md:mb-16">
-          <h2 className="text-2xl xs:text-3xl sm:text-4xl font-serif font-bold mb-3 sm:mb-4">{content.testimonials.title}</h2>
+        <div className="text-center mb-11 sm:mb-14 md:mb-18">
+          <h2 className="text-2xl xs:text-3xl sm:text-4xl font-serif font-bold mb-4 sm:mb-5">{content.testimonials.title}</h2>
           <p className="text-base sm:text-lg md:text-xl text-c4 px-2">
             {content.testimonials.description}
           </p>
