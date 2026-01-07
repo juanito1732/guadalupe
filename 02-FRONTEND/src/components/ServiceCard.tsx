@@ -28,7 +28,7 @@ export default function ServiceCard({ service }: { service: Service }) {
         {service.description}
       </p>
 
-      {service.description.length > 100 && (
+      {service.description.length > 200 && (
         <button
           onClick={() => setIsExpanded(!isExpanded)}
           className="text-c4 hover:text-c5 font-semibold text-sm mb-5 sm:mb-6 transition-colors duration-200 inline-flex items-center gap-1"
