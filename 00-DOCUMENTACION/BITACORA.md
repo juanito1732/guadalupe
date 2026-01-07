@@ -908,3 +908,6 @@ GUADIS v2.0 está COMPLETAMENTE LISTO para Vercel deployment. Código profesiona
 
 ## [2026-01-07]
 - Fix: Mejorar visibilidad botones 'Leer más' y agregar a Confidencialidad
+
+## [2026-01-07]
+- Fix: Igualar altura de todas las tarjetas en About

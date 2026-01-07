@@ -64,14 +64,14 @@ export default function About() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 items-stretch">
           {features.map((feature, idx) => (
             <motion.div
               key={idx}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: idx * 0.1 }}
-              className="p-6 sm:p-8 bg-white rounded-lg border border-c2 shadow-sm hover:shadow-xl transition-shadow flex flex-col"
+              className="p-6 sm:p-8 bg-white rounded-lg border border-c2 shadow-sm hover:shadow-xl transition-shadow flex flex-col h-full"
             >
               <div className="flex justify-center mb-4 sm:mb-6">
                 <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-c4 to-c5 rounded-lg flex items-center justify-center text-white">
