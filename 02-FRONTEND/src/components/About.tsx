@@ -18,6 +18,15 @@ const features = content.about.features.map((feature, idx) => ({
 
 export default function About() {
   const [isExpanded, setIsExpanded] = useState(false)
+  const [expandedFeatures, setExpandedFeatures] = useState<boolean[]>([false, false, false])
+
+  const toggleFeature = (index: number) => {
+    setExpandedFeatures(prev => {
+      const newState = [...prev]
+      newState[index] = !newState[index]
+      return newState
+    })
+  }
 
   return (
     <section id="about" className="scroll-mt-24 sm:scroll-mt-28 md:scroll-mt-32 py-12 sm:py-16 md:py-20 px-4 bg-c1">
@@ -44,21 +53,30 @@ export default function About() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: idx * 0.1 }}
-              className="p-6 sm:p-8 bg-white rounded-lg border border-c2 shadow-sm hover:shadow-xl transition-shadow"
+              className="p-6 sm:p-8 bg-white rounded-lg border border-c2 shadow-sm hover:shadow-xl transition-shadow h-full flex flex-col"
             >
-              <div className="mb-4 sm:mb-6">
+              <div className="flex justify-center mb-4 sm:mb-6">
                 <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-c4 to-c5 rounded-lg flex items-center justify-center text-white">
                   <feature.icon size={28} />
                 </div>
               </div>
 
-              <h3 className="text-lg sm:text-xl font-serif font-bold mb-2 sm:mb-3">
+              <h3 className="text-center text-lg sm:text-xl font-serif font-bold mb-2 sm:mb-3">
                 {feature.title}
               </h3>
 
-              <p className="text-sm sm:text-base text-c4 leading-relaxed">
+              <p className={`text-center text-sm sm:text-base text-c4 leading-relaxed flex-grow ${!expandedFeatures[idx] && feature.description.length > 150 ? 'line-clamp-3' : ''}`}>
                 {feature.description}
               </p>
+
+              {feature.description.length > 150 && (
+                <button
+                  onClick={() => toggleFeature(idx)}
+                  className="mt-4 text-sm font-semibold text-c5 hover:text-c6 transition-colors duration-200 self-center"
+                >
+                  {expandedFeatures[idx] ? 'Leer menos ←' : 'Leer más →'}
+                </button>
+              )}
             </motion.div>
           ))}
         </div>

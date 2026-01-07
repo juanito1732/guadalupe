@@ -824,3 +824,6 @@ GUADIS v2.0 está COMPLETAMENTE LISTO para Vercel deployment. Código profesiona
 
 ## [2026-01-07]
 - fix: Cambiar límite de Leer más a 200 caracteres
+
+## [2026-01-07]
+- fix: Mejorar tarjetas de About - centrado y Leer más
