@@ -23,9 +23,9 @@ export const content = {
   // ============================================
   about: {
     title: 'RECORDA…\nNO PODES DEFENDER NI EXIGIR DERECHOS QUE NO CONOCES, POR ESO SIEMPRE\nCONSULTA A TU ABOGADA DE CONFIANZA',
-    subtitle: 'ESTAMOS AQUÍ PARA AYUDARTE',
+    subtitle: 'Estamos Aquí Para Ayudarte',
     description1: 'El estudio brinda asesoramiento y patrocinio jurídico integral desde el año 2004, habiendo comenzado en la ciudad de La Plata, para luego expandirnos hacia Mar del Plata y Balcarce, donde actualmente reside nuestra sede y desde donde trabajamos en toda la provincia de Buenos Aires y resto del país.\n\nProveemos servicios de consultoría, asesoramiento legal y defensa en juicio en casos de familia, sucesiones, daños y amparos de salud, contando con especialistas en cada área, cubriendo desde la investigación preliminar del caso, hasta la etapa final del mismo sea prejudicial, o judicial, siguiendo cada etapa con gran profesionalismo.\n\nNuestro objetivo es brindarte soluciones eficaces e innovadoras, tratando de otorgarte siempre los mayores beneficios y sobre todo tranquilidad y seguridad durante todo el proceso.',
-    subtitle2: 'Por una abogacía diferente.',
+    subtitle2: 'Por una Abogacía Diferente',
     description2: 'Abogamos por el respeto y cumplimiento de todos tus derechos sin vulnerar el derecho del otro, procuramos un acompañamiento permanente en la resolución de los conflictos legales, en un marco de contención, empatía y confianza que permite al cliente sentirse cómodo/a y seguro/a a la hora de buscar asesoramiento jurídico y confiar sus asuntos.\n\nCreemos que una abogacía diferente es posible, generando un ambiente de calidez y amabilidad que busca conectar con el otro sin rivalidades, evitando caer en los estereotipos de siempre que lo único que hacen es generar más conflicto y alejarnos de las soluciones.\n\nEntendemos que enfrentar una situación jurídica muchas veces es estresante y a veces angustiante, por eso trabajamos de manera interdisciplinaria para brindarte tranquilidad al mismo tiempo que encontramos la solución.\n\nTrabajamos en el respeto absoluto de los principios generales del derecho y su ferviente aplicación.\n\nContamos con un 92% de efectividad en la firma de convenios, donde se acuerdan y respetan los derechos de ambas partes, protegiendo además un fin social, que colabora en la construcción de una sociedad mejor y menos conflictiva.',
 
     features: [
@@ -50,7 +50,7 @@ export const content = {
   services: {
     title: 'Nuestros Servicios',
     description: 'Los abogados tenemos una única misión: "Ayudar a las personas a defender sus derechos y hacerlos valer ante terceros", procurando la máxima justicia en cada caso.\n\nEl abogado utiliza el conocimiento de la ley para obtener el cumplimiento de sus derechos, haciendo respetar a cada individuo.',
-    subtitle: 'ÁREAS DE PRÁCTICA',
+    subtitle: 'Áreas de Práctica',
 
     list: [
       {
