@@ -24,7 +24,9 @@ export const siteConfig = {
     { name: 'Inicio', href: '#hero' },
     { name: 'Sobre Nosotros', href: '#about' },
     { name: 'Servicios', href: '#services' },
+    { name: 'Mi Historia', href: '#my-story' },
     { name: 'Testimonios', href: '#testimonials' },
+    { name: 'Preguntas Frecuentes', href: '#faq' },
     { name: 'Contacto', href: '#contact' },
   ],
 }
