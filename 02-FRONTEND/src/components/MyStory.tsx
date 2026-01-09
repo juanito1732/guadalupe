@@ -18,15 +18,15 @@ export default function MyStory() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 md:gap-16 items-start">
           {/* Texto a la izquierda */}
-          <div>
-            <p className={`text-left text-base sm:text-lg md:text-xl text-c4 leading-relaxed whitespace-pre-line ${!isExpanded ? 'line-clamp-6' : ''}`}>
+          <div className="flex flex-col">
+            <p className={`text-left text-base sm:text-lg md:text-xl text-c4 leading-relaxed whitespace-pre-line ${!isExpanded ? 'line-clamp-[20]' : ''}`}>
               {content.myStory.content}
             </p>
 
-            <div className="flex justify-start">
+            <div className="flex justify-start mt-6">
               <button
                 onClick={() => setIsExpanded(!isExpanded)}
-                className="mt-6 px-4 py-2 text-sm font-bold text-c5 hover:text-c4 transition-colors duration-200"
+                className="px-4 py-2 text-sm font-bold text-c5 hover:text-c4 transition-colors duration-200"
               >
                 {isExpanded ? 'Leer menos' : 'Leer más'}
               </button>
