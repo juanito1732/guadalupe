@@ -1007,3 +1007,6 @@ GUADIS v2.0 está COMPLETAMENTE LISTO para Vercel deployment. Código profesiona
 
 ## [2026-01-09]
 - Add 6th FAQ question for better visual layout
+
+## [2026-01-09]
+- Add professional photo of Dra. Guadalupe for Mi Historia section
