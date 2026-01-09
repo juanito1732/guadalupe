@@ -998,3 +998,6 @@ GUADIS v2.0 está COMPLETAMENTE LISTO para Vercel deployment. Código profesiona
 
 ## [2026-01-07]
 - Add spacer to first About card to match button height
+
+## [2026-01-09]
+- Add FAQ section and update MyStory with image layout
