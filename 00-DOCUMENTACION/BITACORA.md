@@ -1004,3 +1004,6 @@ GUADIS v2.0 está COMPLETAMENTE LISTO para Vercel deployment. Código profesiona
 
 ## [2026-01-09]
 - Add Mi Historia and Preguntas Frecuentes to navbar
+
+## [2026-01-09]
+- Add 6th FAQ question for better visual layout

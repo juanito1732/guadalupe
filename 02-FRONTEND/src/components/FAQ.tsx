@@ -29,6 +29,10 @@ const faqs: FAQItem[] = [
     question: '¿Qué se puede hacer si una de las partes incumple con las obligaciones alimentarias?',
     answer: 'Si alguien incumple con el pago de la cuota alimentaria, se puede solicitar la ejecución judicial de la obligación. El juez puede ordenar embargos, retenciones salariales o incluso sanciones más severas en casos extremos de incumplimiento.',
   },
+  {
+    question: '¿Puedo iniciar un trámite de familia sin ir a juicio?',
+    answer: 'Sí. Muchos conflictos de familia pueden resolverse a través de acuerdos, mediación o abordajes preventivos, evitando procesos judiciales largos y desgastantes. El objetivo es proteger los vínculos, reducir la conflictividad y priorizar el bienestar de niños, niñas y adolescentes. Cada caso se analiza de manera personalizada para evaluar la mejor estrategia legal y humana.',
+  },
 ]
 
 function FAQCard({ faq, index }: { faq: FAQItem; index: number }) {
